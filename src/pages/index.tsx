@@ -1,8 +1,15 @@
 import React from 'react'
 import { Box } from '@chakra-ui/react'
 
+import { getI18nSSRProps, GetI18nServerSideProps } from '@/utils/i18n'
+
 function App() {
   return <Box>home page</Box>
 }
 
-export default React.memo(App)
+export const getServerSideProps = async (ctx: GetI18nServerSideProps) => {
+  return {
+    props: { ...(await getI18nSSRProps(ctx, ['home'])) },
+  }
+}
+export default App
