@@ -22,9 +22,9 @@
     "target": "esnext",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "incremental": true
   },
-
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx", "typings.d.ts"]
 }
