@@ -11,17 +11,23 @@ const breakpoints = createBreakpoints({
   sm: '640px',
   md: '768px',
   lg: '1024px',
-  xl: '1080px',
+  xl: '1366px',
 })
 
 const colors = {
   ...baseTheme.colors,
-  white: '#FFFFFF',
+  white: {
+    '100': '#FFFFFF',
+    '200': '#F9FAFE',
+  },
   black: '#000000',
   blue: {
-    '600': '#042646',
-    '700': '#072738',
-    '800': '#062130',
+    '100': '#3A68E7',
+    '200': '#213C86',
+    '300': '#2A4DAD',
+    '400': '#97B3FF',
+    '500': '#F9FAFE',
+    '600': '#D7E1FF',
   },
   green: {
     '200': '#9DDB59',
@@ -52,6 +58,21 @@ const textStyles = {
   },
   '24': {
     fontSize: 24,
+    fontWeight: 'bold',
+    lineHeight: 1,
+  },
+  '30': {
+    fontSize: 30,
+    fontWeight: 'bold',
+    lineHeight: 1,
+  },
+  '48': {
+    fontSize: 48,
+    fontWeight: 'bold',
+    lineHeight: 1,
+  },
+  '64': {
+    fontSize: 64,
     fontWeight: 'bold',
     lineHeight: 1,
   },

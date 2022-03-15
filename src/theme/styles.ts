@@ -3,11 +3,10 @@ export default {
     return {
       'html, body': {
         fontSize: '12',
-        color: 'white',
-        bgGradient: 'linear(to-b, blue.600 0%, blue.700 100%)',
-        w: '100vw',
-        minH: '100vh',
+        color: 'blue.100',
+        bgColor: 'white.200',
       },
+
       '*::-webkit-scrollbar': {
         width: '6px',
         height: '6px',
