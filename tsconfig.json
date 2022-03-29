@@ -23,7 +23,7 @@
     "paths": {
       "@/*": ["src/*"]
     },
-    "incremental": true
+    "incremental": false // 不生成tsconfig.tsbuildinfo文件
   },
   "exclude": ["node_modules"],
   "include": ["**/*.ts", "**/*.tsx", "typings.d.ts"]
