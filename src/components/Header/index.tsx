@@ -1,18 +1,7 @@
 import React from 'react'
-import { Text, Flex, HStack, Image, Button, Box } from '@chakra-ui/react'
-
+import { Text, Flex, HStack, Image, Button } from '@chakra-ui/react'
 import eva from '@/assets/imgs/eva.png'
 
-const buttonHover = {
-  cursor: 'pointer',
-  color: 'blue.100',
-}
-
-export const buttonStyle = {
-  fontSize: '18px',
-  borderRadius: '6px',
-  padding: '0 10px',
-}
 function Index() {
   return (
     <Flex padding="30px 60px" bgColor="white.100" justify="space-between">
@@ -28,17 +17,11 @@ function Index() {
         </Text>
       </HStack>
       <HStack spacing="30px" color="blue.400" textStyle="14">
-        <Box as="a" _hover={buttonHover}>
-          Docs
-        </Box>
-        <Box as="a" _hover={buttonHover}>
-          Solutions
-        </Box>
-        <Box as="a" _hover={buttonHover}>
-          Scripts
-        </Box>
         <Button bgColor="blue.100" color="white.100">
-          Start your flows
+          Connect Wallet
+        </Button>
+        <Button bgColor="blue.100" color="white.100">
+          Disconnect
         </Button>
       </HStack>
     </Flex>
