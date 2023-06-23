@@ -1,3 +1,10 @@
+/*
+ * @Author: Austion
+ * @Date: 2023-06-23 18:33:19
+ * @LastEditTime: 2023-06-23 19:06:31
+ * @LastEditors: Austion
+ * @FilePath: /Rollna-office/src/components/Header/index.tsx
+ */
 import React from 'react'
 import { Text, Flex, HStack, Image, Button } from '@chakra-ui/react'
 import eva from '@/assets/imgs/eva.png'
@@ -18,10 +25,16 @@ function Index() {
       </HStack>
       <HStack spacing="30px" color="blue.400" textStyle="14">
         <Button bgColor="blue.100" color="white.100">
-          Connect Wallet
+          Protocol
         </Button>
         <Button bgColor="blue.100" color="white.100">
-          Disconnect
+          Featrues
+        </Button>
+        <Button bgColor="blue.100" color="white.100">
+        Roadmap
+        </Button>
+        <Button bgColor="blue.100" color="white.100">
+        Communiity
         </Button>
       </HStack>
     </Flex>
