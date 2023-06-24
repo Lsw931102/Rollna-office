@@ -1,12 +1,12 @@
 /*
  * @Author: Austion
  * @Date: 2023-06-23 18:33:19
- * @LastEditTime: 2023-06-23 19:06:31
+ * @LastEditTime: 2023-06-24 11:10:15
  * @LastEditors: Austion
  * @FilePath: /Rollna-office/src/components/Header/index.tsx
  */
 import React from 'react'
-import { Text, Flex, HStack, Image, Button } from '@chakra-ui/react'
+import { Text, Flex, HStack, Image } from '@chakra-ui/react'
 import eva from '@/assets/imgs/eva.png'
 
 function Index() {
@@ -23,19 +23,19 @@ function Index() {
           EVA BASE
         </Text>
       </HStack>
-      <HStack spacing="30px" color="blue.400" textStyle="14">
-        <Button bgColor="blue.100" color="white.100">
+      <HStack spacing="30px" textStyle="14">
+        <a color="white.100">
           Protocol
-        </Button>
-        <Button bgColor="blue.100" color="white.100">
+        </a>
+        <a color="white.100">
           Featrues
-        </Button>
-        <Button bgColor="blue.100" color="white.100">
-        Roadmap
-        </Button>
-        <Button bgColor="blue.100" color="white.100">
-        Communiity
-        </Button>
+        </a>
+        <a color="white.100">
+          Roadmap
+        </a>
+        <a color="white.100">
+          Communiity
+        </a>
       </HStack>
     </Flex>
   )
