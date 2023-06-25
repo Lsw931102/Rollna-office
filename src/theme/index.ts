@@ -18,6 +18,7 @@ const colors = {
   white: {
     '100': '#FFFFFF',
     '200': '#F9FAFE',
+    '12': 'rgba(255, 255, 255, 0.12)',
   },
   black: '#000000',
   blue: {

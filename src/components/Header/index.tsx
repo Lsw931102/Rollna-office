@@ -1,41 +1,41 @@
 /*
  * @Author: Austion
  * @Date: 2023-06-23 18:33:19
- * @LastEditTime: 2023-06-24 11:10:15
+ * @LastEditTime: 2023-06-25 10:17:37
  * @LastEditors: Austion
  * @FilePath: /Rollna-office/src/components/Header/index.tsx
  */
 import React from 'react'
-import { Text, Flex, HStack, Image } from '@chakra-ui/react'
+import { Text, Flex, HStack, Image,Link } from '@chakra-ui/react'
 import eva from '@/assets/imgs/eva.png'
 
 function Index() {
   return (
-    <Flex padding="30px 60px" bgColor="white.100" justify="space-between">
+    <Flex padding="30px 60px" bgColor="white.12" justify="space-between">
       <HStack spacing="10px">
         <Image src={eva} ignoreFallback />
         <Text
           textStyle="18"
           backgroundClip="text"
-          color="transparent"
+          color="black"
           backgroundImage="linear-gradient(180deg, #5E81FF 0%, #3A68E7 100%)"
         >
-          EVA BASE
+          RollNA
         </Text>
       </HStack>
       <HStack spacing="30px" textStyle="14">
-        <a color="white.100">
+        <Link color="black">
           Protocol
-        </a>
-        <a color="white.100">
+        </Link>
+        <Link color="black">
           Featrues
-        </a>
-        <a color="white.100">
+        </Link>
+        <Link color="black">
           Roadmap
-        </a>
-        <a color="white.100">
+        </Link>
+        <Link color="black">
           Communiity
-        </a>
+        </Link>
       </HStack>
     </Flex>
   )
