@@ -11,15 +11,10 @@ import eva from '@/assets/imgs/logo.png'
 
 function Index() {
   return (
-    <Flex padding="30px 60px" bgColor="white.12" justify="space-between">
+    <Flex p="30px 60px" bgColor="white.12" justify="space-between">
       <HStack spacing="10px">
         <Image src={eva} ignoreFallback />
-        <Text
-          textStyle="18"
-          backgroundClip="text"
-          color="black"
-          backgroundImage="linear-gradient(180deg, #5E81FF 0%, #3A68E7 100%)"
-        >
+        <Text textStyle="18" backgroundClip="text" color="black">
           RollNA
         </Text>
       </HStack>

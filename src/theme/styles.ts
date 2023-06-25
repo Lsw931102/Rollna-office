@@ -19,14 +19,14 @@ export default {
       },
       '*::-webkit-scrollbar-thumb': {
         borderRadius: '10px',
-        bg: 'green.200',
+        // bg: 'green.200',
         boxShadow: 'inset 0 0 6px rgba(0, 0, 0, .3)',
       },
       '*::-webkit-scrollbar-corner': {
         bg: 'transparent',
       },
       '*': {
-        scrollbarColor: 'var(--chakra-colors-green-200)',
+        // scrollbarColor: 'var(--chakra-colors-green-200)',
         scrollbarWidth: 'thin',
       },
     }

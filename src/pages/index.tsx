@@ -6,7 +6,7 @@
  * @FilePath: /Rollna-office/src/pages/index.tsx
  */
 import React from 'react'
-import { Box, Text, Center, Image, List, ListItem } from '@chakra-ui/react'
+import { Box, Flex, Text, Center, Image, List, ListItem } from '@chakra-ui/react'
 import { Scrollbar, Mousewheel, Parallax } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
@@ -20,16 +20,7 @@ import eva from '@/assets/imgs/logo.png'
 
 function App() {
   return (
-    <Box
-      maxW={{
-        lg: '1366px',
-      }}
-      minW={{
-        lg: '1024px',
-      }}
-      margin=" 0 auto"
-      bg="bg"
-    >
+    <Box margin=" 0 auto" bg="bg">
       <Swiper
         // install Swiper modules
         className="swiperView"
@@ -45,8 +36,13 @@ function App() {
         onSlideChange={(n) => console.log(n)}
       >
         <SwiperSlide>
-          <Box h="100%">
-            <Box mt="7%">
+          <Flex h="100%" w={{ base: '100%', lg: '1280px' }} m="0 auto">
+            <Flex
+              direction="column"
+              justifyContent="center"
+              alignItems="flex-start"
+              ml={{ lg: '40px' }}
+            >
               <Text
                 fontSize={{ base: px2vw(50), lg: '90px' }}
                 lineHeight={{ base: px2vw(75), lg: '112px' }}
@@ -69,8 +65,8 @@ function App() {
               >
                 Revolutionizing Crypto with one-stop multi-chain trading Protocol
               </Text>
-            </Box>
-          </Box>
+            </Flex>
+          </Flex>
         </SwiperSlide>
         <SwiperSlide>
           <Box h="100%">

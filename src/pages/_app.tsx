@@ -12,7 +12,7 @@ const { publicRuntimeConfig } = getConfig()
 
 function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    window.zoConfig = publicRuntimeConfig
+    window.rollnaConfig = publicRuntimeConfig
   }, [])
 
   return (
@@ -35,7 +35,7 @@ function App({ Component, pageProps }: AppProps) {
           type="image/x-icon"
         />
         <link
-          href={`${publicRuntimeConfig.cdn}/images/apple-touch-icon-144-precomposed.png`}
+          href={`${publicRuntimeConfig.cdn}/images/apple-touch-icon-48-precomposed.png`}
           rel="apple-touch-icon-precomposed"
         />
       </Head>
