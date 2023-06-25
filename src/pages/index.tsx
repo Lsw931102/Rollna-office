@@ -13,6 +13,8 @@ import 'swiper/css'
 import 'swiper/css/mousewheel'
 import 'swiper/css/scrollbar'
 import 'swiper/css/parallax'
+
+import px2vw from '@/utils/px2vw'
 import tlm from '@/assets/imgs/tlm.png'
 import eva from '@/assets/imgs/eva.png'
 
@@ -45,13 +47,26 @@ function App() {
         <SwiperSlide>
           <Box h="100%">
             <Box mt="7%">
-              <Text textStyle="64" lineHeight="112px" color="black">
+              <Text
+                fontSize={{ base: px2vw(50), lg: '90px' }}
+                lineHeight={{ base: px2vw(75), lg: '112px' }}
+                color="black"
+              >
                 Make decentralized
               </Text>
-              <Text textStyle="64" lineHeight="112px" color="black">
+              <Text
+                fontSize={{ base: px2vw(50), lg: '90px' }}
+                lineHeight={{ base: px2vw(75), lg: '112px' }}
+                color="black"
+              >
                 trading easier
               </Text>
-              <Text textStyle="32" lineHeight="37.54px" color="black">
+              <Text
+                fontSize={{ base: px2vw(20), lg: '24px' }}
+                lineHeight={{ base: px2vw(30), lg: '28px' }}
+                color="black"
+                mt={{ base: px2vw(16), lg: '40px' }}
+              >
                 Revolutionizing Crypto with one-stop multi-chain trading Protocol
               </Text>
             </Box>

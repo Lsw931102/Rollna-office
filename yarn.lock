@@ -380,7 +380,7 @@
 
 "@chakra-ui/cli@^2.7.0":
   version "2.4.1"
-  resolved "https://registry.npmmirror.com/@chakra-ui/cli/-/cli-2.4.1.tgz#254a0f229a38c2ba235e2a7cc24c6c20deee8117"
+  resolved "https://registry.yarnpkg.com/@chakra-ui/cli/-/cli-2.4.1.tgz#254a0f229a38c2ba235e2a7cc24c6c20deee8117"
   integrity sha512-GZZuHUA1cXJWpmYNiVTLPihvY4VhIssRl+AXgw/0IbeodTMop3jWlIioPKLAQeXu5CwvRA6iESyGjnu1V8Zykg==
   dependencies:
     chokidar "^3.5.3"
