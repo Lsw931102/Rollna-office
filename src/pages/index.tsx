@@ -6,7 +6,7 @@
  * @FilePath: /Rollna-office/src/pages/index.tsx
  */
 import React from 'react'
-import { Box, Flex, Text, Center, Image, List, ListItem } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 import { Scrollbar, Mousewheel, Parallax } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
@@ -14,18 +14,14 @@ import 'swiper/css/mousewheel'
 import 'swiper/css/scrollbar'
 import 'swiper/css/parallax'
 
-import px2vw from '@/utils/px2vw'
-
-
 import PageOne from '@/components/page/pageOne'
 import PageTwo from '@/components/page/pageTwo'
 import PageThree from '@/components/page/pageThree'
 import PageFour from '@/components/page/pageFour'
 
-
 function App() {
   return (
-    <Box margin=" 0 auto" bg="bg"  backgroundBlendMode='NORMAL, SCREEN, NORMAL'>
+    <Box margin=" 0 auto" bg="bg" backgroundBlendMode="NORMAL, SCREEN, NORMAL">
       <Swiper
         // install Swiper modules
         className="swiperView"
