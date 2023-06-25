@@ -4,6 +4,8 @@ import px2vw from '../utils/px2vw'
 import styles from './styles'
 import borders from './foundations/borders'
 import components from './components'
+import bgImg from '@/assets/imgs/bg.png'
+
 
 const config: ThemeConfig = {}
 
@@ -16,7 +18,7 @@ const breakpoints = {
 
 const colors = {
   ...baseTheme.colors,
-  white: {
+  wh: {
     '100': '#FFFFFF',
     '12': 'rgba(255, 255, 255, 0.12)',
   },
@@ -24,7 +26,8 @@ const colors = {
   font: {
     100: '#2F2F2F',
   },
-  bg: 'rgba(255, 170, 246, 1)rgba(72, 165, 252, 1)rgba(0, 9, 255, 1)rgba(33, 55, 255, 1)',
+  bg: 'radial-gradient(50% 50.00% at 50% 50.00%, #FFF 0%, rgba(255, 255, 255, 0.00) 100%), linear-gradient(147deg, #FFAAF6 0%, #48A5FC 67.71%, #0009FF 99.99%, #2137FF 100%), url(@/assets/imgs/bg.png), lightgray 50% / cover no-repeat',
+  purple:'#8337ED'
 }
 
 const textStyles = {

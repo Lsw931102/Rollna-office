@@ -1,7 +1,7 @@
 /*
  * @Author: Austion
  * @Date: 2023-06-23 18:33:19
- * @LastEditTime: 2023-06-25 10:17:37
+ * @LastEditTime: 2023-06-25 15:42:50
  * @LastEditors: Austion
  * @FilePath: /Rollna-office/src/components/Header/index.tsx
  */
@@ -11,7 +11,7 @@ import eva from '@/assets/imgs/logo.png'
 
 function Index() {
   return (
-    <Flex p="30px 60px" bgColor="white.12" justify="space-between">
+    <Flex p="30px 60px" bgColor="wh.12" justify="space-between">
       <HStack spacing="10px">
         <Image src={eva} ignoreFallback />
         <Text textStyle="18" backgroundClip="text" color="black">
