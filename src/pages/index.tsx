@@ -16,7 +16,7 @@ import 'swiper/css/parallax'
 
 import px2vw from '@/utils/px2vw'
 import tlm from '@/assets/imgs/tlm.png'
-import eva from '@/assets/imgs/eva.png'
+import eva from '@/assets/imgs/logo.png'
 
 function App() {
   return (
@@ -28,7 +28,7 @@ function App() {
         lg: '1024px',
       }}
       margin=" 0 auto"
-      bg="rgba(255, 170, 246, 1)rgba(72, 165, 252, 1)rgba(0, 9, 255, 1)rgba(33, 55, 255, 1)"
+      bg="bg"
     >
       <Swiper
         // install Swiper modules
@@ -38,7 +38,7 @@ function App() {
         allowSlidePrev
         centeredSlides
         autoHeight
-        direction={'vertical'}
+        direction="vertical"
         scrollbar={{ draggable: true }}
         mousewheel
         onSwiper={(swiper) => console.log(swiper)}

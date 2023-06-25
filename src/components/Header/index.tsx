@@ -7,7 +7,7 @@
  */
 import React from 'react'
 import { Text, Flex, HStack, Image, Link } from '@chakra-ui/react'
-import eva from '@/assets/imgs/eva.png'
+import eva from '@/assets/imgs/logo.png'
 
 function Index() {
   return (

@@ -2,9 +2,8 @@ export default {
   global: () => {
     return {
       'html, body': {
-        fontSize: '12',
-        color: 'blue.100',
-        bgColor: 'white.200',
+        fontSize: '14',
+        color: 'black',
       },
 
       '*::-webkit-scrollbar': {

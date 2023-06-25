@@ -1,5 +1,6 @@
 import { extendTheme, theme as baseTheme, ThemeConfig } from '@chakra-ui/react'
 
+import px2vw from '../utils/px2vw'
 import styles from './styles'
 import borders from './foundations/borders'
 import components from './components'
@@ -17,64 +18,135 @@ const colors = {
   ...baseTheme.colors,
   white: {
     '100': '#FFFFFF',
-    '200': '#F9FAFE',
     '12': 'rgba(255, 255, 255, 0.12)',
   },
   black: '#000000',
-  blue: {
-    '100': '#3A68E7',
-    '200': '#213C86',
-    '300': '#2A4DAD',
-    '400': '#97B3FF',
-    '500': '#F9FAFE',
-    '600': '#D7E1FF',
+  font: {
+    100: '#2F2F2F',
   },
-  green: {
-    '200': '#9DDB59',
-  },
-  yellow: { '200': '#EDAB06' },
+  bg: 'rgba(255, 170, 246, 1)rgba(72, 165, 252, 1)rgba(0, 9, 255, 1)rgba(33, 55, 255, 1)',
 }
 
 const textStyles = {
   '12': {
-    fontSize: 12,
-    fontWeight: 'bold',
-    lineHeight: 1,
+    fontSize: {
+      base: px2vw(12),
+      md: '12px',
+    },
+    lineHeight: {
+      base: px2vw(12),
+      md: '12px',
+    },
+  },
+  '13': {
+    fontSize: {
+      base: px2vw(13),
+      md: '13px',
+    },
+    lineHeight: {
+      base: px2vw(13),
+      md: '13px',
+    },
   },
   '14': {
-    fontSize: 14,
-    fontWeight: 'bold',
-    lineHeight: 1,
+    fontSize: {
+      base: px2vw(14),
+      md: '14px',
+    },
+    lineHeight: {
+      base: px2vw(14),
+      md: '14px',
+    },
   },
   '16': {
-    fontSize: 16,
-    fontWeight: 'bold',
-    lineHeight: 1,
+    fontSize: {
+      base: px2vw(16),
+      md: '16px',
+    },
+    lineHeight: {
+      base: px2vw(16),
+      md: '16px',
+    },
   },
   '18': {
-    fontSize: 18,
-    fontWeight: 'bold',
-    lineHeight: 1,
+    fontSize: {
+      base: px2vw(18),
+      md: '18px',
+    },
+    lineHeight: {
+      base: px2vw(18),
+      md: '18px',
+    },
+  },
+  '20': {
+    fontSize: {
+      base: px2vw(20),
+      md: '20px',
+    },
+    lineHeight: {
+      base: px2vw(20),
+      md: '20px',
+    },
+  },
+  '22': {
+    fontSize: {
+      base: px2vw(22),
+      md: '22px',
+    },
+    lineHeight: {
+      base: px2vw(22),
+      md: '22px',
+    },
   },
   '24': {
-    fontSize: 24,
-    fontWeight: 'bold',
-    lineHeight: 1,
+    fontSize: {
+      base: px2vw(24),
+      md: '24px',
+    },
+    lineHeight: {
+      base: px2vw(24),
+      md: '24px',
+    },
   },
   '30': {
-    fontSize: 30,
-    fontWeight: 'bold',
-    lineHeight: 1,
+    fontSize: {
+      base: px2vw(30),
+      md: '30px',
+    },
+    lineHeight: {
+      base: px2vw(30),
+      md: '30px',
+    },
+  },
+  '36': {
+    fontSize: {
+      base: px2vw(36),
+      md: '36px',
+    },
+    lineHeight: {
+      base: px2vw(36),
+      md: '36px',
+    },
   },
   '48': {
-    fontSize: 48,
-    fontWeight: 'bold',
-    lineHeight: 1,
+    fontSize: {
+      base: px2vw(48),
+      md: '48px',
+    },
+    lineHeight: {
+      base: px2vw(48),
+      md: '48px',
+    },
   },
-  '64': {
-    fontSize: 64,
-    fontWeight: 'bold',
-    lineHeight: 1,
+  '72': {
+    fontSize: {
+      base: px2vw(72),
+      md: '72px',
+    },
+    lineHeight: {
+      base: px2vw(72),
+      md: '72px',
+    },
   },
 }
 
