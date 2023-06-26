@@ -5,7 +5,7 @@
  * @LastEditors: Austion
  * @FilePath: /Rollna-office/src/components/page/pageFour.tsx
  */
-import React from 'react'
+import React, { useState } from 'react'
 import {
   Box,
   Button,
@@ -21,9 +21,10 @@ import {
   Input,
   Textarea,
 } from '@chakra-ui/react'
-import { useState } from 'react'
+import Lottie from 'lottie-react'
 
 import px2vw from '@/utils/px2vw'
+import roadMapAni from '@/assets/lotties/roadMap.json'
 
 function PageFour() {
   const [isModel, setModel] = useState(false)
@@ -43,6 +44,7 @@ function PageFour() {
       >
         RoadMap
       </Center>
+      <Lottie animationData={roadMapAni} />
       <Box>
         <Center
           fontSize={{ base: px2vw(32), lg: '32px' }}
