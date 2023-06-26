@@ -19,9 +19,8 @@ function PageTwo() {
       >
         Token Liquidity Merge
       </Center>
-      <Flex alignItems="center" p={{ base: px2vw(10), lg: '10px' }}>
-        <Box>
-          <Image src={tlm} ignoreFallback w={{ base: px2vw(800), lg: '800px' }} />
+      <Box>
+          <Image src={tlm} ignoreFallback w='100%' />
         </Box>
         <Box ml={{ base: px2vw(20), lg: '20px' }}>
           <List spacing={3}>
@@ -131,7 +130,7 @@ function PageTwo() {
             </ListItem>
           </List>
         </Box>
-      </Flex>
+      
     </Box>
   )
 }

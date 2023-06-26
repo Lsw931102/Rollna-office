@@ -25,7 +25,7 @@ body {
 }
 
 .swiperView {
-  height: 100vh;
+  height: calc(100vh - 90px) ;
 }
 
 // 单行文本溢出

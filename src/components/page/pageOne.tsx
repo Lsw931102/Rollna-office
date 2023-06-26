@@ -1,10 +1,3 @@
-/*
- * @Author: Austion
- * @Date: 2023-06-23 18:33:19
- * @LastEditTime: 2023-06-25 14:05:57
- * @LastEditors: Austion
- * @FilePath: /Rollna-office/src/components/page/pageOne.tsx
- */
 import React from 'react'
 import { Flex, Text } from '@chakra-ui/react'
 import px2vw from '@/utils/px2vw'

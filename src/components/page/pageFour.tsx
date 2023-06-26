@@ -1,10 +1,3 @@
-/*
- * @Author: Austion
- * @Date: 2023-06-23 18:33:19
- * @LastEditTime: 2023-06-25 16:49:48
- * @LastEditors: Austion
- * @FilePath: /Rollna-office/src/components/page/pageFour.tsx
- */
 import React, { useState } from 'react'
 import {
   Box,
@@ -20,6 +13,8 @@ import {
   ModalOverlay,
   Input,
   Textarea,
+  Flex,
+  Text
 } from '@chakra-ui/react'
 import Lottie from 'lottie-react'
 
@@ -35,7 +30,7 @@ function PageFour() {
   const [Massage, setMassage] = useState('')
 
   return (
-    <Box h="100%" w={{ base: '100%', lg: '1280px' }} m="0 auto">
+    <Box  w={{ base: '100%', lg: '1280px' }} m="0 auto" >
       <Center
         fontSize={{ base: px2vw(32), lg: '32px' }}
         fontWeight={{ base: px2vw(900), lg: '900' }}
@@ -44,7 +39,57 @@ function PageFour() {
       >
         RoadMap
       </Center>
-      <Lottie animationData={roadMapAni} />
+      <Box position='relative' h={{ base: px2vw(420), lg: '420px' }} >
+        <Box position='absolute' top={{ base: px2vw(180), lg: '180px' }} left='5%'>
+          <Flex>
+            <Box>
+              <Text>Kickoff the project:</Text>
+              <Text>1.Research the Market and Technology.</Text>
+              <Text>2.Start Project Design.</Text>
+            </Box>
+          </Flex>
+        </Box>
+        <Box position='absolute' left='35%' top={{ base: px2vw(90), lg: '90px' }}>
+          <Flex>
+            <Box>
+              <Text>Kickoff the project:</Text>
+              <Text>1.Research the Market and Technology.</Text>
+              <Text>2.Start Project Design.</Text>
+            </Box>
+          </Flex>
+        </Box>
+        <Box position='absolute' right='10%'>
+          <Flex>
+            <Box>
+              <Text>Kickoff the project:</Text>
+              <Text>1.Research the Market and Technology.</Text>
+              <Text>2.Start Project Design.</Text>
+            </Box>
+          </Flex>
+        </Box>
+        <Box position='absolute' top={{ base: px2vw(85), lg: '85px' }} h={{base: px2vw(250), lg: '250px'}}>
+          <Lottie animationData={roadMapAni} />
+        </Box>
+        
+        <Box position='absolute'  left='20%' bottom={{ base: px2vw(0), lg: '0px' }}>
+          <Flex>
+            <Box>
+              <Text>Kickoff the project:</Text>
+              <Text>1.Research the Market and Technology.</Text>
+              <Text>2.Start Project Design.</Text>
+            </Box>
+          </Flex>
+        </Box>
+        <Box position='absolute' bottom={{ base: px2vw(180), lg: '180px' }} right='15%'>
+          <Flex>
+            <Box>
+              <Text>Kickoff the project:</Text>
+              <Text>1.Research the Market and Technology.</Text>
+              <Text>2.Start Project Design.</Text>
+            </Box>
+          </Flex>
+        </Box>
+      </Box>
       <Box>
         <Center
           fontSize={{ base: px2vw(32), lg: '32px' }}

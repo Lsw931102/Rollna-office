@@ -1,7 +1,7 @@
 /*
  * @Author: Austion
- * @Date: 2023-06-23 18:33:19
- * @LastEditTime: 2023-06-25 15:42:50
+ * @Date: 2023-06-26 12:02:36
+ * @LastEditTime: 2023-06-26 12:18:57
  * @LastEditors: Austion
  * @FilePath: /Rollna-office/src/components/Header/index.tsx
  */
@@ -16,6 +16,7 @@ function Index() {
       bgColor="wh.12"
       justify="space-between"
       pos={{ base: 'initial', lg: 'fixed' }}
+      w='100%'
     >
       <HStack spacing="10px">
         <Image src={eva} ignoreFallback />
