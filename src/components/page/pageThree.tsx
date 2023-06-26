@@ -33,18 +33,30 @@ function PageThree() {
         className="swiperView"
         modules={[Scrollbar, Mousewheel, Parallax]}
         touchRatio={0.5}
-        allowSlidePrev
         centeredSlides
-        autoHeight
         direction="vertical"
         scrollbar={{ draggable: true }}
+        nested={true}
+        touchMoveStopPropagation
         mousewheel
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={(n) => console.log(n)}
       >
-        <SwiperSlide>1</SwiperSlide>
-        <SwiperSlide>2</SwiperSlide>
-        <SwiperSlide>3</SwiperSlide>
+        <SwiperSlide>
+          <Box h="100%" bg="red">
+            1
+          </Box>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Box h="100%" bg="green">
+            2
+          </Box>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Box h="100%" bg="blue">
+            3
+          </Box>
+        </SwiperSlide>
       </Swiper>
     </Box>
   )

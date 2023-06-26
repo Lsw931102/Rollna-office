@@ -29,10 +29,9 @@ function App() {
         touchRatio={0.5}
         allowSlidePrev
         centeredSlides
-        autoHeight
+        mousewheel
         direction="vertical"
         scrollbar={{ draggable: true }}
-        mousewheel
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={(n) => console.log(n)}
       >

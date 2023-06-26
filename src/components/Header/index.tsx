@@ -11,7 +11,12 @@ import eva from '@/assets/imgs/logo.png'
 
 function Index() {
   return (
-    <Flex p="30px 60px" bgColor="wh.12" justify="space-between">
+    <Flex
+      p="30px 60px"
+      bgColor="wh.12"
+      justify="space-between"
+      pos={{ base: 'initial', lg: 'fixed' }}
+    >
       <HStack spacing="10px">
         <Image src={eva} ignoreFallback />
         <Text textStyle="18" backgroundClip="text" color="black">
