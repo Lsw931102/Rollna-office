@@ -25,9 +25,11 @@ function PageTwo() {
         </Box>
         <Box ml={{ base: px2vw(20), lg: '20px' }}>
           <List spacing={3}>
-            <ListItem  data-swiper-parallax-y='-400'
-                data-swiper-parallax-duration='500'
-                data-swiper-parallax-opacity="0">
+            <ListItem
+              data-swiper-parallax-y="-400"
+              data-swiper-parallax-duration="500"
+              data-swiper-parallax-opacity="0"
+            >
               <Flex alignItems="center">
                 <Image src={convenient} ignoreFallback width={{ base: px2vw(32), lg: '32px' }} />
                 <Box color="black" p="10px">
@@ -49,9 +51,11 @@ function PageTwo() {
                 </Box>
               </Flex>
             </ListItem>
-            <ListItem data-swiper-parallax-y='-400'
-                data-swiper-parallax-duration='500'
-                data-swiper-parallax-opacity="0">
+            <ListItem
+              data-swiper-parallax-y="-400"
+              data-swiper-parallax-duration="500"
+              data-swiper-parallax-opacity="0"
+            >
               <Flex alignItems="center">
                 <Image
                   src={interoperability}
@@ -77,9 +81,11 @@ function PageTwo() {
                 </Box>
               </Flex>
             </ListItem>
-            <ListItem data-swiper-parallax-y='-400'
-                data-swiper-parallax-duration='500'
-                data-swiper-parallax-opacity="0">
+            <ListItem
+              data-swiper-parallax-y="-400"
+              data-swiper-parallax-duration="500"
+              data-swiper-parallax-opacity="0"
+            >
               <Flex alignItems="center">
                 <Image src={lowcost} ignoreFallback width={{ base: px2vw(32), lg: '32px' }} />
                 <Box color="black" p="10px">
@@ -101,9 +107,11 @@ function PageTwo() {
                 </Box>
               </Flex>
             </ListItem>
-            <ListItem data-swiper-parallax-y='-400'
-                data-swiper-parallax-duration='500'
-                data-swiper-parallax-opacity="0">
+            <ListItem
+              data-swiper-parallax-y="-400"
+              data-swiper-parallax-duration="500"
+              data-swiper-parallax-opacity="0"
+            >
               <Flex alignItems="center">
                 <Image
                   src={supremesecurity}

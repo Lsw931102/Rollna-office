@@ -14,7 +14,7 @@ import {
   Input,
   Textarea,
   Flex,
-  Text
+  Text,
 } from '@chakra-ui/react'
 import Lottie from 'lottie-react'
 
@@ -30,7 +30,7 @@ function PageFour() {
   const [Massage, setMassage] = useState('')
 
   return (
-    <Box  w={{ base: '100%', lg: '1280px' }} m="0 auto" >
+    <Box w={{ base: '100%', lg: '1280px' }} m="0 auto">
       <Center
         fontSize={{ base: px2vw(32), lg: '32px' }}
         fontWeight={{ base: px2vw(900), lg: '900' }}
@@ -39,8 +39,8 @@ function PageFour() {
       >
         RoadMap
       </Center>
-      <Box position='relative' h={{ base: px2vw(420), lg: '420px' }} >
-        <Box position='absolute' top={{ base: px2vw(180), lg: '180px' }} left='5%'>
+      <Box position="relative" h={{ base: px2vw(420), lg: '420px' }}>
+        <Box position="absolute" top={{ base: px2vw(180), lg: '180px' }} left="5%">
           <Flex>
             <Box>
               <Text>Kickoff the project:</Text>
@@ -49,7 +49,7 @@ function PageFour() {
             </Box>
           </Flex>
         </Box>
-        <Box position='absolute' left='35%' top={{ base: px2vw(90), lg: '90px' }}>
+        <Box position="absolute" left="35%" top={{ base: px2vw(90), lg: '90px' }}>
           <Flex>
             <Box>
               <Text>Kickoff the project:</Text>
@@ -58,7 +58,7 @@ function PageFour() {
             </Box>
           </Flex>
         </Box>
-        <Box position='absolute' right='10%'>
+        <Box position="absolute" right="10%">
           <Flex>
             <Box>
               <Text>Kickoff the project:</Text>
@@ -67,11 +67,15 @@ function PageFour() {
             </Box>
           </Flex>
         </Box>
-        <Box position='absolute' top={{ base: px2vw(85), lg: '85px' }} h={{base: px2vw(250), lg: '250px'}}>
+        <Box
+          position="absolute"
+          top={{ base: px2vw(85), lg: '85px' }}
+          h={{ base: px2vw(250), lg: '250px' }}
+        >
           <Lottie animationData={roadMapAni} />
         </Box>
-        
-        <Box position='absolute'  left='20%' bottom={{ base: px2vw(0), lg: '0px' }}>
+
+        <Box position="absolute" left="20%" bottom={{ base: px2vw(0), lg: '0px' }}>
           <Flex>
             <Box>
               <Text>Kickoff the project:</Text>
@@ -80,7 +84,7 @@ function PageFour() {
             </Box>
           </Flex>
         </Box>
-        <Box position='absolute' bottom={{ base: px2vw(180), lg: '180px' }} right='15%'>
+        <Box position="absolute" bottom={{ base: px2vw(180), lg: '180px' }} right="15%">
           <Flex>
             <Box>
               <Text>Kickoff the project:</Text>

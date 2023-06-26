@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box } from '@chakra-ui/react'
-import { Scrollbar, Mousewheel, Parallax} from 'swiper'
+import { Scrollbar, Mousewheel, Parallax } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import 'swiper/css/mousewheel'
@@ -13,25 +13,21 @@ import PageThree from '@/components/page/pageThree'
 import PageFour from '@/components/page/pageFour'
 import px2vw from '@/utils/px2vw'
 
-
 function App() {
   // const [mySwiper, setMySwiper] = useState()
 
   return (
-    <Box  bg="bg" backgroundBlendMode="NORMAL, SCREEN, NORMAL" pt={{base: px2vw(0), lg: '90px'}}>
+    <Box bg="bg" backgroundBlendMode="NORMAL, SCREEN, NORMAL" pt={{ base: px2vw(0), lg: '90px' }}>
       <Swiper
         // install Swiper modules
         className="swiperView"
-    
         modules={[Scrollbar, Mousewheel, Parallax]}
         touchRatio={0.5}
         allowSlidePrev
         centeredSlides
-        mousewheel= {
-          {
-            thresholdTime:800,
-          }
-         }
+        mousewheel={{
+          thresholdTime: 800,
+        }}
         parallax
         direction="vertical"
         scrollbar={{ draggable: true }}
@@ -39,18 +35,16 @@ function App() {
           console.log(swiper)
           // setMySwiper(swiper)
         }}
-        onSlideChange={(n) =>{
-          if(n.activeIndex == 3){
+        onSlideChange={(n) => {
+          if (n.activeIndex == 3) {
             // mySwiper.mousewheel.disable()
           }
         }}
-        
       >
         <SwiperSlide>
           <PageOne />
         </SwiperSlide>
         <SwiperSlide>
-         
           <PageTwo />
         </SwiperSlide>
         <SwiperSlide>

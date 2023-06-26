@@ -16,7 +16,7 @@ function Index() {
       bgColor="wh.12"
       justify="space-between"
       pos={{ base: 'initial', lg: 'fixed' }}
-      w='100%'
+      w="100%"
     >
       <HStack spacing="10px">
         <Image src={eva} ignoreFallback />
