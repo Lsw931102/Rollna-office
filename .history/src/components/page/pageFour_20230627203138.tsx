@@ -39,7 +39,8 @@ function PageFour(prop: any) {
   useEffect(() => {
     const handleScroll = () => {
       const container: any = containerRef.current
-      // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+
       if (container && container.scrollTop !== undefined) {
         const { scrollTop } = container
         if (preScrollTop >= scrollTop) {
@@ -49,12 +50,12 @@ function PageFour(prop: any) {
     }
     const container: any = containerRef.current
     container?.addEventListener('scroll', handleScroll)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+      // eslint-disable-next-line react-hooks/exhaustive-deps
 
     return () => {
       const container: any = containerRef.current
       container?.removeEventListener('scroll', handleScroll)
-      // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
 
     }
   }, [])
