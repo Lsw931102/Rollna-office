@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Box } from '@chakra-ui/react'
 import { Scrollbar, Mousewheel, Parallax } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -14,10 +14,17 @@ import PageFour from '@/components/page/pageFour'
 import px2vw from '@/utils/px2vw'
 
 function App() {
-  // const [mySwiper, setMySwiper] = useState()
-
+  const [mySwiper, setMySwiper] = useState<any>(null)
   return (
     <Box bg="bg" backgroundBlendMode="NORMAL, SCREEN, NORMAL" pt={{ base: px2vw(0), lg: '90px' }}>
+      {/* <Box >
+        <Box className='swiperView'>
+          <PageOne />
+        </Box>
+        <PageTwo />
+        <PageThree />
+        <PageFour />
+      </Box> */}
       <Swiper
         // install Swiper modules
         className="swiperView"
@@ -32,12 +39,11 @@ function App() {
         direction="vertical"
         scrollbar={{ draggable: true }}
         onSwiper={(swiper) => {
-          console.log(swiper)
-          // setMySwiper(swiper)
+          setMySwiper(swiper)
         }}
         onSlideChange={(n) => {
           if (n.activeIndex == 3) {
-            // mySwiper.mousewheel.disable()
+            mySwiper.mousewheel.disable()
           }
         }}
       >
@@ -51,7 +57,7 @@ function App() {
           <PageThree />
         </SwiperSlide>
         <SwiperSlide>
-          <PageFour />
+          <PageFour IndexSwiper={mySwiper} />
         </SwiperSlide>
       </Swiper>
     </Box>

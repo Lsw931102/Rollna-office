@@ -16,6 +16,7 @@ function PageTwo() {
         fontWeight={{ base: px2vw(900), lg: '900' }}
         color="black"
         mt={{ base: px2vw(16), lg: '32px' }}
+        textAlign="center"
       >
         Token Liquidity Merge
       </Center>
