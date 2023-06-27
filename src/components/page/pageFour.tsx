@@ -33,8 +33,8 @@ function PageFour(prop: any) {
   const [Massage, setMassage] = useState('')
   const containerRef = useRef(null)
   const [preScrollTop] = useState(0)
-  let [isTop, setIsTop] = useState(0)
-
+  const [isTop, setIsTop] = useState(0)
+  let number = 0
   // const indexSwiper = prop.IndexSwiper
   useEffect(() => {
     const handleScroll = () => {
@@ -42,7 +42,7 @@ function PageFour(prop: any) {
       if (container && container.scrollTop !== undefined) {
         const { scrollTop } = container
         if (preScrollTop >= scrollTop) {
-          setIsTop(++isTop)
+          setIsTop(++number)
         }
       }
     }
