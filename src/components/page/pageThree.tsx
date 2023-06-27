@@ -9,7 +9,9 @@ import 'swiper/css/parallax'
 
 import px2vw from '@/utils/px2vw'
 
-import frame from '@/assets/imgs/frame.png'
+import Baowr01 from '@/assets/imgs/Baowr01.png'
+import Baowr02 from '@/assets/imgs/Baowr02.png'
+import Baowr03 from '@/assets/imgs/Baowr03.png'
 
 function PageThree() {
   const [index, setIndex] = useState(0)
@@ -106,7 +108,7 @@ function PageThree() {
                     Make user experience similar to CEX
                   </Text>
                 </Box>
-                <Image src={frame} ignoreFallback h={{ base: px2vw(400), lg: '400px' }} />
+                <Image src={Baowr01} data-swiper-parallax-y="0" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="800" ignoreFallback h={{ base: px2vw(400), lg: '400px' }} />
               </Flex>
             </SwiperSlide>
             <SwiperSlide>
@@ -154,7 +156,7 @@ function PageThree() {
                     Make user experience similar to CEX
                   </Text>
                 </Box>
-                <Image src={frame} ignoreFallback h={{ base: px2vw(400), lg: '400px' }} />
+                <Image src={Baowr02} data-swiper-parallax-y="0" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="800" ignoreFallback h={{ base: px2vw(400), lg: '400px' }} />
               </Flex>
             </SwiperSlide>
             <SwiperSlide>
@@ -202,7 +204,7 @@ function PageThree() {
                     Make user experience similar to CEX
                   </Text>
                 </Box>
-                <Image src={frame} ignoreFallback h={{ base: px2vw(400), lg: '400px' }} />
+                <Image data-swiper-parallax-opacity="0" data-swiper-parallax-y="0" data-swiper-parallax-duration="800" src={Baowr03} ignoreFallback h={{ base: px2vw(400), lg: '400px' }} />
               </Flex>
             </SwiperSlide>
           </Swiper>
