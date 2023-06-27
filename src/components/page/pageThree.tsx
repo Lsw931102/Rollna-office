@@ -108,7 +108,14 @@ function PageThree() {
                     Make user experience similar to CEX
                   </Text>
                 </Box>
-                <Image src={Baowr01} data-swiper-parallax-y="0" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="800" ignoreFallback h={{ base: px2vw(400), lg: '400px' }} />
+                <Image
+                  src={Baowr01}
+                  data-swiper-parallax-y="0"
+                  data-swiper-parallax-opacity="0"
+                  data-swiper-parallax-duration="800"
+                  ignoreFallback
+                  h={{ base: px2vw(400), lg: '400px' }}
+                />
               </Flex>
             </SwiperSlide>
             <SwiperSlide>
@@ -156,7 +163,14 @@ function PageThree() {
                     Make user experience similar to CEX
                   </Text>
                 </Box>
-                <Image src={Baowr02} data-swiper-parallax-y="0" data-swiper-parallax-opacity="0" data-swiper-parallax-duration="800" ignoreFallback h={{ base: px2vw(400), lg: '400px' }} />
+                <Image
+                  src={Baowr02}
+                  data-swiper-parallax-y="0"
+                  data-swiper-parallax-opacity="0"
+                  data-swiper-parallax-duration="800"
+                  ignoreFallback
+                  h={{ base: px2vw(400), lg: '400px' }}
+                />
               </Flex>
             </SwiperSlide>
             <SwiperSlide>
@@ -204,7 +218,14 @@ function PageThree() {
                     Make user experience similar to CEX
                   </Text>
                 </Box>
-                <Image data-swiper-parallax-opacity="0" data-swiper-parallax-y="0" data-swiper-parallax-duration="800" src={Baowr03} ignoreFallback h={{ base: px2vw(400), lg: '400px' }} />
+                <Image
+                  data-swiper-parallax-opacity="0"
+                  data-swiper-parallax-y="0"
+                  data-swiper-parallax-duration="800"
+                  src={Baowr03}
+                  ignoreFallback
+                  h={{ base: px2vw(400), lg: '400px' }}
+                />
               </Flex>
             </SwiperSlide>
           </Swiper>
