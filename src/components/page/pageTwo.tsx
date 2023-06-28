@@ -10,7 +10,7 @@ import supremesecurity from '@/assets/imgs/supremesecurity.png'
 
 function PageTwo() {
   return (
-    <Box h="100%" w={{ base: '100%', lg: '1280px' }} m="0 auto">
+    <Box h="100%" w={{ base: '100%', lg: '1286px' }} m="0 auto">
       <Center
         fontSize={{ base: px2vw(32), lg: '32px' }}
         fontWeight={{ base: px2vw(900), lg: '900' }}

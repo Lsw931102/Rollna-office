@@ -4,7 +4,7 @@ import px2vw from '@/utils/px2vw'
 
 function PageOne() {
   return (
-    <Flex h="100%" w={{ base: '100%', lg: '1280px' }} m="0 auto">
+    <Flex h={{ base: 'fit-content', lg: '100%' }} w={{ base: '100%', lg: '1286px' }} m="0 auto">
       <Flex direction="column" justifyContent="center" alignItems="flex-start" ml={{ lg: '40px' }}>
         <Text
           fontSize={{ base: px2vw(50), lg: '90px' }}

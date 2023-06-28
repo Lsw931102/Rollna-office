@@ -17,7 +17,7 @@ function PageThree() {
   const [index, setIndex] = useState(0)
 
   return (
-    <Box w={{ base: '100%', lg: '1280px' }} m="0 auto">
+    <Box w={{ base: '100%', lg: '1286px' }} m="0 auto">
       <Center
         fontSize={{ base: px2vw(32), lg: '32px' }}
         fontWeight="900"

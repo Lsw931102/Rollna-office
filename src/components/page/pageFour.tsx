@@ -61,7 +61,7 @@ function PageFour(prop: any) {
   }, [isTop])
   return (
     <Box
-      w={{ base: '100%', lg: '1280px' }}
+      w={{ base: '100%', lg: '1286px' }}
       m="0 auto"
       h="100%"
       overflow="auto"
@@ -204,7 +204,7 @@ function PageFour(prop: any) {
           top={{ base: px2vw(140), lg: '140px' }}
           h={{ base: px2vw(250), lg: '250px' }}
         >
-          <Lottie animationData={roadMapAni} />
+          <Lottie animationData={roadMapAni} loop={false} />
         </Box>
 
         <Box position="absolute" left="25%" bottom={{ base: px2vw(0), lg: '0px' }}>
@@ -388,4 +388,4 @@ function PageFour(prop: any) {
   )
 }
 
-export default PageFour
+export default React.memo(PageFour)

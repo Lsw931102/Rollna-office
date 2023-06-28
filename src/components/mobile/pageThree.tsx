@@ -17,7 +17,7 @@ function PageMobileThree() {
   const [index, setIndex] = useState(0)
 
   return (
-    <Box w={{ base: '100%', lg: '1280px' }} m="0 auto" p={{ base: '10px', lg: '0' }}>
+    <Box w="100%" m="0 auto" p={{ base: '10px', lg: '0' }}>
       <Center
         fontSize={{ base: px2vw(28), lg: '32px' }}
         fontWeight="900"
