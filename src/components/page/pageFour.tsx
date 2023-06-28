@@ -36,23 +36,44 @@ function PageFour(prop: any) {
   const [isTop, setIsTop] = useState(0)
   let number = 0
   // const indexSwiper = prop.IndexSwiper
+
+
+  // useEffect(() => {
+  //   let container: any
+  //   const handleScroll = () => {
+  //     container = containerRef?.current
+  //     if (container?.scrollTop !== undefined) {
+  //       const { scrollTop } = container
+  //       if (preScrollTop >= scrollTop) {
+  //         setIsTop(++number)
+  //       }
+  //     }
+  //   }
+  //   container?.addEventListener('scroll', handleScroll)
+  //   return () => {
+  //     container?.removeEventListener('scroll', handleScroll)
+  //   }
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [])
+
   useEffect(() => {
-    let container: any
     const handleScroll = () => {
-      container = containerRef?.current
-      if (container?.scrollTop !== undefined) {
+      const container: any = containerRef.current
+      if (container && container.scrollTop !== undefined) {
         const { scrollTop } = container
         if (preScrollTop >= scrollTop) {
           setIsTop(++number)
         }
       }
     }
+    const container: any = containerRef.current
     container?.addEventListener('scroll', handleScroll)
     return () => {
+      const container: any = containerRef.current
       container?.removeEventListener('scroll', handleScroll)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
+
 
   useEffect(() => {
     if (isTop > 0) {

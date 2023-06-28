@@ -13,6 +13,7 @@ import PageThree from '@/components/page/pageThree'
 import PageFour from '@/components/page/pageFour'
 import PageMobileTwo from '@/components/mobile/pageTwo'
 import PageMobileThree from '@/components/mobile/pageThree'
+import Footer from '@/components/Footer'
 
 function App() {
   const [mySwiper, setMySwiper] = useState<any>(null)
@@ -26,8 +27,9 @@ function App() {
           touchRatio={0.5}
           allowSlidePrev
           centeredSlides
+          
           mousewheel={{
-            thresholdTime: 8000,
+            thresholdTime: 800,
           }}
           parallax
           direction="vertical"
@@ -66,6 +68,7 @@ function App() {
             <PageFour IndexSwiper={mySwiper} />
           </SwiperSlide>
         </Swiper>
+        <Footer />
       </Box>
       <Box display={{ base: 'block', lg: 'none' }}>
         <Box className="swiperView">
