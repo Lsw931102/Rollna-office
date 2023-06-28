@@ -37,27 +37,28 @@ function PageFour(prop: any) {
   let number = 0
   // const indexSwiper = prop.IndexSwiper
   useEffect(() => {
+    let container: any
     const handleScroll = () => {
-      const container: any = containerRef.current
-      if (container && container.scrollTop !== undefined) {
+      container = containerRef?.current
+      if (container?.scrollTop !== undefined) {
         const { scrollTop } = container
         if (preScrollTop >= scrollTop) {
           setIsTop(++number)
         }
       }
     }
-    const container: any = containerRef.current
     container?.addEventListener('scroll', handleScroll)
     return () => {
-      const container: any = containerRef.current
       container?.removeEventListener('scroll', handleScroll)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   useEffect(() => {
     if (isTop > 0) {
       prop.IndexSwiper.mousewheel.enable()
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isTop])
   return (
     <Box
