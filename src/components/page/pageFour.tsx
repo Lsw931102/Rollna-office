@@ -37,7 +37,6 @@ function PageFour(prop: any) {
   let number = 0
   // const indexSwiper = prop.IndexSwiper
 
-
   // useEffect(() => {
   //   let container: any
   //   const handleScroll = () => {
@@ -73,7 +72,6 @@ function PageFour(prop: any) {
       container?.removeEventListener('scroll', handleScroll)
     }
   }, [])
-
 
   useEffect(() => {
     if (isTop > 0) {

@@ -27,7 +27,6 @@ function App() {
           touchRatio={0.5}
           allowSlidePrev
           centeredSlides
-          
           mousewheel={{
             thresholdTime: 800,
           }}
