@@ -8,7 +8,7 @@ import interoperability from '@/assets/imgs/interoperability.png'
 import lowcost from '@/assets/imgs/lowcost.png'
 import supremesecurity from '@/assets/imgs/supremesecurity.png'
 
-function PageTwo() {
+function PageMobileTwo() {
   return (
     <Box h="100%" w={{ base: '100%', lg: '1280px' }} m="0 auto">
       <Center
@@ -139,4 +139,4 @@ function PageTwo() {
   )
 }
 
-export default PageTwo
+export default PageMobileTwo

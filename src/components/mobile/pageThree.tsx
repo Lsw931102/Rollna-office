@@ -13,7 +13,7 @@ import Baowr01 from '@/assets/imgs/Baowr01.png'
 import Baowr02 from '@/assets/imgs/Baowr02.png'
 import Baowr03 from '@/assets/imgs/Baowr03.png'
 
-function PageThree() {
+function PageMobileThree() {
   const [index, setIndex] = useState(0)
 
   return (
@@ -228,4 +228,4 @@ function PageThree() {
   )
 }
 
-export default PageThree
+export default PageMobileThree
