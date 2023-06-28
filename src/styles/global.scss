@@ -25,12 +25,15 @@ body {
 }
 
 .swiperView {
-  height: calc(100vh - 90px ) ;
+  height: 100vh;
+
+  .swiper-wrapper {
+    transform: translateX(0) !important;
+  }
 }
 .fourBox::-webkit-scrollbar {
   display: none;
 }
-
 
 // 单行文本溢出
 .ellipsis {

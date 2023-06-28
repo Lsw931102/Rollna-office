@@ -17,6 +17,7 @@ function Index() {
       justify="space-between"
       pos={{ base: 'initial', lg: 'fixed' }}
       w="100%"
+      zIndex={99}
     >
       <HStack spacing="10px">
         <Image src={eva} ignoreFallback />
