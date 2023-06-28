@@ -14,8 +14,6 @@ import PageFour from '@/components/page/pageFour'
 import PageMobileTwo from '@/components/mobile/pageTwo'
 import PageMobileThree from '@/components/mobile/pageThree'
 
-
-
 import px2vw from '@/utils/px2vw'
 
 function App() {
@@ -60,14 +58,13 @@ function App() {
         </Swiper>
       </Box>
       <Box display={{ base: 'block', lg: 'none' }}>
-        <Box className='swiperView'>
+        <Box className="swiperView">
           <PageOne />
         </Box>
         <PageMobileTwo />
         <PageMobileThree />
       </Box>
     </Box>
-
   )
 }
 
