@@ -27,7 +27,7 @@ function App() {
           allowSlidePrev
           centeredSlides
           mousewheel={{
-            thresholdTime: 800,
+            thresholdTime: 8000,
           }}
           parallax
           direction="vertical"
