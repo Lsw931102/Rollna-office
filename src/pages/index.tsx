@@ -19,11 +19,9 @@ function App(prop: any) {
   const [mySwiper, setMySwiper] = useState<any>(null)
 
   useEffect(() => {
-    console.log(mySwiper)
-
-    if (prop.Index > 0) {
-      console.log(prop)
+    if (prop.Index >= 0) {
       mySwiper?.slideTo(prop.Index, 1000, false)
+      prop.setndexU(-1)
     }
   }, prop.index)
 
