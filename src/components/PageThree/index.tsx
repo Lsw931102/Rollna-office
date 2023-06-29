@@ -57,7 +57,8 @@ function PageThree() {
       h="100%"
       bg="bg"
       backgroundBlendMode="NORMAL, SCREEN, NORMAL"
-      pt={{ base: 0, lg: '90px' }}
+      pt={{ base: px2vw(80), lg: '90px' }}
+      pb={{ base: px2vw(40) }}
     >
       <Box w={{ base: '100%', lg: '1286px' }} m="0 auto">
         <Center

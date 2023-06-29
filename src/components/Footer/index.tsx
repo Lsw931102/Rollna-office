@@ -7,6 +7,30 @@ import Telegram from '@/assets/imgs/Telegram.png'
 
 import px2vw from '@/utils/px2vw'
 
+export const Madies = () => (
+  <Flex mt={{ base: px2vw(56) }}>
+    <Box mr={{ base: px2vw(40), lg: '40px' }}>
+      <Link href="https://twitter.com/rollna_protocol" isExternal>
+        <Image src={Twitter} />
+      </Link>
+    </Box>
+    <Box mr={{ base: px2vw(40), lg: '40px' }}>
+      <Link href="https://medium.com/@rollna_team" isExternal>
+        <Image src={Medium} />
+      </Link>
+    </Box>
+    <Box mr={{ base: px2vw(40), lg: '40px' }}>
+      <Tooltip label="coming soon">
+        <Image src={Discord} />
+      </Tooltip>
+    </Box>
+    <Box>
+      <Tooltip label="coming soon">
+        <Image src={Telegram} />
+      </Tooltip>
+    </Box>
+  </Flex>
+)
 function Footer() {
   return (
     <Flex
@@ -18,26 +42,7 @@ function Footer() {
       padding={{ base: px2vw(27), lg: '27px' }}
       alignItems="center"
     >
-      <Box mr={{ base: px2vw(40), lg: '40px' }}>
-        <Link href="https://twitter.com/rollna_protocol" isExternal>
-          <Image src={Twitter} />
-        </Link>
-      </Box>
-      <Box mr={{ base: px2vw(40), lg: '40px' }}>
-        <Link href="https://medium.com/@rollna_team" isExternal>
-          <Image src={Medium} />
-        </Link>
-      </Box>
-      <Box mr={{ base: px2vw(40), lg: '40px' }}>
-        <Tooltip label="coming soon">
-          <Image src={Discord} />
-        </Tooltip>
-      </Box>
-      <Box>
-        <Tooltip label="coming soon">
-          <Image src={Telegram} />
-        </Tooltip>
-      </Box>
+      <Madies />
       <Spacer />
       <Box>
         <Button

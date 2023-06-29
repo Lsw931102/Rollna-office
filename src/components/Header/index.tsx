@@ -28,10 +28,10 @@ function Index() {
 
   return (
     <Flex
-      p="30px 60px"
+      p={{ base: `${px2vw(48)} ${px2vw(16)} ${px2vw(16)}`, lg: '30px 60px' }}
       bgColor="wh.12"
       justify="space-between"
-      pos={{ base: 'absolute', lg: 'fixed' }}
+      pos="fixed"
       w="100%"
       zIndex={99}
     >

@@ -43,27 +43,34 @@ function PageTwo() {
       h="100%"
       bg="bg"
       backgroundBlendMode="NORMAL, SCREEN, NORMAL"
-      pt={{ base: 0, lg: '90px' }}
+      pt={{ base: px2vw(80), lg: '90px' }}
+      pb={{ base: px2vw(40) }}
     >
       <Flex
-        direction="column"
+        direction={{ base: 'column', lg: 'row' }}
         justifyContent="center"
         h="100%"
         w={{ base: '100%', lg: '1286px' }}
         m="0 auto"
       >
         <Center
-          fontSize={{ base: px2vw(32), lg: '32px' }}
+          fontSize={{ base: px2vw(28), lg: '32px' }}
           fontWeight={{ base: px2vw(900), lg: '900' }}
           color="black"
-          mt={{ base: px2vw(16), lg: '32px' }}
+          mt={{ base: 0, lg: '32px' }}
+          textAlign="center"
           data-swiper-parallax-y="-500"
           data-swiper-parallax-duration="500"
           data-swiper-parallax-opacity="0"
         >
           Advanced Omnichain Trading Protocol
         </Center>
-        <Flex alignItems="center" p={{ base: px2vw(10), lg: '10px' }}>
+        <Flex
+          direction={{ base: 'column', lg: 'row' }}
+          alignItems="center"
+          p={{ base: 0, lg: '10px' }}
+          mt={{ base: px2vw(40) }}
+        >
           <Lottie
             animationData={leftAni}
             loop={false}
@@ -71,11 +78,15 @@ function PageTwo() {
             data-swiper-parallax-duration="1000"
             data-swiper-parallax-opacity="0"
           />
-          <Box ml={{ base: px2vw(20), lg: '20px' }}>
-            <List spacing={3}>
+          <Box ml={{ base: 0, lg: '20px' }} mx={{ base: px2vw(16) }}>
+            <List mt={{ base: px2vw(26) }}>
               {arr.map((item: ArrItem) => (
                 <ListItem
                   key={item.title}
+                  mt={{ base: px2vw(48), lg: '48px' }}
+                  _first={{
+                    marginTop: 0,
+                  }}
                   data-swiper-parallax-y="-1000"
                   data-swiper-parallax-duration="1500"
                   data-swiper-parallax-opacity="0"
@@ -84,9 +95,9 @@ function PageTwo() {
                     <Image
                       src={item?.icon}
                       ignoreFallback
-                      width={{ base: px2vw(32), lg: '32px' }}
+                      width={{ base: px2vw(48), lg: '32px' }}
                     />
-                    <Box color="black" p="10px">
+                    <Box color="black" p={{ lg: '10px' }} ml={{ base: px2vw(16) }}>
                       <Text
                         fontSize={{ base: px2vw(16), lg: '16px' }}
                         fontWeight={{ base: px2vw(700), lg: '700' }}
@@ -94,9 +105,11 @@ function PageTwo() {
                         {item.title}
                       </Text>
                       <Text
+                        mt={{ base: px2vw(12) }}
                         fontSize={{ base: px2vw(14), lg: '14px' }}
                         lineHeight={{ base: px2vw(24), lg: '24px' }}
                         noOfLines={[3]}
+                        opacity={0.64}
                       >
                         {item.desc}
                       </Text>
