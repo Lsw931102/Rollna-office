@@ -87,11 +87,7 @@ function PageFour(prop: any) {
           RoadMap
         </Center>
         <Box position="relative" h={{ base: px2vw(571), lg: '575px' }}>
-          <Box position="absolute" top={{ base: px2vw(200), lg: '240px' }} left="8%"
-          data-swiper-parallax-y="300"
-          data-swiper-parallax-duration="1000"
-          data-swiper-parallax-opacity="0"
-          >
+          <Box position="absolute" top={{ base: px2vw(200), lg: '240px' }} left="8%">
             <Flex>
               <Box position="relative" mr={{ base: px2vw(16), lg: '16px' }}>
                 <Image
@@ -125,11 +121,7 @@ function PageFour(prop: any) {
               </Box>
             </Flex>
           </Box>
-          <Box position="absolute" left="35%" top={{ base: px2vw(100), lg: '92px' }}
-           data-swiper-parallax-y="300"
-           data-swiper-parallax-duration="2000"
-           data-swiper-parallax-opacity="0"
-          >
+          <Box position="absolute" left="35%" top={{ base: px2vw(100), lg: '92px' }}>
             <Flex>
               <Box position="relative" mr={{ base: px2vw(16), lg: '16px' }}>
                 <Image
@@ -162,10 +154,7 @@ function PageFour(prop: any) {
               </Box>
             </Flex>
           </Box>
-          <Box position="absolute" right="12%"
-           data-swiper-parallax-y="300"
-           data-swiper-parallax-duration="3000"
-           data-swiper-parallax-opacity="0">
+          <Box position="absolute" right="12%">
             <Flex>
               <Box position="relative" mr={{ base: px2vw(16), lg: '16px' }}>
                 <Image
@@ -207,11 +196,7 @@ function PageFour(prop: any) {
             <Lottie animationData={roadMapAni} loop={false} />
           </Box>
 
-          <Box position="absolute" left="26%" bottom={{ base: px2vw(0), lg: '3px' }}
-           data-swiper-parallax-y="-300"
-           data-swiper-parallax-duration="1500"
-           data-swiper-parallax-opacity="0"
-          >
+          <Box position="absolute" left="26%" bottom={{ base: px2vw(0), lg: '3px' }}>
             <Flex>
               <Box position="relative" mr={{ base: px2vw(16), lg: '16px' }}>
                 <Image
@@ -245,11 +230,7 @@ function PageFour(prop: any) {
               </Box>
             </Flex>
           </Box>
-          <Box position="absolute" bottom={{ base: px2vw(178), lg: '178px' }} right="21%"
-          
-          data-swiper-parallax-y="-300"
-          data-swiper-parallax-duration="2500"
-          data-swiper-parallax-opacity="0">
+          <Box position="absolute" bottom={{ base: px2vw(178), lg: '178px' }} right="21%">
             <Flex>
               <Box position="relative" mr={{ base: px2vw(16), lg: '16px' }}>
                 <Image

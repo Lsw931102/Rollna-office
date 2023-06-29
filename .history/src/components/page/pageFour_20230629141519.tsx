@@ -208,7 +208,7 @@ function PageFour(prop: any) {
           </Box>
 
           <Box position="absolute" left="26%" bottom={{ base: px2vw(0), lg: '3px' }}
-           data-swiper-parallax-y="-300"
+           data-swiper-parallax-y="300"
            data-swiper-parallax-duration="1500"
            data-swiper-parallax-opacity="0"
           >
@@ -247,7 +247,7 @@ function PageFour(prop: any) {
           </Box>
           <Box position="absolute" bottom={{ base: px2vw(178), lg: '178px' }} right="21%"
           
-          data-swiper-parallax-y="-300"
+          data-swiper-parallax-y="300"
           data-swiper-parallax-duration="2500"
           data-swiper-parallax-opacity="0">
             <Flex>

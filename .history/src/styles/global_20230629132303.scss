@@ -36,40 +36,35 @@ body {
 }
 /*从上到下*/
 
-.fadeInUp {
-  animation: fadeInUp 1000ms;
-  -webkit-animation: fadeInUp 1000ms;
+.fadeInDown {
+  animation: fadeInUpLeft 5s;
+  -webkit-animation: fadeInUpLeft 5s;
 }
-.fadeInUp2000 {
-  animation: fadeInUp 2000ms;
-  -webkit-animation: fadeInUp 2000ms;
-  
-}
-@keyframes fadeInUp
+@keyframes fadeInUpLeft
 {
     from {
         opacity: 0;
-        -webkit-transform: translate(0,100px); 
-        transform: translate(0,100px); 
+        -webkit-transform: translate(-1000px,1000px); /* Safari */
+        transform: stranslate(-1000px,1000px); /* 标准语法 */
     }
     to {
         opacity:1;
-        -webkit-transform: translate(0,0); 
-        transform: translate(0,0); 
+        -webkit-transform: translate(0,10px); /* Safari */
+        transform: stranslate(0,10px); /* 标准语法 */
     }
 }
  
-@-webkit-keyframes fadeInUp 
+@-webkit-keyframes fadeInUpLeft 
 {
     from {
         opacity:0;
-        -webkit-transform: translate(0,100px); 
-        transform: translate(0,100px); 
+        -webkit-transform: translate(-1000px,1000px); /* Safari */
+        transform: stranslate(-1000px,1000px); /* 标准语法 */
     }
     to {
         opacity:1;
-        -webkit-transform: translate(0,0); 
-        transform: translate(0,0); 
+        -webkit-transform: translate(0,10px); /* Safari */
+        transform: stranslate(0,10px); /* 标准语法 */
     }
 }
 

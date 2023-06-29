@@ -34,44 +34,6 @@ body {
 .fourBox::-webkit-scrollbar {
   display: none;
 }
-/*从上到下*/
-
-.fadeInUp {
-  animation: fadeInUp 1000ms;
-  -webkit-animation: fadeInUp 1000ms;
-}
-.fadeInUp2000 {
-  animation: fadeInUp 2000ms;
-  -webkit-animation: fadeInUp 2000ms;
-  
-}
-@keyframes fadeInUp
-{
-    from {
-        opacity: 0;
-        -webkit-transform: translate(0,100px); 
-        transform: translate(0,100px); 
-    }
-    to {
-        opacity:1;
-        -webkit-transform: translate(0,0); 
-        transform: translate(0,0); 
-    }
-}
- 
-@-webkit-keyframes fadeInUp 
-{
-    from {
-        opacity:0;
-        -webkit-transform: translate(0,100px); 
-        transform: translate(0,100px); 
-    }
-    to {
-        opacity:1;
-        -webkit-transform: translate(0,0); 
-        transform: translate(0,0); 
-    }
-}
 
 // 单行文本溢出
 .ellipsis {

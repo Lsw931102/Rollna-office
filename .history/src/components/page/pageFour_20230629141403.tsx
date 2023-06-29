@@ -207,11 +207,7 @@ function PageFour(prop: any) {
             <Lottie animationData={roadMapAni} loop={false} />
           </Box>
 
-          <Box position="absolute" left="26%" bottom={{ base: px2vw(0), lg: '3px' }}
-           data-swiper-parallax-y="-300"
-           data-swiper-parallax-duration="1500"
-           data-swiper-parallax-opacity="0"
-          >
+          <Box position="absolute" left="26%" bottom={{ base: px2vw(0), lg: '3px' }}>
             <Flex>
               <Box position="relative" mr={{ base: px2vw(16), lg: '16px' }}>
                 <Image
@@ -245,11 +241,7 @@ function PageFour(prop: any) {
               </Box>
             </Flex>
           </Box>
-          <Box position="absolute" bottom={{ base: px2vw(178), lg: '178px' }} right="21%"
-          
-          data-swiper-parallax-y="-300"
-          data-swiper-parallax-duration="2500"
-          data-swiper-parallax-opacity="0">
+          <Box position="absolute" bottom={{ base: px2vw(178), lg: '178px' }} right="21%">
             <Flex>
               <Box position="relative" mr={{ base: px2vw(16), lg: '16px' }}>
                 <Image

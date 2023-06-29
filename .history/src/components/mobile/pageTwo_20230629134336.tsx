@@ -26,9 +26,13 @@ function PageMobileTwo() {
       <Box ml={{ base: px2vw(20), lg: '20px' }}>
         <List spacing={3}>
           <ListItem
-
+           
           >
-            <Flex alignItems="center" >
+            <Flex alignItems="center" 
+             data-swiper-parallax-y="300"
+             data-swiper-parallax-duration="1000"
+             data-swiper-parallax-opacity="0"
+            >
               <Image src={convenient} ignoreFallback width={{ base: px2vw(32), lg: '32px' }} />
               <Box color="black" p="10px">
                 <Text
@@ -50,7 +54,9 @@ function PageMobileTwo() {
             </Flex>
           </ListItem>
           <ListItem
-
+            data-swiper-parallax-y="-400"
+            data-swiper-parallax-duration="1000"
+            data-swiper-parallax-opacity="0"
           >
             <Flex alignItems="center">
               <Image
@@ -78,7 +84,9 @@ function PageMobileTwo() {
             </Flex>
           </ListItem>
           <ListItem
-
+            data-swiper-parallax-y="-400"
+            data-swiper-parallax-duration="1500"
+            data-swiper-parallax-opacity="0"
           >
             <Flex alignItems="center">
               <Image src={lowcost} ignoreFallback width={{ base: px2vw(32), lg: '32px' }} />
@@ -102,7 +110,9 @@ function PageMobileTwo() {
             </Flex>
           </ListItem>
           <ListItem
-
+            data-swiper-parallax-y="-400"
+            data-swiper-parallax-duration="2000"
+            data-swiper-parallax-opacity="0"
           >
             <Flex alignItems="center">
               <Image src={supremesecurity} ignoreFallback width={{ base: px2vw(32), lg: '32px' }} />

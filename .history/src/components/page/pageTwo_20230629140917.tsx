@@ -32,13 +32,13 @@ function PageTwo() {
         </Center>
         <Flex alignItems="center" p={{ base: px2vw(10), lg: '10px' }}>
           <Lottie animationData={leftAni} loop={false}  
-          data-swiper-parallax-y="-1000"
+          data-swiper-parallax-y="-300"
            data-swiper-parallax-duration="1000"
            data-swiper-parallax-opacity="0"/>
           <Box ml={{ base: px2vw(20), lg: '20px' }}>
             <List spacing={3}>
               <ListItem
-                data-swiper-parallax-y="-1000"
+                data-swiper-parallax-y="-300"
                 data-swiper-parallax-duration="1500"
                 data-swiper-parallax-opacity="0"
               >
@@ -64,7 +64,7 @@ function PageTwo() {
                 </Flex>
               </ListItem>
               <ListItem
-                data-swiper-parallax-y="-1000"
+                data-swiper-parallax-y="-300"
                 data-swiper-parallax-duration="2000"
                 data-swiper-parallax-opacity="0"
               >
@@ -94,7 +94,7 @@ function PageTwo() {
                 </Flex>
               </ListItem>
               <ListItem
-                data-swiper-parallax-y="-1000"
+                data-swiper-parallax-y="-300"
                 data-swiper-parallax-duration="2500"
                 data-swiper-parallax-opacity="0"
               >
@@ -120,7 +120,7 @@ function PageTwo() {
                 </Flex>
               </ListItem>
               <ListItem
-                data-swiper-parallax-y="-1000"
+                data-swiper-parallax-y="-300"
                 data-swiper-parallax-duration="3000"
                 data-swiper-parallax-opacity="0"
               >

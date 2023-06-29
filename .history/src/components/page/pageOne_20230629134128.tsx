@@ -53,7 +53,7 @@ function PageOne() {
             className='fadeInUp2000'
             color="black"
             mt={{ base: px2vw(16), lg: '40px' }}
-           
+            opacity='0'
             data-swiper-parallax-y="300"
             data-swiper-parallax-duration="1000"
             data-swiper-parallax-opacity="0"

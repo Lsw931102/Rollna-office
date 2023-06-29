@@ -37,12 +37,12 @@ body {
 /*从上到下*/
 
 .fadeInUp {
-  animation: fadeInUp 1000ms;
-  -webkit-animation: fadeInUp 1000ms;
+  animation: fadeInUp 2s;
+  -webkit-animation: fadeInUp 2s;
 }
 .fadeInUp2000 {
-  animation: fadeInUp 2000ms;
-  -webkit-animation: fadeInUp 2000ms;
+  animation: fadeInUp 2.5s;
+  -webkit-animation: fadeInUp 2.5s;
   
 }
 @keyframes fadeInUp

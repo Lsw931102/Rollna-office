@@ -17,6 +17,7 @@ function PageMobileTwo() {
         color="black"
         mt={{ base: px2vw(16), lg: '32px' }}
         textAlign="center"
+       
       >
         Token Liquidity Merge
       </Center>

@@ -36,40 +36,47 @@ body {
 }
 /*从上到下*/
 
-.fadeInUp {
-  animation: fadeInUp 1000ms;
-  -webkit-animation: fadeInUp 1000ms;
+@keyframes myfirst
+{
+    from {background: red;}
+    to {background: yellow;}
 }
-.fadeInUp2000 {
-  animation: fadeInUp 2000ms;
-  -webkit-animation: fadeInUp 2000ms;
-  
+ 
+@-webkit-keyframes myfirst 
+{
+    from {background: red;}
+    to {background: yellow;}
 }
-@keyframes fadeInUp
+
+.fadeInDown {
+  animation-name: fadeInDown;
+  -webkit-animation: fadeInDown;
+}
+@keyframes fadeInDown
 {
     from {
         opacity: 0;
-        -webkit-transform: translate(0,100px); 
-        transform: translate(0,100px); 
+        -webkit-transform: translate(0,-1000px); 
+        transform: stranslate(0,-1000px);
     }
     to {
         opacity:1;
-        -webkit-transform: translate(0,0); 
-        transform: translate(0,0); 
+        -webkit-transform: translate(0,10px); 
+        transform: stranslate(0,10px); 
     }
 }
  
-@-webkit-keyframes fadeInUp 
+@-webkit-keyframes fadeInDown 
 {
     from {
         opacity:0;
-        -webkit-transform: translate(0,100px); 
-        transform: translate(0,100px); 
+        -webkit-transform: translate(0,-1000px);
+        transform: stranslate(0,-1000px);
     }
     to {
         opacity:1;
-        -webkit-transform: translate(0,0); 
-        transform: translate(0,0); 
+        -webkit-transform: translate(0,10px); 
+        transform: stranslate(0,10px); 
     }
 }
 

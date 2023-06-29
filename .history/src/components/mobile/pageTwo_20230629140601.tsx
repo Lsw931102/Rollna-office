@@ -17,6 +17,9 @@ function PageMobileTwo() {
         color="black"
         mt={{ base: px2vw(16), lg: '32px' }}
         textAlign="center"
+        data-swiper-parallax-y="300"
+           data-swiper-parallax-duration="500"
+           data-swiper-parallax-opacity="0"
       >
         Token Liquidity Merge
       </Center>
@@ -26,7 +29,7 @@ function PageMobileTwo() {
       <Box ml={{ base: px2vw(20), lg: '20px' }}>
         <List spacing={3}>
           <ListItem
-
+           
           >
             <Flex alignItems="center" >
               <Image src={convenient} ignoreFallback width={{ base: px2vw(32), lg: '32px' }} />
@@ -50,7 +53,7 @@ function PageMobileTwo() {
             </Flex>
           </ListItem>
           <ListItem
-
+          
           >
             <Flex alignItems="center">
               <Image
@@ -78,7 +81,7 @@ function PageMobileTwo() {
             </Flex>
           </ListItem>
           <ListItem
-
+          
           >
             <Flex alignItems="center">
               <Image src={lowcost} ignoreFallback width={{ base: px2vw(32), lg: '32px' }} />
@@ -102,7 +105,7 @@ function PageMobileTwo() {
             </Flex>
           </ListItem>
           <ListItem
-
+          
           >
             <Flex alignItems="center">
               <Image src={supremesecurity} ignoreFallback width={{ base: px2vw(32), lg: '32px' }} />

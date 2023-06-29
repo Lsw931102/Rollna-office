@@ -1,7 +1,7 @@
 /*
  * @Author: Austion
  * @Date: 2023-06-28 22:24:22
- * @LastEditTime: 2023-06-29 13:40:37
+ * @LastEditTime: 2023-06-29 13:38:18
  * @LastEditors: Austion
  * @FilePath: /Rollna-office/src/components/page/pageOne.tsx
  */
@@ -42,7 +42,7 @@ function PageOne() {
             color="black"
             className='fadeInUp'
             data-swiper-parallax-y="300"
-            data-swiper-parallax-duration="500"
+            data-swiper-parallax-duration="1000"
             data-swiper-parallax-opacity="0"
           >
             trading easier
@@ -53,7 +53,6 @@ function PageOne() {
             className='fadeInUp2000'
             color="black"
             mt={{ base: px2vw(16), lg: '40px' }}
-           
             data-swiper-parallax-y="300"
             data-swiper-parallax-duration="1000"
             data-swiper-parallax-opacity="0"
