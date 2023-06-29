@@ -3,7 +3,6 @@ import { Flex, Text, Box, Image, List, ListItem, Center } from '@chakra-ui/react
 import Lottie from 'lottie-react'
 
 import px2vw from '@/utils/px2vw'
-import tlm from '@/assets/imgs/tlm.png'
 import convenient from '@/assets/imgs/convenient.png'
 import interoperability from '@/assets/imgs/interoperability.png'
 import lowcost from '@/assets/imgs/lowcost.png'
