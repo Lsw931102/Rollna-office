@@ -23,13 +23,15 @@ body {
 #__next {
   height: 100%;
 }
+#OuterSwiper{
+  &>.swiper-wrapper{
+    transform:translateX(0) !important;
 
+  }
+}
 .swiperView {
   height: 100vh;
 
-  .swiper-wrapper {
-    transform: translateX(0) !important;
-  }
 }
 .fourBox::-webkit-scrollbar {
   display: none;
