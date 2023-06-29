@@ -50,7 +50,7 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
       <ChakraProvider resetCSS theme={theme}>
         <Header Click={onClick}/>
-        <Component {...(pageProps ?? {})} Index={swiperindex} />
+        <Component {...(pageProps ?? {})} Index=1 />
       </ChakraProvider>
     </>
   )

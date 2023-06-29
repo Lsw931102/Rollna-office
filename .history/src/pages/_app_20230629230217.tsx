@@ -14,7 +14,7 @@ function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     window.rollnaConfig = publicRuntimeConfig
   }, [])
-  const [swiperindex, setIndex] = useState(0)
+  const [index, setIndex] = useState(0)
 
   const onClick = (val:number) => {
     setIndex(val)
@@ -50,7 +50,7 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
       <ChakraProvider resetCSS theme={theme}>
         <Header Click={onClick}/>
-        <Component {...(pageProps ?? {})} Index={swiperindex} />
+        <Component {...(pageProps ?? {})} Index={index} />
       </ChakraProvider>
     </>
   )

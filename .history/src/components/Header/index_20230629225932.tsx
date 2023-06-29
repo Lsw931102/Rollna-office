@@ -26,6 +26,7 @@ import px2vw from '@/utils/px2vw'
 function Index(prop: any) {
   const [isOpenDrawer, setisOpenDrawer] = useState(false)
   const handClick = (val: number) => {
+    console.log(val)
     prop.Click(val)
   }
   return (

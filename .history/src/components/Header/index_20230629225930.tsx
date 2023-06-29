@@ -26,6 +26,7 @@ import px2vw from '@/utils/px2vw'
 function Index(prop: any) {
   const [isOpenDrawer, setisOpenDrawer] = useState(false)
   const handClick = (val: number) => {
+    console.log(val)
     prop.Click(val)
   }
   return (
@@ -44,9 +45,9 @@ function Index(prop: any) {
         </Text>
       </HStack>
       <HStack spacing="30px" textStyle="14" display={{ base: 'none', lg: 'flex' }}>
-        <Link color="black"  onClick={() => { handClick(1) }}>Featrues</Link>
+        <Link color="black"  onClick={() => { handClick(2) }}>Featrues</Link>
         <Link color="black"  onClick={() => { handClick(2) }}>Using Cases</Link>
-        <Link color="black"  onClick={() => { handClick(3) }}>Roadmap</Link>
+        <Link color="black"  onClick={() => { handClick(2) }}>Roadmap</Link>
       </HStack>
       <Button
         colorScheme="wh.12"

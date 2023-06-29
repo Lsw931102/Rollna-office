@@ -23,7 +23,7 @@ function App(prop: any) {
    
     if(prop.Index > 0){
       console.log(prop)
-      mySwiper?.slideTo(prop.Index, 1000, false)
+      mySwiper.slideTo(prop.Index, 1000, false)
     }
   }, prop.index)
  

@@ -1,4 +1,4 @@
-import { useEffect,useState } from 'react'
+import { useEffect } from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 import Head from 'next/head'
 import getConfig from 'next/config'
@@ -14,11 +14,7 @@ function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     window.rollnaConfig = publicRuntimeConfig
   }, [])
-  const [swiperindex, setIndex] = useState(0)
 
-  const onClick = (val:number) => {
-    setIndex(val)
-  }
   return (
     <>
       <Head>
@@ -49,8 +45,8 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <ChakraProvider resetCSS theme={theme}>
-        <Header Click={onClick}/>
-        <Component {...(pageProps ?? {})} Index={swiperindex} />
+        <Header />
+        <Component {...(pageProps ?? {})} />
       </ChakraProvider>
     </>
   )

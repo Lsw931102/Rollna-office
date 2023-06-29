@@ -44,9 +44,9 @@ function Index(prop: any) {
         </Text>
       </HStack>
       <HStack spacing="30px" textStyle="14" display={{ base: 'none', lg: 'flex' }}>
-        <Link color="black"  onClick={() => { handClick(1) }}>Featrues</Link>
-        <Link color="black"  onClick={() => { handClick(2) }}>Using Cases</Link>
-        <Link color="black"  onClick={() => { handClick(3) }}>Roadmap</Link>
+        <Link color="black">Featrues</Link>
+        <Link color="black">Using Cases</Link>
+        <Link color="black">Roadmap</Link>
       </HStack>
       <Button
         colorScheme="wh.12"
@@ -73,7 +73,7 @@ function Index(prop: any) {
             pt={{ base: px2vw(60), lg: '0' }}
             color="black"
             fontSize={{ base: px2vw(14), lg: '14px' }}
-           
+            onClick={() => { handClick(1) }}
           >
             Featrues
           </Box>
@@ -81,7 +81,7 @@ function Index(prop: any) {
             pt={{ base: px2vw(60), lg: '0' }}
             color="black"
             fontSize={{ base: px2vw(14), lg: '14px' }}
-           
+            onClick={() => { handClick(2) }}
           >
             Using Cases
           </Box>
@@ -89,7 +89,7 @@ function Index(prop: any) {
             pt={{ base: px2vw(60), lg: '0' }}
             color="black"
             fontSize={{ base: px2vw(14), lg: '14px' }}
-           
+            onClick={() => { handClick(3) }}
           >
             Roadmap
           </Box>

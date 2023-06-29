@@ -23,11 +23,10 @@ import eva from '@/assets/imgs/logo.png'
 import nav from '@/assets/imgs/nav.png'
 import px2vw from '@/utils/px2vw'
 
-function Index(prop: any) {
+function Index() {
   const [isOpenDrawer, setisOpenDrawer] = useState(false)
-  const handClick = (val: number) => {
-    prop.Click(val)
-  }
+  const [index, setIndex] = useState(0)
+
   return (
     <Flex
       p={{ base: `${px2vw(48)} ${px2vw(16)} ${px2vw(16)}`, lg: '30px 60px' }}
@@ -44,9 +43,9 @@ function Index(prop: any) {
         </Text>
       </HStack>
       <HStack spacing="30px" textStyle="14" display={{ base: 'none', lg: 'flex' }}>
-        <Link color="black"  onClick={() => { handClick(1) }}>Featrues</Link>
-        <Link color="black"  onClick={() => { handClick(2) }}>Using Cases</Link>
-        <Link color="black"  onClick={() => { handClick(3) }}>Roadmap</Link>
+        <Link color="black">Featrues</Link>
+        <Link color="black">Using Cases</Link>
+        <Link color="black">Roadmap</Link>
       </HStack>
       <Button
         colorScheme="wh.12"
@@ -73,7 +72,7 @@ function Index(prop: any) {
             pt={{ base: px2vw(60), lg: '0' }}
             color="black"
             fontSize={{ base: px2vw(14), lg: '14px' }}
-           
+            onClick={()=>{setIndex(1)}}
           >
             Featrues
           </Box>
@@ -81,7 +80,7 @@ function Index(prop: any) {
             pt={{ base: px2vw(60), lg: '0' }}
             color="black"
             fontSize={{ base: px2vw(14), lg: '14px' }}
-           
+            onClick={()=>{setIndex(2)}}
           >
             Using Cases
           </Box>
@@ -89,7 +88,7 @@ function Index(prop: any) {
             pt={{ base: px2vw(60), lg: '0' }}
             color="black"
             fontSize={{ base: px2vw(14), lg: '14px' }}
-           
+            onClick={()=>{setIndex(3)}}
           >
             Roadmap
           </Box>
