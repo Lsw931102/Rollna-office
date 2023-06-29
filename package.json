@@ -31,6 +31,7 @@
     "@chakra-ui/react": "^2.7.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "axios": "^1.4.0",
     "cross-env": "^7.0.3",
     "framer-motion": "^10.12.16",
     "lottie-react": "^2.4.0",

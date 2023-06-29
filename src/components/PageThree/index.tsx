@@ -69,6 +69,7 @@ function PageThree() {
         touchMoveStopPropagation
         mousewheel={{
           thresholdTime: 800,
+          thresholdDelta: 10,
         }}
         parallax
         onSwiper={(swiper) => console.log(swiper)}

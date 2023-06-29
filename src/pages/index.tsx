@@ -40,6 +40,7 @@ function App(prop: any) {
           centeredSlides
           mousewheel={{
             thresholdTime: 800,
+            thresholdDelta: 30,
           }}
           speed={2000}
           parallax
