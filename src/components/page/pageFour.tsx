@@ -1,12 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
-import {
-  Box,
-  Button,
-  Center,
-  Flex,
-  Text,
-  Image,
-} from '@chakra-ui/react'
+import { Box, Button, Center, Flex, Text, Image } from '@chakra-ui/react'
 import Lottie from 'lottie-react'
 
 import px2vw from '@/utils/px2vw'
@@ -15,7 +8,6 @@ import rbg from '@/assets/imgs/rbg.png'
 import rbgSelected from '@/assets/imgs/rbgSelected.png'
 
 function PageFour(prop: any) {
-
   const containerRef = useRef(null)
   const [preScrollTop] = useState(0)
   const [isTop, setIsTop] = useState(0)
@@ -312,8 +304,6 @@ function PageFour(prop: any) {
             >
               Contact us
             </Button>
-
-          
           </Center>
         </Box>
       </Box>

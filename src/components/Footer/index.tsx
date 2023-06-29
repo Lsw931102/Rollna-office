@@ -16,7 +16,7 @@ function Footer() {
       position="fixed"
       bottom="0"
       padding={{ base: px2vw(27), lg: '27px' }}
-      alignItems='center'
+      alignItems="center"
     >
       <Box mr={{ base: px2vw(40), lg: '40px' }}>
         <Link href="https://twitter.com/rollna_protocol" isExternal>
@@ -42,7 +42,8 @@ function Footer() {
       <Box>
         <Button
           borderRadius={{ base: px2vw(16), lg: '16px' }}
-          colorScheme='black' variant='outline'
+          colorScheme="black"
+          variant="outline"
           color="black"
           mt={{ base: px2vw(10), lg: '10px' }}
         >
