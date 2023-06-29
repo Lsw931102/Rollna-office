@@ -26,10 +26,9 @@ function Index() {
         </Text>
       </HStack>
       <HStack spacing="30px" textStyle="14">
-        <Link color="black">Protocol</Link>
         <Link color="black">Featrues</Link>
+        <Link color="black">Using Cases</Link>
         <Link color="black">Roadmap</Link>
-        <Link color="black">Communiity</Link>
       </HStack>
     </Flex>
   )
