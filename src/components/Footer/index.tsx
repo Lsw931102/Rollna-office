@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Image, Link, Tooltip, Box } from '@chakra-ui/react'
+import { Flex, Image, Link, Tooltip, Box, Button, Spacer } from '@chakra-ui/react'
 import Twitter from '@/assets/imgs/Twitter.png'
 import Medium from '@/assets/imgs/Medium.png'
 import Discord from '@/assets/imgs/Discord.png'
@@ -16,6 +16,7 @@ function Footer() {
       position="fixed"
       bottom="0"
       padding={{ base: px2vw(27), lg: '27px' }}
+      alignItems="center"
     >
       <Box mr={{ base: px2vw(40), lg: '40px' }}>
         <Link href="https://twitter.com/rollna_protocol" isExternal>
@@ -36,6 +37,18 @@ function Footer() {
         <Tooltip label="coming soon">
           <Image src={Telegram} />
         </Tooltip>
+      </Box>
+      <Spacer />
+      <Box>
+        <Button
+          borderRadius={{ base: px2vw(16), lg: '16px' }}
+          colorScheme="black"
+          variant="outline"
+          color="black"
+          mt={{ base: px2vw(10), lg: '10px' }}
+        >
+          Contact us
+        </Button>
       </Box>
     </Flex>
   )
