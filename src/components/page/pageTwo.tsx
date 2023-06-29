@@ -24,16 +24,25 @@ function PageTwo() {
           fontWeight={{ base: px2vw(900), lg: '900' }}
           color="black"
           mt={{ base: px2vw(16), lg: '32px' }}
+          data-swiper-parallax-y="-500"
+          data-swiper-parallax-duration="500"
+          data-swiper-parallax-opacity="0"
         >
           Token Liquidity Merge
         </Center>
         <Flex alignItems="center" p={{ base: px2vw(10), lg: '10px' }}>
-          <Lottie animationData={leftAni} loop={false} />
+          <Lottie
+            animationData={leftAni}
+            loop={false}
+            data-swiper-parallax-y="-1000"
+            data-swiper-parallax-duration="1000"
+            data-swiper-parallax-opacity="0"
+          />
           <Box ml={{ base: px2vw(20), lg: '20px' }}>
             <List spacing={3}>
               <ListItem
-                data-swiper-parallax-y="-400"
-                data-swiper-parallax-duration="500"
+                data-swiper-parallax-y="-1000"
+                data-swiper-parallax-duration="1500"
                 data-swiper-parallax-opacity="0"
               >
                 <Flex alignItems="center">
@@ -58,8 +67,8 @@ function PageTwo() {
                 </Flex>
               </ListItem>
               <ListItem
-                data-swiper-parallax-y="-400"
-                data-swiper-parallax-duration="500"
+                data-swiper-parallax-y="-1000"
+                data-swiper-parallax-duration="2000"
                 data-swiper-parallax-opacity="0"
               >
                 <Flex alignItems="center">
@@ -88,8 +97,8 @@ function PageTwo() {
                 </Flex>
               </ListItem>
               <ListItem
-                data-swiper-parallax-y="-400"
-                data-swiper-parallax-duration="500"
+                data-swiper-parallax-y="-1000"
+                data-swiper-parallax-duration="2500"
                 data-swiper-parallax-opacity="0"
               >
                 <Flex alignItems="center">
@@ -114,8 +123,8 @@ function PageTwo() {
                 </Flex>
               </ListItem>
               <ListItem
-                data-swiper-parallax-y="-400"
-                data-swiper-parallax-duration="500"
+                data-swiper-parallax-y="-1000"
+                data-swiper-parallax-duration="3000"
                 data-swiper-parallax-opacity="0"
               >
                 <Flex alignItems="center">

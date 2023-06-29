@@ -35,6 +35,45 @@ body {
   display: none;
 }
 
+/* 从上到下 */
+
+.fadeInUp {
+  -webkit-animation: fadeinup 1000ms;
+  animation: fadeInUp 1000ms;
+}
+.fadeInUp2000 {
+  -webkit-animation: fadeinup 2000ms;
+  animation: fadeInUp 2000ms;
+  
+}
+@keyframes fadeInUp
+{
+    from {
+        -webkit-transform: translate(0,100px); 
+        transform: translate(0,100px);
+        opacity: 0; 
+    }
+    to {
+        -webkit-transform: translate(0,0); 
+        transform: translate(0,0);
+        opacity:1; 
+    }
+}
+ 
+@-webkit-keyframes fadeInUp 
+{
+    from {
+        -webkit-transform: translate(0,100px); 
+        transform: translate(0,100px);
+        opacity:0; 
+    }
+    to {
+        -webkit-transform: translate(0,0); 
+        transform: translate(0,0);
+        opacity:1; 
+    }
+}
+
 // 单行文本溢出
 .ellipsis {
   overflow: hidden;
