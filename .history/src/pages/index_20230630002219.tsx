@@ -19,9 +19,12 @@ function App(prop: any) {
   const [mySwiper, setMySwiper] = useState<any>(null)
 
   useEffect(() => {
-    if (prop.Index >= 0) {
+    console.log(mySwiper)
+
+    if (prop.Index <9) {
+      console.log(prop)
       mySwiper?.slideTo(prop.Index, 1000, false)
-      prop.setndexU(-1)
+      prop.setIndexU(9)
     }
   }, prop.index)
 

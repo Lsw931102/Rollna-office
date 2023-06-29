@@ -19,9 +19,9 @@ function App({ Component, pageProps }: AppProps) {
   const onClick = (val: number) => {
     setIndex(val)
   }
-  // const setIndexU = (val: number) => {
-  //   setIndex(val)
-  // }
+  const setIndexU = (val: number) => {
+    setIndex(val)
+  }
 
   return (
     <>
@@ -54,7 +54,7 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
       <ChakraProvider resetCSS theme={theme}>
         <Header Click={onClick} />
-        <Component {...(pageProps ?? {})} Index={swiperindex} setndexU={onClick}/>
+        <Component {...(pageProps ?? {})} Index={swiperindex} setndexU={setIndexU}/>
       </ChakraProvider>
     </>
   )

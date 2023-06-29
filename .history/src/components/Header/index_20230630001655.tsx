@@ -38,9 +38,7 @@ function Index(prop: any) {
       zIndex={99}
     >
       <HStack spacing="10px">
-        <Image src={eva} ignoreFallback onClick={() => {
-            handClick(0)
-          }}/>
+        <Image src={eva} ignoreFallback />
         <Text textStyle="18" backgroundClip="text" color="black">
           RollNA
         </Text>
