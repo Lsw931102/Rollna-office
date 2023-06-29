@@ -5,8 +5,7 @@ import px2vw from '@/utils/px2vw'
 import Group51 from '@/assets/imgs/Group51.png'
 import Rectangle from '@/assets/imgs/Rectangle.png'
 
-
-function PageMobileFour(prop:any) {
+function PageMobileFour(prop: any) {
   const getisShow = () => {
     prop.Click(true)
   }
@@ -245,7 +244,7 @@ function PageMobileFour(prop:any) {
           color="purple"
           textTransform="capitalize"
           mt={{ base: px2vw(16), lg: '32px' }}
-          textAlign='center'
+          textAlign="center"
         >
           Join us to access the future of omnichain trading
         </Center>
@@ -256,7 +255,7 @@ function PageMobileFour(prop:any) {
           color="purple"
           textTransform="capitalize"
           mt={{ base: px2vw(16), lg: '32px' }}
-          textAlign='center'
+          textAlign="center"
         >
           with RollNA.
         </Center>
@@ -272,14 +271,13 @@ function PageMobileFour(prop:any) {
             pb={{ base: px2vw(12) }}
             pl={{ base: px2vw(24) }}
             pr={{ base: px2vw(24) }}
-            colorScheme='purple'
+            colorScheme="purple"
           >
             Contact us
           </Button>
         </Center>
       </Box>
-
-    </Box >
+    </Box>
   )
 }
 

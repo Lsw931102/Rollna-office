@@ -43,12 +43,20 @@ function ContractModel(prop: any) {
   return (
     <Modal isOpen={isModel} onClose={isModelFlase}>
       <ModalOverlay />
-      <ModalContent maxW={{ base: '90%', lg: '640px' }} top='14%' borderRadius={{ base: px2vw(16), lg: '24px' }} pt={{ base: px2vw(10), lg: '14px' }}>
+      <ModalContent
+        maxW={{ base: '90%', lg: '640px' }}
+        top="14%"
+        borderRadius={{ base: px2vw(16), lg: '24px' }}
+        pt={{ base: px2vw(10), lg: '14px' }}
+      >
         <ModalHeader>
           <Center fontSize={{ base: px2vw(24), lg: '24px' }}>Contact Us</Center>
         </ModalHeader>
-        <ModalCloseButton right={{ base: px2vw(16), lg: '24px' }} top={{ base: px2vw(16), lg: '24px' }} />
-        <ModalBody >
+        <ModalCloseButton
+          right={{ base: px2vw(16), lg: '24px' }}
+          top={{ base: px2vw(16), lg: '24px' }}
+        />
+        <ModalBody>
           <Box p={{ base: px2vw(24), lg: '20px' }} pt="0">
             <FormControl mb={{ base: px2vw(16), lg: '16px' }}>
               <FormLabel>*Kdesign Company</FormLabel>
@@ -60,7 +68,7 @@ function ContractModel(prop: any) {
                 h={{ base: px2vw(40), lg: '40px' }}
                 borderRadius={{ base: px2vw(4), lg: '4px' }}
                 pl={{ base: px2vw(12), lg: '12px' }}
-                borderColor='rgba(0, 0, 0, 0.24)'
+                borderColor="rgba(0, 0, 0, 0.24)"
                 mt={{ base: px2vw(5), lg: '10px' }}
               />
             </FormControl>
@@ -71,34 +79,34 @@ function ContractModel(prop: any) {
                 value={CompanyName}
                 h={{ base: px2vw(40), lg: '40px' }}
                 borderRadius={{ base: px2vw(4), lg: '4px' }}
-                borderColor='rgba(0, 0, 0, 0.24)'
+                borderColor="rgba(0, 0, 0, 0.24)"
                 mt={{ base: px2vw(5), lg: '10px' }}
                 pl={{ base: px2vw(12), lg: '12px' }}
-
                 onChange={(e) => setCompanyName(e.target.value)}
               />
             </FormControl>
             <FormControl mb={{ base: px2vw(16), lg: '16px' }}>
               <FormLabel>*Email</FormLabel>
-              <Input placeholder="Email" value={Email}
-               h={{ base: px2vw(40), lg: '40px' }}
-               borderRadius={{ base: px2vw(4), lg: '4px' }}
-               borderColor='rgba(0, 0, 0, 0.24)'
-               mt={{ base: px2vw(5), lg: '10px' }}
-               pl={{ base: px2vw(12), lg: '12px' }}
-
-              onChange={(e) => setEmail(e.target.value)} />
+              <Input
+                placeholder="Email"
+                value={Email}
+                h={{ base: px2vw(40), lg: '40px' }}
+                borderRadius={{ base: px2vw(4), lg: '4px' }}
+                borderColor="rgba(0, 0, 0, 0.24)"
+                mt={{ base: px2vw(5), lg: '10px' }}
+                pl={{ base: px2vw(12), lg: '12px' }}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </FormControl>
             <FormControl mb={{ base: px2vw(16), lg: '16px' }}>
               <FormLabel>Telegram Handle</FormLabel>
               <Input
                 placeholder="Telegram Handle"
                 value={TelegramHandle}
-                
                 onChange={(e) => setTelegramHandle(e.target.value)}
                 h={{ base: px2vw(40), lg: '40px' }}
                 borderRadius={{ base: px2vw(4), lg: '4px' }}
-                borderColor='rgba(0, 0, 0, 0.24)'
+                borderColor="rgba(0, 0, 0, 0.24)"
                 pl={{ base: px2vw(12), lg: '12px' }}
                 mt={{ base: px2vw(5), lg: '10px' }}
               />
@@ -111,19 +119,19 @@ function ContractModel(prop: any) {
                 onChange={(e) => setMassage(e.target.value)}
                 h={{ base: px2vw(72), lg: '72px' }}
                 borderRadius={{ base: px2vw(4), lg: '4px' }}
-                borderColor='rgba(0, 0, 0, 0.24)'
+                borderColor="rgba(0, 0, 0, 0.24)"
                 mt={{ base: px2vw(5), lg: '10px' }}
                 pl={{ base: px2vw(12), lg: '12px' }}
               />
             </FormControl>
             <Center>
               <Button
-
-              w={{base:'100%', lg: '245px'}}
-              h={{base:px2vw(48),lg: '48px'}}
-              bg="purple" 
-              colorScheme='purple'
-              color="wh.100">
+                w={{ base: '100%', lg: '245px' }}
+                h={{ base: px2vw(48), lg: '48px' }}
+                bg="purple"
+                colorScheme="purple"
+                color="wh.100"
+              >
                 Submit
               </Button>
             </Center>

@@ -27,6 +27,7 @@ body {
   & > .swiper-wrapper {
     transform: translateX(0) !important;
   }
+
   z-index: 0;
 }
 .swiperView {
@@ -46,6 +47,7 @@ body {
 .fourBox::-webkit-scrollbar {
   display: none;
 }
+
 /* 从上到下 */
 
 .fadeInUp {

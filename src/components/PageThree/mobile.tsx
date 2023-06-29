@@ -38,7 +38,7 @@ function PageMobileThree() {
         >
           Build an omnichain application with RollNA easily!
         </Center>
-        <Box h="100%" mt={{base: px2vw(45)}}>
+        <Box h="100%" mt={{ base: px2vw(45) }}>
           <Swiper
             // install Swiper modules
 

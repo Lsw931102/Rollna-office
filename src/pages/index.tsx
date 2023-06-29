@@ -16,7 +16,6 @@ import PageMobileFour from '@/components/PageFour/mobile'
 import Footer from '@/components/Footer'
 import ContractModel from '@/components/ContractModel'
 
-
 function App(prop: any) {
   const [mySwiper, setMySwiper] = useState<any>(null)
   const [isShow, setIsShow] = useState<boolean>(false)
@@ -26,8 +25,8 @@ function App(prop: any) {
       prop.setIndexU(-1)
     }
   }, prop.index)
- 
-  const getisShow =(val:boolean)=>{
+
+  const getisShow = (val: boolean) => {
     console.log(val)
     setIsShow(val)
   }
@@ -84,7 +83,7 @@ function App(prop: any) {
           </SwiperSlide>
           <SwiperSlide>
             {/* <div style={{ height: '100%' }}>4</div> */}
-            <PageFour IndexSwiper={mySwiper} Click={getisShow}/>
+            <PageFour IndexSwiper={mySwiper} Click={getisShow} />
           </SwiperSlide>
         </Swiper>
         <Footer Click={getisShow} />
@@ -93,9 +92,9 @@ function App(prop: any) {
         <PageOne />
         <PageTwo />
         <PageMobileThree />
-        <PageMobileFour Click={getisShow}/>
+        <PageMobileFour Click={getisShow} />
       </Box>
-      <ContractModel isShow={isShow} Click={getisShow}/>
+      <ContractModel isShow={isShow} Click={getisShow} />
     </>
   )
 }
