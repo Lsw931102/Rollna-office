@@ -8,6 +8,7 @@ import Telegram from '@/assets/imgs/Telegram.png'
 import px2vw from '@/utils/px2vw'
 
 export const Madies = () => (
+
   <Flex mt={{ base: px2vw(56), lg: 0 }}>
     <Box mr={{ base: px2vw(40), lg: '40px' }}>
       <Link href="https://twitter.com/rollna_protocol" isExternal>
@@ -31,11 +32,14 @@ export const Madies = () => (
     </Box>
   </Flex>
 )
-function Footer() {
+function Footer(prop: any) {
+  const getisShow = () => {
+    prop.Click(true)
+  }
   return (
     <Flex
       bgColor="wh.12"
-      zIndex="99"
+     
       w="100%"
       position="fixed"
       bottom="0"
@@ -46,11 +50,15 @@ function Footer() {
       <Spacer />
       <Box>
         <Button
+          onClick={() => {
+            getisShow()
+          }}
           borderRadius={{ base: px2vw(16), lg: '16px' }}
           colorScheme="black"
           variant="outline"
           color="black"
-          mt={{ base: px2vw(10), lg: '10px' }}
+          w={{ lg: '134px'}}
+          h={{ lg: '42px'}}
         >
           Contact us
         </Button>

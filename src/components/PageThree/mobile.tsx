@@ -24,6 +24,8 @@ function PageMobileThree() {
       backgroundBlendMode="NORMAL, SCREEN, NORMAL"
       pt={px2vw(80)}
       pb={px2vw(40)}
+      pl={px2vw(16)}
+      pr={px2vw(16)}
     >
       <Flex direction="column" w="100%" m="0 auto" p={{ base: '10px', lg: '0' }}>
         <Center
@@ -36,7 +38,7 @@ function PageMobileThree() {
         >
           Build an omnichain application with RollNA easily!
         </Center>
-        <Box h="100%">
+        <Box h="100%" mt={{base: px2vw(45)}}>
           <Swiper
             // install Swiper modules
 

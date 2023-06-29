@@ -18,6 +18,7 @@ import {
   DrawerContent,
   DrawerCloseButton,
   Box,
+  SkipNavLink
 } from '@chakra-ui/react'
 import eva from '@/assets/imgs/logo.png'
 import nav from '@/assets/imgs/nav.png'
@@ -35,7 +36,7 @@ function Index(prop: any) {
       justify="space-between"
       pos="fixed"
       w="100%"
-      zIndex={99}
+      zIndex={{lg:'9'}}
     >
       <HStack spacing="10px">
         <Image
@@ -91,18 +92,25 @@ function Index(prop: any) {
           setisOpenDrawer(false)
         }}
         placement="right"
+        
       >
-        <DrawerOverlay />
+        <DrawerOverlay/>
 
-        <DrawerContent pl={{ base: px2vw(24), lg: '24px' }}>
-          <DrawerCloseButton />
-          <Box
+        <DrawerContent pl={{ base: px2vw(24), lg: '24px' }} maxW='60%' >
+          <DrawerCloseButton right={{ base: px2vw(16) }} top={{ base: px2vw(16) }}/>
+          <SkipNavLink
+         href="#four"
+         
             pt={{ base: px2vw(60), lg: '0' }}
             color="black"
             fontSize={{ base: px2vw(14), lg: '14px' }}
+            h='20px'
+            id='four'
+            w='100%'
+            position='relative'
           >
             Featrues
-          </Box>
+          </SkipNavLink>
           <Box
             pt={{ base: px2vw(60), lg: '0' }}
             color="black"

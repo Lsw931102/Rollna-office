@@ -1,11 +1,15 @@
 import React from 'react'
-import { Box, Center, Flex, Text, Image } from '@chakra-ui/react'
+import { Box, Center, Flex, Text, Image, Button } from '@chakra-ui/react'
 
 import px2vw from '@/utils/px2vw'
 import Group51 from '@/assets/imgs/Group51.png'
 import Rectangle from '@/assets/imgs/Rectangle.png'
 
-function PageMobileFour() {
+
+function PageMobileFour(prop:any) {
+  const getisShow = () => {
+    prop.Click(true)
+  }
   return (
     <Box bg="bg" backgroundBlendMode="NORMAL, SCREEN, NORMAL" pt={{ base: 0, lg: '80px' }}>
       <Center
@@ -20,7 +24,7 @@ function PageMobileFour() {
       >
         RoadMap
       </Center>
-      <Flex pr={{ base: px2vw(14) }}>
+      <Flex pr={{ base: px2vw(14) }} mt={{ base: px2vw(45) }}>
         <Box
           // backgroundImage={Group51}
           // backgroundSize="100% "
@@ -233,7 +237,49 @@ function PageMobileFour() {
           </Box>
         </Box>
       </Flex>
-    </Box>
+      <Box pb={{ base: px2vw(77), lg: '77px' }} pt={{ base: px2vw(50), lg: '55px' }}>
+        <Center
+          fontSize={{ base: px2vw(28), lg: '32px' }}
+          fontWeight={{ base: px2vw(900), lg: '900' }}
+          fontFamily="DT Getai Grotesk Display"
+          color="purple"
+          textTransform="capitalize"
+          mt={{ base: px2vw(16), lg: '32px' }}
+          textAlign='center'
+        >
+          Join us to access the future of omnichain trading
+        </Center>
+        <Center
+          fontSize={{ base: px2vw(28), lg: '32px' }}
+          fontWeight={{ base: px2vw(900), lg: '900' }}
+          fontFamily="DT Getai Grotesk Display"
+          color="purple"
+          textTransform="capitalize"
+          mt={{ base: px2vw(16), lg: '32px' }}
+          textAlign='center'
+        >
+          with RollNA.
+        </Center>
+        <Center>
+          <Button
+            onClick={() => {
+              getisShow()
+            }}
+            bg="purple"
+            color="wh.100"
+            mt={{ base: px2vw(10), lg: '10px' }}
+            pt={{ base: px2vw(12) }}
+            pb={{ base: px2vw(12) }}
+            pl={{ base: px2vw(24) }}
+            pr={{ base: px2vw(24) }}
+            colorScheme='purple'
+          >
+            Contact us
+          </Button>
+        </Center>
+      </Box>
+
+    </Box >
   )
 }
 

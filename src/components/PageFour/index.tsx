@@ -36,6 +36,9 @@ function PageFour(prop: any) {
       prop.IndexSwiper.mousewheel.enable()
     }
   }, [isTop])
+  const getisShow = () => {
+    prop.Click(true)
+  }
   return (
     <Flex
       w="100%"
@@ -44,6 +47,7 @@ function PageFour(prop: any) {
       backgroundBlendMode="NORMAL, SCREEN, NORMAL"
       pt={{ base: 0, lg: '90px' }}
     >
+     
       <Box
         w={{ base: '100%', lg: '1286px' }}
         m="0 auto"
@@ -300,10 +304,14 @@ function PageFour(prop: any) {
           </Center>
           <Center>
             <Button
-              // onClick={() => setModel(true)}
+               onClick={() => {
+                getisShow()
+              }}
               bg="purple"
               color="wh.100"
-              mt={{ base: px2vw(10), lg: '10px' }}
+             w={{base: px2vw(134), lg: '134px'}}
+             h={{base: px2vw(48), lg: '48px'}}
+              colorScheme='purple'
             >
               Contact us
             </Button>

@@ -14,17 +14,23 @@ import PageFour from '@/components/PageFour'
 import PageMobileThree from '@/components/PageThree/mobile'
 import PageMobileFour from '@/components/PageFour/mobile'
 import Footer from '@/components/Footer'
+import ContractModel from '@/components/ContractModel'
+
 
 function App(prop: any) {
   const [mySwiper, setMySwiper] = useState<any>(null)
-
+  const [isShow, setIsShow] = useState<boolean>(false)
   useEffect(() => {
     if (prop.Index >= 0) {
       mySwiper?.slideTo(prop.Index, 1000, false)
-      prop.setndexU(-1)
+      prop.setIndexU(-1)
     }
   }, prop.index)
-
+ 
+  const getisShow =(val:boolean)=>{
+    console.log(val)
+    setIsShow(val)
+  }
   return (
     <>
       <Box display={{ base: 'none', lg: 'block' }}>
@@ -78,17 +84,18 @@ function App(prop: any) {
           </SwiperSlide>
           <SwiperSlide>
             {/* <div style={{ height: '100%' }}>4</div> */}
-            <PageFour IndexSwiper={mySwiper} />
+            <PageFour IndexSwiper={mySwiper} Click={getisShow}/>
           </SwiperSlide>
         </Swiper>
-        <Footer />
+        <Footer Click={getisShow} />
       </Box>
       <Box display={{ base: 'block', lg: 'none' }} w="100%" overflowX="hidden">
         <PageOne />
         <PageTwo />
         <PageMobileThree />
-        <PageMobileFour />
+        <PageMobileFour Click={getisShow}/>
       </Box>
+      <ContractModel isShow={isShow} Click={getisShow}/>
     </>
   )
 }
