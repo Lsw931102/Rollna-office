@@ -25,10 +25,8 @@ function PageMobileTwo() {
       </Box>
       <Box ml={{ base: px2vw(20), lg: '20px' }}>
         <List spacing={3}>
-          <ListItem
-
-          >
-            <Flex alignItems="center" >
+          <ListItem>
+            <Flex alignItems="center">
               <Image src={convenient} ignoreFallback width={{ base: px2vw(32), lg: '32px' }} />
               <Box color="black" p="10px">
                 <Text
@@ -49,9 +47,7 @@ function PageMobileTwo() {
               </Box>
             </Flex>
           </ListItem>
-          <ListItem
-
-          >
+          <ListItem>
             <Flex alignItems="center">
               <Image
                 src={interoperability}
@@ -77,9 +73,7 @@ function PageMobileTwo() {
               </Box>
             </Flex>
           </ListItem>
-          <ListItem
-
-          >
+          <ListItem>
             <Flex alignItems="center">
               <Image src={lowcost} ignoreFallback width={{ base: px2vw(32), lg: '32px' }} />
               <Box color="black" p="10px">
@@ -101,9 +95,7 @@ function PageMobileTwo() {
               </Box>
             </Flex>
           </ListItem>
-          <ListItem
-
-          >
+          <ListItem>
             <Flex alignItems="center">
               <Image src={supremesecurity} ignoreFallback width={{ base: px2vw(32), lg: '32px' }} />
               <Box color="black" p="10px">

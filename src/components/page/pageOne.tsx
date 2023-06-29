@@ -29,7 +29,7 @@ function PageOne() {
             fontSize={{ base: px2vw(50), lg: '90px' }}
             lineHeight={{ base: px2vw(75), lg: '112px' }}
             color="black"
-            className='fadeInUp'
+            className="fadeInUp"
             data-swiper-parallax-y="300"
             data-swiper-parallax-duration="500"
             data-swiper-parallax-opacity="0"
@@ -40,7 +40,7 @@ function PageOne() {
             fontSize={{ base: px2vw(50), lg: '90px' }}
             lineHeight={{ base: px2vw(75), lg: '112px' }}
             color="black"
-            className='fadeInUp'
+            className="fadeInUp"
             data-swiper-parallax-y="300"
             data-swiper-parallax-duration="500"
             data-swiper-parallax-opacity="0"
@@ -50,10 +50,9 @@ function PageOne() {
           <Text
             fontSize={{ base: px2vw(20), lg: '24px' }}
             lineHeight={{ base: px2vw(30), lg: '28px' }}
-            className='fadeInUp2000'
+            className="fadeInUp2000"
             color="black"
             mt={{ base: px2vw(16), lg: '40px' }}
-           
             data-swiper-parallax-y="300"
             data-swiper-parallax-duration="1000"
             data-swiper-parallax-opacity="0"
