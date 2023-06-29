@@ -99,7 +99,7 @@ function PageTwo() {
                   data-swiper-parallax-duration="1500"
                   data-swiper-parallax-opacity="0"
                 >
-                  <Flex alignItems="center">
+                  <Flex alignItems="center" paddingX={{ base: px2vw(16), lg: 0 }}>
                     <Image
                       src={item?.icon}
                       ignoreFallback
