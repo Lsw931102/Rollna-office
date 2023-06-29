@@ -8,7 +8,7 @@ import Telegram from '@/assets/imgs/Telegram.png'
 import px2vw from '@/utils/px2vw'
 
 export const Madies = () => (
-  <Flex mt={{ base: px2vw(56) }}>
+  <Flex mt={{ base: px2vw(56), lg: 0 }}>
     <Box mr={{ base: px2vw(40), lg: '40px' }}>
       <Link href="https://twitter.com/rollna_protocol" isExternal>
         <Image src={Twitter} />

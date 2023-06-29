@@ -44,10 +44,10 @@ function PageTwo() {
       bg="bg"
       backgroundBlendMode="NORMAL, SCREEN, NORMAL"
       pt={{ base: px2vw(80), lg: '90px' }}
-      pb={{ base: px2vw(40) }}
+      pb={{ base: px2vw(40), lg: 0 }}
     >
       <Flex
-        direction={{ base: 'column', lg: 'row' }}
+        direction="column"
         justifyContent="center"
         h="100%"
         w={{ base: '100%', lg: '1286px' }}
@@ -69,7 +69,7 @@ function PageTwo() {
           direction={{ base: 'column', lg: 'row' }}
           alignItems="center"
           p={{ base: 0, lg: '10px' }}
-          mt={{ base: px2vw(40) }}
+          mt={{ base: px2vw(40), lg: 0 }}
         >
           <Lottie
             animationData={leftAni}
@@ -78,7 +78,7 @@ function PageTwo() {
             data-swiper-parallax-duration="1000"
             data-swiper-parallax-opacity="0"
           />
-          <Box ml={{ base: 0, lg: '20px' }} mx={{ base: px2vw(16) }}>
+          <Box ml={{ base: 0, lg: '20px' }} mx={{ base: px2vw(16), lg: 0 }}>
             <List mt={{ base: px2vw(26) }}>
               {arr.map((item: ArrItem) => (
                 <ListItem
@@ -105,7 +105,7 @@ function PageTwo() {
                         {item.title}
                       </Text>
                       <Text
-                        mt={{ base: px2vw(12) }}
+                        mt={{ base: px2vw(12), lg: 0 }}
                         fontSize={{ base: px2vw(14), lg: '14px' }}
                         lineHeight={{ base: px2vw(24), lg: '24px' }}
                         noOfLines={[3]}

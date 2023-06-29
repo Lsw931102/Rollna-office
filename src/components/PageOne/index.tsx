@@ -56,7 +56,9 @@ function PageOne() {
             Making Web3 more accessible for both users and developers, while improving the
             non-custody omnichain trading experience
           </Text>
-          <Madies />
+          <Flex display={{ base: 'flex', lg: 'none' }}>
+            <Madies />
+          </Flex>
         </Flex>
       </Flex>
     </Flex>
