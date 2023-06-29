@@ -1,12 +1,14 @@
 import React from 'react'
 import { Flex, Text, Box, Image, List, ListItem, Center } from '@chakra-ui/react'
-import px2vw from '@/utils/px2vw'
+import Lottie from 'lottie-react'
 
+import px2vw from '@/utils/px2vw'
 import tlm from '@/assets/imgs/tlm.png'
 import convenient from '@/assets/imgs/convenient.png'
 import interoperability from '@/assets/imgs/interoperability.png'
 import lowcost from '@/assets/imgs/lowcost.png'
 import supremesecurity from '@/assets/imgs/supremesecurity.png'
+import leftAni from '@/assets/lotties/page2.json'
 
 function PageTwo() {
   return (
@@ -17,7 +19,7 @@ function PageTwo() {
       backgroundBlendMode="NORMAL, SCREEN, NORMAL"
       pt={{ base: 0, lg: '90px' }}
     >
-      <Flex h="100%" w={{ base: '100%', lg: '1286px' }} m="0 auto">
+      <Flex direction="column" h="100%" w={{ base: '100%', lg: '1286px' }} m="0 auto">
         <Center
           fontSize={{ base: px2vw(32), lg: '32px' }}
           fontWeight={{ base: px2vw(900), lg: '900' }}
@@ -27,9 +29,7 @@ function PageTwo() {
           Token Liquidity Merge
         </Center>
         <Flex alignItems="center" p={{ base: px2vw(10), lg: '10px' }}>
-          <Box>
-            <Image src={tlm} ignoreFallback w={{ base: px2vw(800), lg: '800px' }} />
-          </Box>
+          <Lottie animationData={leftAni} loop={false} />
           <Box ml={{ base: px2vw(20), lg: '20px' }}>
             <List spacing={3}>
               <ListItem
