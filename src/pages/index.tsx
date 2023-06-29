@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Box } from '@chakra-ui/react'
+import { Box, SkipNavContent } from '@chakra-ui/react'
 import { Scrollbar, Mousewheel, Parallax, EffectCreative } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
@@ -89,9 +89,14 @@ function App(prop: any) {
         <Footer Click={getisShow} />
       </Box>
       <Box display={{ base: 'block', lg: 'none' }} w="100%" overflowX="hidden">
+        <SkipNavContent id='one' />
         <PageOne />
+        <SkipNavContent id='two' />
         <PageTwo />
+        <SkipNavContent id='three' />
         <PageMobileThree />
+        <SkipNavContent id='four' />
+
         <PageMobileFour Click={getisShow} />
       </Box>
       <ContractModel isShow={isShow} Click={getisShow} />

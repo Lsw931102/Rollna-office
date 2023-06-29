@@ -83,6 +83,9 @@ body {
     opacity: 1;
   }
 }
+.swiper, swiper-container{
+  z-index: 0 !important;
+}
 
 // 单行文本溢出
 .ellipsis {

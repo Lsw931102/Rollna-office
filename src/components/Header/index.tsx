@@ -39,13 +39,23 @@ function Index(prop: any) {
       zIndex={{ lg: '9' }}
     >
       <HStack spacing="10px">
-        <Image
-          src={eva}
-          ignoreFallback
-          onClick={() => {
-            handClick(0)
-          }}
-        />
+        <SkipNavLink
+          href="#one"
+          id="one"
+          h="100%"
+          w="100%"
+          position="unset"
+          display='block'
+        >
+          <Image
+            src={eva}
+            ignoreFallback
+            onClick={() => {
+              handClick(0)
+            }}
+          />
+        </SkipNavLink>
+
         <Text textStyle="18" backgroundClip="text" color="black">
           RollNA
         </Text>
@@ -97,31 +107,69 @@ function Index(prop: any) {
 
         <DrawerContent pl={{ base: px2vw(24), lg: '24px' }} maxW="60%">
           <DrawerCloseButton right={{ base: px2vw(16) }} top={{ base: px2vw(16) }} />
-          <SkipNavLink
-            href="#four"
-            pt={{ base: px2vw(60), lg: '0' }}
-            color="black"
-            fontSize={{ base: px2vw(14), lg: '14px' }}
-            h="20px"
-            id="four"
-            w="100%"
-            position="relative"
-          >
-            Featrues
-          </SkipNavLink>
+
           <Box
             pt={{ base: px2vw(60), lg: '0' }}
             color="black"
             fontSize={{ base: px2vw(14), lg: '14px' }}
+            onClick={() => {
+              setisOpenDrawer(false)
+            }}
           >
-            Using Cases
+            <SkipNavLink
+              href="#two"
+              id="two"
+              h="100%"
+              w="100%"
+              position="unset"
+              display='block'
+            >
+              Featrues
+            </SkipNavLink>
+
           </Box>
           <Box
+            onClick={() => {
+              setisOpenDrawer(false)
+            }}
             pt={{ base: px2vw(60), lg: '0' }}
             color="black"
             fontSize={{ base: px2vw(14), lg: '14px' }}
           >
-            Roadmap
+            <SkipNavLink
+              href="#three"
+              id="three"
+              h="100%"
+              w="100%"
+              position="unset"
+              display='block'
+
+            >
+              Using Cases
+            </SkipNavLink>
+
+          </Box>
+          <Box
+            onClick={() => {
+              setisOpenDrawer(false)
+            }}
+            pt={{ base: px2vw(60), lg: '0' }}
+            color="black"
+            fontSize={{ base: px2vw(14), lg: '14px' }}
+
+          >
+            <SkipNavLink
+              href="#four"
+              id="four"
+              h="100%"
+              w="100%"
+              position="unset"
+              display='block'
+
+            >
+              Roadmap
+            </SkipNavLink>
+
           </Box>
         </DrawerContent>
       </Drawer>
