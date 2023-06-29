@@ -36,181 +36,184 @@ function PageMobileThree() {
         >
           Build an omnichain application with RollNA easily!
         </Center>
-        <Swiper
-          // install Swiper modules
-          // className="swiperView"
-          modules={[Mousewheel, Parallax]}
-          touchRatio={0.5}
-          centeredSlides
-          nested={true}
-          touchMoveStopPropagation
-          mousewheel={{
-            thresholdTime: 800,
-          }}
-          parallax
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={(n) => setIndex(n.activeIndex)}
-        >
-          <SwiperSlide>
-            <Image
-              data-swiper-parallax-opacity="0"
-              data-swiper-parallax-x="0"
-              data-swiper-parallax-duration="800"
-              src={Baowr01}
-              ignoreFallback
-              h={{ base: px2vw(358), lg: '400px' }}
-              w="100%"
-            />
-            <Box w="100%">
-              <Text
-                data-swiper-parallax-x="-400"
-                data-swiper-parallax-duration="800"
+        <Box h='100%'>
+          <Swiper
+            // install Swiper modules
+
+            modules={[Mousewheel, Parallax]}
+            touchRatio={0.5}
+            centeredSlides
+            nested={true}
+            touchMoveStopPropagation
+            mousewheel={{
+              thresholdTime: 800,
+              forceToAxis: true
+            }}
+            parallax
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={(n) => setIndex(n.activeIndex)}
+          >
+            <SwiperSlide>
+              <Image
                 data-swiper-parallax-opacity="0"
-                fontSize={{ base: px2vw(24), lg: '28px' }}
-                fontWeight="900"
-                color="black"
-                pb={{ base: px2vw(24), lg: '24px' }}
-              >
-                One-stop multi-chain DEX
-              </Text>
-              <Text
-                data-swiper-parallax-x="-400"
+                data-swiper-parallax-x="0"
                 data-swiper-parallax-duration="800"
+                src={Baowr01}
+                ignoreFallback
+               
+                w="100%"
+              />
+              <Box w="100%" mt={{ base: px2vw(50)}}>
+                <Text
+                  data-swiper-parallax-x="-400"
+                  data-swiper-parallax-duration="800"
+                  data-swiper-parallax-opacity="0"
+                  fontSize={{ base: px2vw(24), lg: '28px' }}
+                  fontWeight="900"
+                  color="black"
+                  pb={{ base: px2vw(24), lg: '24px' }}
+                >
+                  One-stop multi-chain DEX
+                </Text>
+                <Text
+                  data-swiper-parallax-x="-400"
+                  data-swiper-parallax-duration="800"
+                  data-swiper-parallax-opacity="0"
+                  fontSize={{ base: px2vw(14), lg: '14px' }}
+                  color="black"
+                  pb={{ base: px2vw(24), lg: '24px' }}
+                >
+                  Multi-chain token listing and trading are supportedX
+                </Text>
+                <Text
+                  data-swiper-parallax-x="-400"
+                  data-swiper-parallax-duration="800"
+                  data-swiper-parallax-opacity="0"
+                  fontSize={{ base: px2vw(14), lg: '14px' }}
+                  color="black"
+                  pb={{ base: px2vw(24), lg: '24px' }}
+                >
+                  Market makers are supported to deploy common multi-chain trading strategies on DEX
+                </Text>
+                <Text
+                  data-swiper-parallax-x="-400"
+                  data-swiper-parallax-duration="800"
+                  data-swiper-parallax-opacity="0"
+                  fontSize={{ base: px2vw(14), lg: '14px' }}
+                  color="black"
+                >
+                  Make user experience similar to CEX
+                </Text>
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
                 data-swiper-parallax-opacity="0"
-                fontSize={{ base: px2vw(14), lg: '14px' }}
-                color="black"
-                pb={{ base: px2vw(24), lg: '24px' }}
-              >
-                Multi-chain token listing and trading are supportedX
-              </Text>
-              <Text
-                data-swiper-parallax-x="-400"
+                data-swiper-parallax-x="0"
                 data-swiper-parallax-duration="800"
+                src={Baowr02}
+                ignoreFallback
+               
+                w="100%"
+              />
+              <Box w="100%" mt={{ base: px2vw(50)}}>
+                <Text
+                  data-swiper-parallax-x="-400"
+                  data-swiper-parallax-duration="800"
+                  data-swiper-parallax-opacity="0"
+                  fontSize={{ base: px2vw(24), lg: '28px' }}
+                  fontWeight="900"
+                  color="black"
+                  pb={{ base: px2vw(24), lg: '24px' }}
+                >
+                  One-stop multi-chain DEX
+                </Text>
+                <Text
+                  data-swiper-parallax-x="-400"
+                  data-swiper-parallax-duration="800"
+                  data-swiper-parallax-opacity="0"
+                  fontSize={{ base: px2vw(14), lg: '14px' }}
+                  color="black"
+                  pb={{ base: px2vw(24), lg: '24px' }}
+                >
+                  Multi-chain token listing and trading are supportedX
+                </Text>
+                <Text
+                  data-swiper-parallax-x="-400"
+                  data-swiper-parallax-duration="800"
+                  data-swiper-parallax-opacity="0"
+                  fontSize={{ base: px2vw(14), lg: '14px' }}
+                  color="black"
+                  pb={{ base: px2vw(24), lg: '24px' }}
+                >
+                  Market makers are supported to deploy common multi-chain trading strategies on DEX
+                </Text>
+                <Text
+                  data-swiper-parallax-x="-400"
+                  data-swiper-parallax-duration="800"
+                  data-swiper-parallax-opacity="0"
+                  fontSize={{ base: px2vw(14), lg: '14px' }}
+                  color="black"
+                >
+                  Make user experience similar to CEX
+                </Text>
+              </Box>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image
                 data-swiper-parallax-opacity="0"
-                fontSize={{ base: px2vw(14), lg: '14px' }}
-                color="black"
-                pb={{ base: px2vw(24), lg: '24px' }}
-              >
-                Market makers are supported to deploy common multi-chain trading strategies on DEX
-              </Text>
-              <Text
-                data-swiper-parallax-x="-400"
+                data-swiper-parallax-x="0"
                 data-swiper-parallax-duration="800"
-                data-swiper-parallax-opacity="0"
-                fontSize={{ base: px2vw(14), lg: '14px' }}
-                color="black"
-              >
-                Make user experience similar to CEX
-              </Text>
-            </Box>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              data-swiper-parallax-opacity="0"
-              data-swiper-parallax-x="0"
-              data-swiper-parallax-duration="800"
-              src={Baowr02}
-              ignoreFallback
-              h={{ base: px2vw(358), lg: '400px' }}
-              w="100%"
-            />
-            <Box w="100%">
-              <Text
-                data-swiper-parallax-x="-400"
-                data-swiper-parallax-duration="800"
-                data-swiper-parallax-opacity="0"
-                fontSize={{ base: px2vw(24), lg: '28px' }}
-                fontWeight="900"
-                color="black"
-                pb={{ base: px2vw(24), lg: '24px' }}
-              >
-                One-stop multi-chain DEX
-              </Text>
-              <Text
-                data-swiper-parallax-x="-400"
-                data-swiper-parallax-duration="800"
-                data-swiper-parallax-opacity="0"
-                fontSize={{ base: px2vw(14), lg: '14px' }}
-                color="black"
-                pb={{ base: px2vw(24), lg: '24px' }}
-              >
-                Multi-chain token listing and trading are supportedX
-              </Text>
-              <Text
-                data-swiper-parallax-x="-400"
-                data-swiper-parallax-duration="800"
-                data-swiper-parallax-opacity="0"
-                fontSize={{ base: px2vw(14), lg: '14px' }}
-                color="black"
-                pb={{ base: px2vw(24), lg: '24px' }}
-              >
-                Market makers are supported to deploy common multi-chain trading strategies on DEX
-              </Text>
-              <Text
-                data-swiper-parallax-x="-400"
-                data-swiper-parallax-duration="800"
-                data-swiper-parallax-opacity="0"
-                fontSize={{ base: px2vw(14), lg: '14px' }}
-                color="black"
-              >
-                Make user experience similar to CEX
-              </Text>
-            </Box>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image
-              data-swiper-parallax-opacity="0"
-              data-swiper-parallax-x="0"
-              data-swiper-parallax-duration="800"
-              src={Baowr03}
-              ignoreFallback
-              h={{ base: px2vw(358), lg: '400px' }}
-              w="100%"
-            />
-            <Box w="100%">
-              <Text
-                data-swiper-parallax-x="-400"
-                data-swiper-parallax-duration="800"
-                data-swiper-parallax-opacity="0"
-                fontSize={{ base: px2vw(24), lg: '28px' }}
-                fontWeight="900"
-                color="black"
-                pb={{ base: px2vw(24), lg: '24px' }}
-              >
-                One-stop multi-chain DEX
-              </Text>
-              <Text
-                data-swiper-parallax-x="-400"
-                data-swiper-parallax-duration="800"
-                data-swiper-parallax-opacity="0"
-                fontSize={{ base: px2vw(14), lg: '14px' }}
-                color="black"
-                pb={{ base: px2vw(24), lg: '24px' }}
-              >
-                Multi-chain token listing and trading are supportedX
-              </Text>
-              <Text
-                data-swiper-parallax-x="-400"
-                data-swiper-parallax-duration="800"
-                data-swiper-parallax-opacity="0"
-                fontSize={{ base: px2vw(14), lg: '14px' }}
-                color="black"
-                pb={{ base: px2vw(24), lg: '24px' }}
-              >
-                Market makers are supported to deploy common multi-chain trading strategies on DEX
-              </Text>
-              <Text
-                data-swiper-parallax-x="-400"
-                data-swiper-parallax-duration="800"
-                data-swiper-parallax-opacity="0"
-                fontSize={{ base: px2vw(14), lg: '14px' }}
-                color="black"
-              >
-                Make user experience similar to CEX
-              </Text>
-            </Box>
-          </SwiperSlide>
-        </Swiper>
+                src={Baowr03}
+                ignoreFallback
+                
+                w="100%"
+              />
+              <Box w="100%" mt={{ base: px2vw(50)}}>
+                <Text
+                  data-swiper-parallax-x="-400"
+                  data-swiper-parallax-duration="800"
+                  data-swiper-parallax-opacity="0"
+                  fontSize={{ base: px2vw(24), lg: '28px' }}
+                  fontWeight="900"
+                  color="black"
+                  pb={{ base: px2vw(24), lg: '24px' }}
+                >
+                  One-stop multi-chain DEX
+                </Text>
+                <Text
+                  data-swiper-parallax-x="-400"
+                  data-swiper-parallax-duration="800"
+                  data-swiper-parallax-opacity="0"
+                  fontSize={{ base: px2vw(14), lg: '14px' }}
+                  color="black"
+                  pb={{ base: px2vw(24), lg: '24px' }}
+                >
+                  Multi-chain token listing and trading are supportedX
+                </Text>
+                <Text
+                  data-swiper-parallax-x="-400"
+                  data-swiper-parallax-duration="800"
+                  data-swiper-parallax-opacity="0"
+                  fontSize={{ base: px2vw(14), lg: '14px' }}
+                  color="black"
+                  pb={{ base: px2vw(24), lg: '24px' }}
+                >
+                  Market makers are supported to deploy common multi-chain trading strategies on DEX
+                </Text>
+                <Text
+                  data-swiper-parallax-x="-400"
+                  data-swiper-parallax-duration="800"
+                  data-swiper-parallax-opacity="0"
+                  fontSize={{ base: px2vw(14), lg: '14px' }}
+                  color="black"
+                >
+                  Make user experience similar to CEX
+                </Text>
+              </Box>
+            </SwiperSlide>
+          </Swiper>
+        </Box>
         <Flex align="center" mt={{ base: px2vw(40), lg: '0px' }}>
           <Box
             w={{ base: px2vw(72), lg: '72px' }}
