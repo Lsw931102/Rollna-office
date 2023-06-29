@@ -39,14 +39,7 @@ function Index(prop: any) {
       zIndex={{ lg: '9' }}
     >
       <HStack spacing="10px">
-        <SkipNavLink
-          href="#one"
-          id="one"
-          h="100%"
-          w="100%"
-          position="unset"
-          display='block'
-        >
+        <SkipNavLink href="#one" id="one" h="100%" w="100%" position="unset" display="block">
           <Image
             src={eva}
             ignoreFallback
@@ -116,17 +109,9 @@ function Index(prop: any) {
               setisOpenDrawer(false)
             }}
           >
-            <SkipNavLink
-              href="#two"
-              id="two"
-              h="100%"
-              w="100%"
-              position="unset"
-              display='block'
-            >
+            <SkipNavLink href="#two" id="two" h="100%" w="100%" position="unset" display="block">
               Featrues
             </SkipNavLink>
-
           </Box>
           <Box
             onClick={() => {
@@ -142,12 +127,10 @@ function Index(prop: any) {
               h="100%"
               w="100%"
               position="unset"
-              display='block'
-
+              display="block"
             >
               Using Cases
             </SkipNavLink>
-
           </Box>
           <Box
             onClick={() => {
@@ -156,20 +139,10 @@ function Index(prop: any) {
             pt={{ base: px2vw(60), lg: '0' }}
             color="black"
             fontSize={{ base: px2vw(14), lg: '14px' }}
-
           >
-            <SkipNavLink
-              href="#four"
-              id="four"
-              h="100%"
-              w="100%"
-              position="unset"
-              display='block'
-
-            >
+            <SkipNavLink href="#four" id="four" h="100%" w="100%" position="unset" display="block">
               Roadmap
             </SkipNavLink>
-
           </Box>
         </DrawerContent>
       </Drawer>

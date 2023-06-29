@@ -89,13 +89,13 @@ function App(prop: any) {
         <Footer Click={getisShow} />
       </Box>
       <Box display={{ base: 'block', lg: 'none' }} w="100%" overflowX="hidden">
-        <SkipNavContent id='one' />
+        <SkipNavContent id="one" />
         <PageOne />
-        <SkipNavContent id='two' />
+        <SkipNavContent id="two" />
         <PageTwo />
-        <SkipNavContent id='three' />
+        <SkipNavContent id="three" />
         <PageMobileThree />
-        <SkipNavContent id='four' />
+        <SkipNavContent id="four" />
 
         <PageMobileFour Click={getisShow} />
       </Box>
