@@ -34,20 +34,10 @@ function PageOne() {
             data-swiper-parallax-duration="500"
             data-swiper-parallax-opacity="0"
           >
-            Make decentralized
+            Empowering Seamless OmniChain Trading
           </Text>
           <Text
-            fontSize={{ base: px2vw(50), lg: '90px' }}
-            lineHeight={{ base: px2vw(75), lg: '112px' }}
-            color="black"
-            className="fadeInUp"
-            data-swiper-parallax-y="300"
-            data-swiper-parallax-duration="500"
-            data-swiper-parallax-opacity="0"
-          >
-            trading easier
-          </Text>
-          <Text
+            w={{ base: '100%', lg: '815px' }}
             fontSize={{ base: px2vw(20), lg: '24px' }}
             lineHeight={{ base: px2vw(30), lg: '28px' }}
             className="fadeInUp2000"
@@ -57,7 +47,8 @@ function PageOne() {
             data-swiper-parallax-duration="1000"
             data-swiper-parallax-opacity="0"
           >
-            Revolutionizing Crypto with one-stop multi-chain trading Protocol
+            Making Web3 more accessible for both users and developers, while improving the
+            non-custody omnichain trading experience
           </Text>
         </Flex>
       </Flex>

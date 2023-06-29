@@ -11,7 +11,6 @@ import PageOne from '@/components/page/pageOne'
 import PageTwo from '@/components/page/pageTwo'
 import PageThree from '@/components/page/pageThree'
 import PageFour from '@/components/page/pageFour'
-import PageMobileTwo from '@/components/mobile/pageTwo'
 import PageMobileThree from '@/components/mobile/pageThree'
 import Footer from '@/components/Footer'
 
@@ -70,10 +69,8 @@ function App() {
         <Footer />
       </Box>
       <Box display={{ base: 'block', lg: 'none' }}>
-        <Box className="swiperView">
-          <PageOne />
-        </Box>
-        <PageMobileTwo />
+        <PageOne />
+        <PageTwo />
         <PageMobileThree />
       </Box>
     </>
