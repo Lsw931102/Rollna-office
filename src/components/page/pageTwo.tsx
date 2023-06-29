@@ -18,7 +18,13 @@ function PageTwo() {
       backgroundBlendMode="NORMAL, SCREEN, NORMAL"
       pt={{ base: 0, lg: '90px' }}
     >
-      <Flex direction="column" h="100%" w={{ base: '100%', lg: '1286px' }} m="0 auto">
+      <Flex
+        direction="column"
+        justifyContent="center"
+        h="100%"
+        w={{ base: '100%', lg: '1286px' }}
+        m="0 auto"
+      >
         <Center
           fontSize={{ base: px2vw(32), lg: '32px' }}
           fontWeight={{ base: px2vw(900), lg: '900' }}

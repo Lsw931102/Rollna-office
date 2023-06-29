@@ -42,6 +42,7 @@ function Index() {
         </Text>
       </HStack>
       <HStack spacing="30px" textStyle="14" display={{ base: 'none', lg: 'flex' }}>
+        <Link color="black">Protocol</Link>
         <Link color="black">Featrues</Link>
         <Link color="black">Using Cases</Link>
         <Link color="black">Roadmap</Link>

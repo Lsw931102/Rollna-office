@@ -21,6 +21,11 @@ function App({ Component, pageProps }: AppProps) {
         <title>{`${pageProps?.title || publicRuntimeConfig.title}`}</title>
         <meta charSet="utf-8" />
         <meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes" />
+        <meta name="keywords" content="RollNA, Omnichain, Mulitchain, Trading, Protocol" />
+        <meta
+          name="description"
+          content="RollNA is Advanced Omnichain Trading Protocol. Making Web3 more accessible for both users and developers, while improving the non-custody omnichain trading experience"
+        />
         <meta content="yes" name="apple-mobile-web-app-capable" />
         <meta content="yes" name="apple-touch-fullscreen" />
         <meta content="telephone=no,email=no" name="format-detection" />

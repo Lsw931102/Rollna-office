@@ -1,7 +1,7 @@
 /*
  * @Author: Austion
  * @Date: 2023-06-26 12:02:36
- * @LastEditTime: 2023-06-29 15:33:26
+ * @LastEditTime: 2023-06-29 15:29:40
  * @LastEditors: Austion
  * @FilePath: /Rollna-office/src/components/Header/index.tsx
  */
@@ -41,7 +41,12 @@ function Index() {
           RollNA
         </Text>
       </HStack>
+<<<<<<< HEAD
       <HStack spacing="30px" textStyle="14" display={{ base: 'none', lg: 'flex' }}>
+        <Link color="black">Protocol</Link>
+=======
+      <HStack spacing="30px" textStyle="14">
+>>>>>>> 9bdde1e4d645356af594440e0cdc6266f1616d03
         <Link color="black">Featrues</Link>
         <Link color="black">Using Cases</Link>
         <Link color="black">Roadmap</Link>

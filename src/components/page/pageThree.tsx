@@ -82,7 +82,7 @@ function PageThree() {
                       data-swiper-parallax-duration="800"
                       data-swiper-parallax-opacity="0"
                     >
-                      One-stop multi-chain DEX
+                      One-stop multi-chain DEX1
                     </Text>
                     <Text
                       fontSize={{ base: px2vw(14), lg: '14px' }}
@@ -137,7 +137,7 @@ function PageThree() {
                       data-swiper-parallax-duration="800"
                       data-swiper-parallax-opacity="0"
                     >
-                      One-stop multi-chain DEX
+                      One-stop multi-chain DEX2
                     </Text>
                     <Text
                       fontSize={{ base: px2vw(14), lg: '14px' }}
@@ -192,7 +192,7 @@ function PageThree() {
                       color="black"
                       pb={{ base: px2vw(24), lg: '24px' }}
                     >
-                      One-stop multi-chain DEX
+                      One-stop multi-chain DEX3
                     </Text>
                     <Text
                       data-swiper-parallax-y="-400"
