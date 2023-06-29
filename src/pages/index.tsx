@@ -85,7 +85,7 @@ function App(prop: any) {
         </Swiper>
         <Footer />
       </Box>
-      <Box display={{ base: 'block', lg: 'none' }}>
+      <Box display={{ base: 'block', lg: 'none' }} w="100%" overflowX="hidden">
         <PageOne />
         <PageTwo />
         <PageMobileThree />

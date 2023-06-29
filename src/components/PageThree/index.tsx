@@ -11,7 +11,7 @@ import Baowr01 from '@/assets/imgs/Baowr01.png'
 import Baowr02 from '@/assets/imgs/Baowr02.png'
 import Baowr03 from '@/assets/imgs/Baowr03.png'
 
-interface ArrItem {
+export interface ArrItem {
   img: string
   title: string
   desc: string[]
@@ -122,7 +122,7 @@ function PageThree() {
         <Flex direction="column" justifyContent="center" w="1286px" h="248px">
           {[0, 1, 2].map((item: number) => (
             <Box
-              key="item"
+              key={item}
               h="72px"
               w="2px"
               bg={index == item ? 'purple' : 'black'}
@@ -133,7 +133,14 @@ function PageThree() {
         </Flex>
       </Flex>
       <Flex justifyContent="center" pos="absolute" top="167px" w="100%" h="100%">
-        <Text fontSize="28px" fontWeight="900" color="black" mt="-45px" textAlign="center">
+        <Text
+          fontSize="28px"
+          fontWeight="900"
+          color="black"
+          mt="-45px"
+          textAlign="center"
+          fontFamily="DT Getai Grotesk Display"
+        >
           Build an omnichain application with RollNA easily!
         </Text>
       </Flex>

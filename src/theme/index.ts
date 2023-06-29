@@ -157,7 +157,7 @@ const theme = extendTheme({
   config,
   colors,
   fonts: {
-    body: '"Bai Jamjuree Regular", "SF Pro Display", "PingFang SC", "Source Han Sans CN", "Microsoft Yahei"',
+    body: 'SF Pro Display", "PingFang SC", "Source Han Sans CN", "Microsoft Yahei"',
   },
   sizes: {
     xl: '1080px',

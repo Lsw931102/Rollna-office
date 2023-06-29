@@ -11,6 +11,7 @@ function PageMobileFour() {
       <Center
         fontSize={{ base: px2vw(32), lg: '32px' }}
         fontWeight={{ base: px2vw(900), lg: '900' }}
+        fontFamily="DT Getai Grotesk Display"
         color="black"
         data-swiper-parallax-y="-300"
         data-swiper-parallax-duration="500"

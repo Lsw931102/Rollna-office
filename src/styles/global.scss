@@ -1,18 +1,18 @@
 // 全局class
-// @font-face {
-//   font-weight: normal;
-//   font-family: 'Bai Jamjuree';
-//   font-style: normal;
-//   src: url('/fonts/BaiJamjuree-Medium.ttf') format('truetype');
-//   font-display: block;
-// }
-// @font-face {
-//   font-weight: normal;
-//   font-family: 'Bai Jamjuree SemiBold';
-//   font-style: normal;
-//   src: url('/fonts/BaiJamjuree-SemiBold.ttf') format('truetype');
-//   font-display: block;
-// }
+@font-face {
+  font-weight: normal;
+  font-family: 'Aoboshi One';
+  font-style: normal;
+  src: url('/fonts/AoboshiOne-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-weight: 900;
+  font-family: 'DT Getai Grotesk Display';
+  font-style: normal;
+  src: url('/fonts/dtgetaigroteskdisplay-black.ttf') format('truetype');
+  font-display: block;
+}
 
 html {
   height: 100%;

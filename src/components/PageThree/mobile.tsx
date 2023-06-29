@@ -29,6 +29,7 @@ function PageMobileThree() {
         <Center
           fontSize={{ base: px2vw(28), lg: '32px' }}
           fontWeight="900"
+          fontFamily="DT Getai Grotesk Display"
           color="black"
           mt={{ base: px2vw(16), lg: '32px' }}
           textAlign="center"

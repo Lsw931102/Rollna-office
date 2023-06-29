@@ -55,6 +55,7 @@ function PageFour(prop: any) {
         <Center
           fontSize={{ base: px2vw(32), lg: '32px' }}
           fontWeight={{ base: px2vw(900), lg: '900' }}
+          fontFamily="DT Getai Grotesk Display"
           color="black"
           data-swiper-parallax-y="-300"
           data-swiper-parallax-duration="500"
@@ -280,6 +281,7 @@ function PageFour(prop: any) {
           <Center
             fontSize={{ base: px2vw(32), lg: '32px' }}
             fontWeight={{ base: px2vw(900), lg: '900' }}
+            fontFamily="DT Getai Grotesk Display"
             color="purple"
             textTransform="capitalize"
             mt={{ base: px2vw(16), lg: '32px' }}
@@ -289,6 +291,7 @@ function PageFour(prop: any) {
           <Center
             fontSize={{ base: px2vw(32), lg: '32px' }}
             fontWeight={{ base: px2vw(900), lg: '900' }}
+            fontFamily="DT Getai Grotesk Display"
             color="purple"
             textTransform="capitalize"
             mt={{ base: px2vw(16), lg: '32px' }}

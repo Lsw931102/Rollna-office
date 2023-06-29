@@ -31,6 +31,7 @@ function PageOne() {
           <Text
             mt={{ base: px2vw(71), lg: 0 }}
             fontSize={{ base: px2vw(50), lg: '90px' }}
+            fontFamily="Aoboshi One"
             lineHeight={{ base: px2vw(75), lg: '112px' }}
             color="black"
             letterSpacing="-3px"

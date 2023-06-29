@@ -56,6 +56,7 @@ function PageTwo() {
         <Center
           fontSize={{ base: px2vw(28), lg: '32px' }}
           fontWeight={{ base: px2vw(900), lg: '900' }}
+          fontFamily="DT Getai Grotesk Display"
           color="black"
           mt={{ base: 0, lg: '-45px' }}
           textAlign="center"
