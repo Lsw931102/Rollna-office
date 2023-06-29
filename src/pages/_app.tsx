@@ -1,4 +1,4 @@
-import { useEffect,useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ChakraProvider } from '@chakra-ui/react'
 import Head from 'next/head'
 import getConfig from 'next/config'
@@ -16,7 +16,7 @@ function App({ Component, pageProps }: AppProps) {
   }, [])
   const [swiperindex, setIndex] = useState(0)
 
-  const onClick = (val:number) => {
+  const onClick = (val: number) => {
     setIndex(val)
   }
   return (
@@ -49,7 +49,7 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <ChakraProvider resetCSS theme={theme}>
-        <Header Click={onClick}/>
+        <Header Click={onClick} />
         <Component {...(pageProps ?? {})} Index={swiperindex} />
       </ChakraProvider>
     </>

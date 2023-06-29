@@ -20,13 +20,13 @@ function App(prop: any) {
 
   useEffect(() => {
     console.log(mySwiper)
-   
-    if(prop.Index > 0){
+
+    if (prop.Index > 0) {
       console.log(prop)
       mySwiper?.slideTo(prop.Index, 1000, false)
     }
   }, prop.index)
- 
+
   return (
     <>
       <Box display={{ base: 'none', lg: 'block' }}>
