@@ -106,7 +106,6 @@ function PageFour(prop: any) {
                 >
                   Be-fore
                 </Box>
-
               </Box>
               <Box w={{ base: px2vw(180), lg: '180px' }}>
                 <Text fontSize={{ base: px2vw(16), lg: '16px' }} fontWeight="600">
@@ -140,7 +139,6 @@ function PageFour(prop: any) {
                   Q3
                   <Center fontSize={{ base: px2vw(16), lg: '16px' }}>2023</Center>
                 </Box>
-
               </Box>
               <Box w={{ base: px2vw(180), lg: '180px' }}>
                 <Text fontSize={{ base: px2vw(16), lg: '16px' }} fontWeight="600">
@@ -175,7 +173,6 @@ function PageFour(prop: any) {
                 >
                   Be-fore
                 </Box>
-
               </Box>
               <Box w={{ base: px2vw(180), lg: '180px' }}>
                 <Text fontSize={{ base: px2vw(16), lg: '16px' }} fontWeight="600">
@@ -199,8 +196,6 @@ function PageFour(prop: any) {
           <Box position="absolute" left="26%" bottom={{ base: px2vw(0), lg: '3px' }}>
             <Flex>
               <Box position="relative" mr={{ base: px2vw(16), lg: '16px' }}>
-
-
                 <Image
                   src={rbg}
                   w={{ base: px2vw(54), lg: '54px' }}
@@ -235,8 +230,6 @@ function PageFour(prop: any) {
           <Box position="absolute" bottom={{ base: px2vw(178), lg: '178px' }} right="21%">
             <Flex>
               <Box position="relative" mr={{ base: px2vw(16), lg: '16px' }}>
-
-
                 <Image
                   src={rbg}
                   w={{ base: px2vw(54), lg: '54px' }}
