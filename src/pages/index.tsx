@@ -12,6 +12,7 @@ import PageTwo from '@/components/PageTwo'
 import PageThree from '@/components/PageThree'
 import PageFour from '@/components/PageFour'
 import PageMobileThree from '@/components/PageThree/mobile'
+import PageMobileFour from '@/components/PageFour/mobile'
 import Footer from '@/components/Footer'
 
 function App() {
@@ -77,6 +78,7 @@ function App() {
         <PageOne />
         <PageTwo />
         <PageMobileThree />
+        <PageMobileFour />
       </Box>
     </>
   )
