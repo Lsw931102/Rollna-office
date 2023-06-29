@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Box } from '@chakra-ui/react'
 import { Scrollbar, Mousewheel, Parallax, EffectCreative } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -15,8 +15,18 @@ import PageMobileThree from '@/components/PageThree/mobile'
 import PageMobileFour from '@/components/PageFour/mobile'
 import Footer from '@/components/Footer'
 
-function App() {
+function App(prop: any) {
   const [mySwiper, setMySwiper] = useState<any>(null)
+
+  useEffect(() => {
+    console.log(mySwiper)
+
+    if (prop.Index > 0) {
+      console.log(prop)
+      mySwiper?.slideTo(prop.Index, 1000, false)
+    }
+  }, prop.index)
+
   return (
     <>
       <Box display={{ base: 'none', lg: 'block' }}>

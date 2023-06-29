@@ -23,9 +23,11 @@ import eva from '@/assets/imgs/logo.png'
 import nav from '@/assets/imgs/nav.png'
 import px2vw from '@/utils/px2vw'
 
-function Index() {
+function Index(prop: any) {
   const [isOpenDrawer, setisOpenDrawer] = useState(false)
-
+  const handClick = (val: number) => {
+    prop.Click(val)
+  }
   return (
     <Flex
       p={{ base: `${px2vw(48)} ${px2vw(16)} ${px2vw(16)}`, lg: '30px 60px' }}
@@ -42,9 +44,30 @@ function Index() {
         </Text>
       </HStack>
       <HStack spacing="30px" textStyle="14" display={{ base: 'none', lg: 'flex' }}>
-        <Link color="black">Featrues</Link>
-        <Link color="black">Using Cases</Link>
-        <Link color="black">Roadmap</Link>
+        <Link
+          color="black"
+          onClick={() => {
+            handClick(1)
+          }}
+        >
+          Featrues
+        </Link>
+        <Link
+          color="black"
+          onClick={() => {
+            handClick(2)
+          }}
+        >
+          Using Cases
+        </Link>
+        <Link
+          color="black"
+          onClick={() => {
+            handClick(3)
+          }}
+        >
+          Roadmap
+        </Link>
       </HStack>
       <Button
         colorScheme="wh.12"
