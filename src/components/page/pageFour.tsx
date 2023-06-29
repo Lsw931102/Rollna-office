@@ -36,25 +36,6 @@ function PageFour(prop: any) {
   const [isTop, setIsTop] = useState(0)
   let number = 0
   // const indexSwiper = prop.IndexSwiper
-
-  // useEffect(() => {
-  //   let container: any
-  //   const handleScroll = () => {
-  //     container = containerRef?.current
-  //     if (container?.scrollTop !== undefined) {
-  //       const { scrollTop } = container
-  //       if (preScrollTop >= scrollTop) {
-  //         setIsTop(++number)
-  //       }
-  //     }
-  //   }
-  //   container?.addEventListener('scroll', handleScroll)
-  //   return () => {
-  //     container?.removeEventListener('scroll', handleScroll)
-  //   }
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [])
-
   useEffect(() => {
     const handleScroll = () => {
       const container: any = containerRef.current
@@ -77,19 +58,20 @@ function PageFour(prop: any) {
     if (isTop > 0) {
       prop.IndexSwiper.mousewheel.enable()
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isTop])
   return (
     <Flex
       w="100%"
+      h="100%"
       bg="bg"
       backgroundBlendMode="NORMAL, SCREEN, NORMAL"
       pt={{ base: 0, lg: '90px' }}
     >
-      <Flex
-        direction="column"
+      <Box
         w={{ base: '100%', lg: '1286px' }}
         m="0 auto"
+        h="100%"
+        overflow="auto"
         className="fourBox"
         ref={containerRef}
       >
@@ -102,7 +84,7 @@ function PageFour(prop: any) {
           RoadMap
         </Center>
         <Box position="relative" h={{ base: px2vw(571), lg: '575px' }}>
-          <Box position="absolute" top={{ base: px2vw(239), lg: '239px' }} left="4%">
+          <Box position="absolute" top={{ base: px2vw(200), lg: '240px' }} left="8%">
             <Flex>
               <Box position="relative" mr={{ base: px2vw(16), lg: '16px' }}>
                 <Image
@@ -124,13 +106,7 @@ function PageFour(prop: any) {
                 >
                   Be-fore
                 </Box>
-                <Box
-                  h={{ base: px2vw(76), lg: '76px' }}
-                  w={{ base: px2vw(1), lg: '1px' }}
-                  bg="black"
-                  position="absolute"
-                  left="50%"
-                ></Box>
+
               </Box>
               <Box w={{ base: px2vw(180), lg: '180px' }}>
                 <Text fontSize={{ base: px2vw(16), lg: '16px' }} fontWeight="600">
@@ -164,13 +140,7 @@ function PageFour(prop: any) {
                   Q3
                   <Center fontSize={{ base: px2vw(16), lg: '16px' }}>2023</Center>
                 </Box>
-                <Box
-                  h={{ base: px2vw(132), lg: '132px' }}
-                  w={{ base: px2vw(1), lg: '1px' }}
-                  bg="purple"
-                  position="absolute"
-                  left="50%"
-                ></Box>
+
               </Box>
               <Box w={{ base: px2vw(180), lg: '180px' }}>
                 <Text fontSize={{ base: px2vw(16), lg: '16px' }} fontWeight="600">
@@ -205,13 +175,7 @@ function PageFour(prop: any) {
                 >
                   Be-fore
                 </Box>
-                <Box
-                  h={{ base: px2vw(80), lg: '80px' }}
-                  w={{ base: px2vw(1), lg: '1px' }}
-                  bg="black"
-                  position="absolute"
-                  left="50%"
-                ></Box>
+
               </Box>
               <Box w={{ base: px2vw(180), lg: '180px' }}>
                 <Text fontSize={{ base: px2vw(16), lg: '16px' }} fontWeight="600">
@@ -226,23 +190,16 @@ function PageFour(prop: any) {
           </Box>
           <Box
             position="absolute"
-            top={{ base: px2vw(140), lg: '140px' }}
+            top={{ base: px2vw(140), lg: '64px' }}
             h={{ base: px2vw(250), lg: '250px' }}
           >
             <Lottie animationData={roadMapAni} loop={false} />
           </Box>
 
-          <Box position="absolute" left="25%" bottom={{ base: px2vw(0), lg: '0px' }}>
+          <Box position="absolute" left="26%" bottom={{ base: px2vw(0), lg: '3px' }}>
             <Flex>
               <Box position="relative" mr={{ base: px2vw(16), lg: '16px' }}>
-                <Box
-                  h={{ base: px2vw(52), lg: '52px' }}
-                  w={{ base: px2vw(1), lg: '1px' }}
-                  bg="black"
-                  position="absolute"
-                  top={{ lg: '-52px' }}
-                  left="50%"
-                ></Box>
+
 
                 <Image
                   src={rbg}
@@ -275,17 +232,10 @@ function PageFour(prop: any) {
               </Box>
             </Flex>
           </Box>
-          <Box position="absolute" bottom={{ base: px2vw(146), lg: '146px' }} right="21%">
+          <Box position="absolute" bottom={{ base: px2vw(178), lg: '178px' }} right="21%">
             <Flex>
               <Box position="relative" mr={{ base: px2vw(16), lg: '16px' }}>
-                <Box
-                  h={{ base: px2vw(52), lg: '52px' }}
-                  w={{ base: px2vw(1), lg: '1px' }}
-                  bg="black"
-                  position="absolute"
-                  top={{ lg: '-52px' }}
-                  left="50%"
-                ></Box>
+
 
                 <Image
                   src={rbg}
@@ -319,7 +269,7 @@ function PageFour(prop: any) {
             </Flex>
           </Box>
         </Box>
-        <Box pb={{ base: px2vw(100), lg: '100px' }} pt={{ base: px2vw(50), lg: '50px' }}>
+        <Box pb={{ base: px2vw(100), lg: '100px' }} pt={{ base: px2vw(50), lg: '55px' }}>
           <Center
             fontSize={{ base: px2vw(32), lg: '32px' }}
             fontWeight={{ base: px2vw(900), lg: '900' }}
@@ -409,7 +359,7 @@ function PageFour(prop: any) {
             </Modal>
           </Center>
         </Box>
-      </Flex>
+      </Box>
     </Flex>
   )
 }
