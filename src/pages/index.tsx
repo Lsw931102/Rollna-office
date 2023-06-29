@@ -25,12 +25,13 @@ function App() {
           id="OuterSwiper"
           className="swiperView"
           modules={[Scrollbar, Mousewheel, Parallax, EffectCreative]}
-          touchRatio={0.5}
+          touchRatio={3}
           allowSlidePrev
           centeredSlides
           mousewheel={{
             thresholdTime: 800,
           }}
+          speed={2000}
           parallax
           direction="vertical"
           scrollbar={{ draggable: true }}
@@ -49,7 +50,6 @@ function App() {
             setMySwiper(swiper)
           }}
           onSlideChange={(n) => {
-            console.log(n.activeIndex, 9999)
             if (n.activeIndex == 3) {
               mySwiper.mousewheel.disable()
             }

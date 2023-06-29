@@ -57,7 +57,7 @@ function PageTwo() {
           fontSize={{ base: px2vw(28), lg: '32px' }}
           fontWeight={{ base: px2vw(900), lg: '900' }}
           color="black"
-          mt={{ base: 0, lg: '32px' }}
+          mt={{ base: 0, lg: '-45px' }}
           textAlign="center"
           data-swiper-parallax-y="-500"
           data-swiper-parallax-duration="500"
@@ -68,18 +68,25 @@ function PageTwo() {
         <Flex
           direction={{ base: 'column', lg: 'row' }}
           alignItems="center"
-          p={{ base: 0, lg: '10px' }}
-          mt={{ base: px2vw(40), lg: 0 }}
+          justifyContent={{ base: 'flex-start', lg: 'space-between' }}
+          mt={{ base: px2vw(40), lg: '64px' }}
         >
           <Lottie
             animationData={leftAni}
             loop={false}
+            style={{
+              width: '623px',
+            }}
             data-swiper-parallax-y="-1000"
             data-swiper-parallax-duration="1000"
             data-swiper-parallax-opacity="0"
           />
-          <Box ml={{ base: 0, lg: '20px' }} mx={{ base: px2vw(16), lg: 0 }}>
-            <List mt={{ base: px2vw(26) }}>
+          <Box
+            ml={{ base: 0, lg: '20px' }}
+            mx={{ base: px2vw(16), lg: 0 }}
+            w={{ base: '100%', lg: '536px' }}
+          >
+            <List mt={{ base: px2vw(26), lg: 0 }}>
               {arr.map((item: ArrItem) => (
                 <ListItem
                   key={item.title}
@@ -95,9 +102,9 @@ function PageTwo() {
                     <Image
                       src={item?.icon}
                       ignoreFallback
-                      width={{ base: px2vw(48), lg: '32px' }}
+                      width={{ base: px2vw(48), lg: '48px' }}
                     />
-                    <Box color="black" p={{ lg: '10px' }} ml={{ base: px2vw(16) }}>
+                    <Box color="black" ml={{ base: px2vw(16), lg: '16px' }}>
                       <Text
                         fontSize={{ base: px2vw(16), lg: '16px' }}
                         fontWeight={{ base: px2vw(700), lg: '700' }}

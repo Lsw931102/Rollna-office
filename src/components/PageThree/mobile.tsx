@@ -22,7 +22,8 @@ function PageMobileThree() {
       h="100%"
       bg="bg"
       backgroundBlendMode="NORMAL, SCREEN, NORMAL"
-      pt={{ base: 0, lg: '90px' }}
+      pt={px2vw(80)}
+      pb={px2vw(40)}
     >
       <Flex direction="column" w="100%" m="0 auto" p={{ base: '10px', lg: '0' }}>
         <Center

@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
-import { Box, Center, Flex, Image, Text } from '@chakra-ui/react'
+import { Box, Flex, Image, Text } from '@chakra-ui/react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Mousewheel, Parallax } from 'swiper'
 
 import 'swiper/css'
 import 'swiper/css/mousewheel'
 import 'swiper/css/parallax'
-
-import px2vw from '@/utils/px2vw'
 
 import Baowr01 from '@/assets/imgs/Baowr01.png'
 import Baowr02 from '@/assets/imgs/Baowr02.png'
@@ -53,103 +51,104 @@ function PageThree() {
 
   return (
     <Flex
+      pos="relative"
       w="100%"
       h="100%"
       bg="bg"
       backgroundBlendMode="NORMAL, SCREEN, NORMAL"
-      pt={{ base: px2vw(80), lg: '90px' }}
-      pb={{ base: px2vw(40) }}
+      pt="90px"
     >
-      <Box w={{ base: '100%', lg: '1286px' }} m="0 auto">
-        <Center
-          fontSize={{ base: px2vw(32), lg: '32px' }}
-          fontWeight="900"
-          color="black"
-          mt={{ base: px2vw(16), lg: '32px' }}
-        >
-          Build an omnichain application with RollNA easily!
-        </Center>
-        <Flex mt={{ base: px2vw(70), lg: '70px' }}>
-          <Box marginRight={{ base: px2vw(80), lg: '80px' }} mt={{ base: px2vw(70), lg: '70px' }}>
-            <Box
-              h={{ base: px2vw(72), lg: '72px' }}
-              w={{ base: px2vw(2), lg: '2px' }}
-              bg={index == 0 ? 'purple' : 'black'}
-            ></Box>
-            <Box
-              h={{ base: px2vw(72), lg: '72px' }}
-              w={{ base: px2vw(2), lg: '2px' }}
-              bg={index == 1 ? 'purple' : 'black'}
-              mt={{ base: px2vw(16), lg: '16px' }}
-            ></Box>
-            <Box
-              h={{ base: px2vw(72), lg: '72px' }}
-              w={{ base: px2vw(2), lg: '2px' }}
-              bg={index == 2 ? 'purple' : 'black'}
-              mt={{ base: px2vw(16), lg: '16px' }}
-            ></Box>
-          </Box>
-          <Box flex="1">
-            <Swiper
-              // install Swiper modules
-              className="swiperView"
-              modules={[Mousewheel, Parallax]}
-              touchRatio={0.5}
-              centeredSlides
-              direction="vertical"
-              nested={true}
-              touchMoveStopPropagation
-              mousewheel={{
-                thresholdTime: 800,
-              }}
-              parallax
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={(n) => setIndex(n.activeIndex)}
+      <Swiper
+        // install Swiper modules
+        className="innerSwiper"
+        modules={[Mousewheel, Parallax]}
+        touchRatio={0.5}
+        centeredSlides
+        direction="vertical"
+        nested={true}
+        touchMoveStopPropagation
+        mousewheel={{
+          thresholdTime: 800,
+        }}
+        parallax
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={(n) => setIndex(n.activeIndex)}
+      >
+        {arr.map((item: ArrItem) => (
+          <SwiperSlide key={item.title}>
+            <Flex
+              direction="column"
+              alignItems="flex-start"
+              justifyContent="center"
+              w="400px"
+              h="100%"
+              ml="42px"
+              mt="-45px"
             >
-              {arr.map((item: ArrItem) => (
-                <SwiperSlide key={item.title}>
-                  <Flex align="center">
-                    <Box w={{ base: px2vw(400), lg: '400px' }} flex="1">
-                      <Text
-                        fontSize={{ base: px2vw(28), lg: '28px' }}
-                        fontWeight="900"
-                        color="black"
-                        pb={{ base: px2vw(24), lg: '24px' }}
-                        data-swiper-parallax-y="-400"
-                        data-swiper-parallax-duration="800"
-                        data-swiper-parallax-opacity="0"
-                      >
-                        {item.title}
-                      </Text>
-                      {item?.desc?.map((it: string, index: number) => (
-                        <Text
-                          key={it}
-                          fontSize={{ base: px2vw(14), lg: '14px' }}
-                          color="black"
-                          pb={{ base: px2vw(24), lg: '24px' }}
-                          data-swiper-parallax-y={index * 100 - 300}
-                          data-swiper-parallax-duration="800"
-                          data-swiper-parallax-opacity="0"
-                        >
-                          {it}
-                        </Text>
-                      ))}
-                    </Box>
-                    <Image
-                      src={item.img}
-                      data-swiper-parallax-y="0"
-                      data-swiper-parallax-opacity="0"
-                      data-swiper-parallax-duration="800"
-                      ignoreFallback
-                      h={{ base: px2vw(400), lg: '400px' }}
-                    />
-                  </Flex>
-                </SwiperSlide>
+              <Text
+                fontSize="28px"
+                fontWeight="700"
+                color="black"
+                pb="24px"
+                data-swiper-parallax-y="-400"
+                data-swiper-parallax-duration="800"
+                data-swiper-parallax-opacity="0"
+              >
+                {item.title}
+              </Text>
+              {item?.desc?.map((it: string, index: number) => (
+                <Text
+                  key={it}
+                  fontSize="14px"
+                  lineHeight="24px"
+                  color="black"
+                  pb="24px"
+                  _last={{
+                    paddingBottom: 0,
+                  }}
+                  data-swiper-parallax-y={index * 100 - 300}
+                  data-swiper-parallax-duration="800"
+                  data-swiper-parallax-opacity="0"
+                >
+                  {it}
+                </Text>
               ))}
-            </Swiper>
-          </Box>
+            </Flex>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <Flex justifyContent="center" alignItems="center" pos="absolute" top="0px" w="100%" h="100%">
+        <Flex direction="column" justifyContent="center" w="1286px" h="248px">
+          {[0, 1, 2].map((item: number) => (
+            <Box
+              key="item"
+              h="72px"
+              w="2px"
+              bg={index == item ? 'purple' : 'black'}
+              mt="16px"
+              _first={{ marginTop: 0 }}
+            />
+          ))}
         </Flex>
-      </Box>
+      </Flex>
+      <Flex justifyContent="center" pos="absolute" top="167px" w="100%" h="100%">
+        <Text fontSize="28px" fontWeight="900" color="black" mt="-45px" textAlign="center">
+          Build an omnichain application with RollNA easily!
+        </Text>
+      </Flex>
+      <Flex justifyContent="center" alignItems="center" pos="absolute" top="0" w="100%" h="100%">
+        <Flex justifyContent="flex-end" w="1286px">
+          <Image
+            src={arr[index]?.img}
+            data-swiper-parallax-y="0"
+            data-swiper-parallax-opacity="0"
+            data-swiper-parallax-duration="800"
+            ignoreFallback
+            w="667px"
+            h="371px"
+          />
+        </Flex>
+      </Flex>
     </Flex>
   )
 }
