@@ -7,11 +7,11 @@ import 'swiper/css/mousewheel'
 import 'swiper/css/scrollbar'
 import 'swiper/css/parallax'
 
-import PageOne from '@/components/page/pageOne'
-import PageTwo from '@/components/page/pageTwo'
-import PageThree from '@/components/page/pageThree'
-import PageFour from '@/components/page/pageFour'
-import PageMobileThree from '@/components/mobile/pageThree'
+import PageOne from '@/components/PageOne'
+import PageTwo from '@/components/PageTwo'
+import PageThree from '@/components/PageThree'
+import PageFour from '@/components/PageFour'
+import PageMobileThree from '@/components/PageThree/mobile'
 import Footer from '@/components/Footer'
 
 function App() {
