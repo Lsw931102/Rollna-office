@@ -21,6 +21,7 @@ function App() {
       <Box display={{ base: 'none', lg: 'block' }}>
         <Swiper
           // install Swiper modules
+          id="OuterSwiper"
           className="swiperView"
           modules={[Scrollbar, Mousewheel, Parallax, EffectCreative]}
           touchRatio={0.5}
@@ -54,15 +55,19 @@ function App() {
           }}
         >
           <SwiperSlide>
+            {/* <div style={{ height: '100%' }}>1</div> */}
             <PageOne />
           </SwiperSlide>
           <SwiperSlide>
+            {/* <div style={{ height: '100%' }}>2</div> */}
             <PageTwo />
           </SwiperSlide>
           <SwiperSlide>
+            {/* <div style={{ height: '100%' }}>3</div> */}
             <PageThree />
           </SwiperSlide>
           <SwiperSlide>
+            {/* <div style={{ height: '100%' }}>4</div> */}
             <PageFour IndexSwiper={mySwiper} />
           </SwiperSlide>
         </Swiper>
