@@ -36,7 +36,7 @@ function PageMobileThree() {
         >
           Build an omnichain application with RollNA easily!
         </Center>
-        <Box h='100%'>
+        <Box h="100%">
           <Swiper
             // install Swiper modules
 
@@ -47,7 +47,7 @@ function PageMobileThree() {
             touchMoveStopPropagation
             mousewheel={{
               thresholdTime: 800,
-              forceToAxis: true
+              forceToAxis: true,
             }}
             parallax
             onSwiper={(swiper) => console.log(swiper)}
@@ -60,10 +60,9 @@ function PageMobileThree() {
                 data-swiper-parallax-duration="800"
                 src={Baowr01}
                 ignoreFallback
-               
                 w="100%"
               />
-              <Box w="100%" mt={{ base: px2vw(50)}}>
+              <Box w="100%" mt={{ base: px2vw(50) }}>
                 <Text
                   data-swiper-parallax-x="-400"
                   data-swiper-parallax-duration="800"
@@ -113,10 +112,9 @@ function PageMobileThree() {
                 data-swiper-parallax-duration="800"
                 src={Baowr02}
                 ignoreFallback
-               
                 w="100%"
               />
-              <Box w="100%" mt={{ base: px2vw(50)}}>
+              <Box w="100%" mt={{ base: px2vw(50) }}>
                 <Text
                   data-swiper-parallax-x="-400"
                   data-swiper-parallax-duration="800"
@@ -166,10 +164,9 @@ function PageMobileThree() {
                 data-swiper-parallax-duration="800"
                 src={Baowr03}
                 ignoreFallback
-                
                 w="100%"
               />
-              <Box w="100%" mt={{ base: px2vw(50)}}>
+              <Box w="100%" mt={{ base: px2vw(50) }}>
                 <Text
                   data-swiper-parallax-x="-400"
                   data-swiper-parallax-duration="800"
