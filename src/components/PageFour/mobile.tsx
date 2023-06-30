@@ -243,23 +243,11 @@ function PageMobileFour(prop: any) {
           fontFamily="DT Getai Grotesk Display"
           color="purple"
           textTransform="capitalize"
-          mt={{ base: px2vw(16), lg: '32px' }}
           textAlign="center"
         >
           Join us to access the future of omnichain trading
         </Center>
-        <Center
-          fontSize={{ base: px2vw(28), lg: '32px' }}
-          fontWeight={{ base: px2vw(900), lg: '900' }}
-          fontFamily="DT Getai Grotesk Display"
-          color="purple"
-          textTransform="capitalize"
-          mt={{ base: px2vw(16), lg: '32px' }}
-          textAlign="center"
-        >
-          with RollNA.
-        </Center>
-        <Center>
+        <Center mt={px2vw(32)}>
           <Button
             onClick={() => {
               getisShow()

@@ -18,22 +18,22 @@ const arr: ArrItem[] = [
   {
     icon: convenient,
     title: 'Convenient',
-    desc: 'Elevated smart contract accounts and seamless asset movement across omnichains enable more convenient development and usage.',
+    desc: 'Elevated smart contract accounts and seamless asset movement across omnichains enable more convenient development and usage',
   },
   {
     icon: interoperability,
     title: 'Interoperability',
-    desc: 'A unified liquidity pool maximizes the efficient use of funds. Once deployed, omnichains are interoperable.',
+    desc: 'A unified liquidity pool maximizes the efficient use of funds. Once deployed, omnichains are interoperable',
   },
   {
     icon: lowcost,
     title: 'Low Cost',
-    desc: 'Gas-Efficient Multi-Chain Rollup enables affordable Omnichain trading.',
+    desc: 'Gas-Efficient Multi-Chain Rollup enables affordable Omnichain trading',
   },
   {
     icon: supremesecurity,
     title: 'Supreme Security',
-    desc: 'Ultra-Secure trustless cross-chain solution with L1-level security.',
+    desc: 'Ultra-Secure trustless cross-chain solution with L1-level security',
   },
 ]
 function PageTwo() {
@@ -74,7 +74,7 @@ function PageTwo() {
         >
           <Lottie
             animationData={leftAni}
-            loop={false}
+            loop={true}
             style={{
               width: '623px',
             }}

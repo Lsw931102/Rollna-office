@@ -14,7 +14,7 @@ import PageFour from '@/components/PageFour'
 import PageMobileThree from '@/components/PageThree/mobile'
 import PageMobileFour from '@/components/PageFour/mobile'
 import Footer from '@/components/Footer'
-import ContractModel from '@/components/ContractModel'
+import ContractModel from '@/components/ModelContract'
 
 function App(prop: any) {
   const [mySwiper, setMySwiper] = useState<any>(null)
@@ -43,7 +43,7 @@ function App(prop: any) {
           centeredSlides
           mousewheel={{
             thresholdTime: 800,
-            thresholdDelta: 30,
+            thresholdDelta: 40,
           }}
           speed={2000}
           parallax
@@ -70,32 +70,28 @@ function App(prop: any) {
           }}
         >
           <SwiperSlide>
-            {/* <div style={{ height: '100%' }}>1</div> */}
             <PageOne />
           </SwiperSlide>
           <SwiperSlide>
-            {/* <div style={{ height: '100%' }}>2</div> */}
             <PageTwo />
           </SwiperSlide>
           <SwiperSlide>
-            {/* <div style={{ height: '100%' }}>3</div> */}
             <PageThree />
           </SwiperSlide>
           <SwiperSlide>
-            {/* <div style={{ height: '100%' }}>4</div> */}
             <PageFour IndexSwiper={mySwiper} Click={getisShow} />
           </SwiperSlide>
         </Swiper>
         <Footer Click={getisShow} />
       </Box>
       <Box display={{ base: 'block', lg: 'none' }} w="100%" overflowX="hidden">
-        <SkipNavContent id="one" />
+        <SkipNavContent id="rollna" />
         <PageOne />
-        <SkipNavContent id="two" />
+        <SkipNavContent id="featrues" />
         <PageTwo />
-        <SkipNavContent id="three" />
+        <SkipNavContent id="usingcase" />
         <PageMobileThree />
-        <SkipNavContent id="four" />
+        <SkipNavContent id="roadmap" />
 
         <PageMobileFour Click={getisShow} />
       </Box>

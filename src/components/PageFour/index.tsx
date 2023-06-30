@@ -7,6 +7,51 @@ import roadMapAni from '@/assets/lotties/roadMap.json'
 import rbg from '@/assets/imgs/rbg.png'
 import rbgSelected from '@/assets/imgs/rbgSelected.png'
 
+export interface Item {
+  time: string
+  title: string
+  desc: string[]
+}
+
+export const List: Item[] = [
+  {
+    time: 'Before',
+    title: 'Kickoff the project',
+    desc: ['1.Kickoff the project', '2.Start Project Design'],
+  },
+  {
+    time: '2023H1',
+    title: 'Technical Design and Prototype Validation',
+    desc: [
+      '1.Design Native Account Abstraction',
+      '2.Design Mutichain Rollup',
+      '3.Complete Prototype Validation',
+    ],
+  },
+  {
+    time: '2023Q3',
+    title: 'Testnet Launch of Core Features',
+    desc: [
+      '1.Rollna Super Abstract Account',
+      '2.Rollna Mutichain Rollup Protocol',
+      '3.Testnets supporting ETH, Polygon, Arbitrum,zkSync,Scroll',
+    ],
+  },
+  {
+    time: '2023Q4',
+    title: 'Continuously Iterate on Essential Features',
+    desc: [
+      '1.Mainnet Launch of Core Features',
+      '2.Launch the Web Product',
+      '3.Achieve Integration of the BTC Ecosystem',
+    ],
+  },
+  {
+    time: '2024H1',
+    title: 'Sustainable Development',
+    desc: ['1.Full Launch Alpha', '2.Construct RollNA Ecosystem', '3.More interesting work'],
+  },
+]
 function PageFour(prop: any) {
   const containerRef = useRef(null)
   const [preScrollTop] = useState(0)
@@ -29,12 +74,14 @@ function PageFour(prop: any) {
       const container: any = containerRef.current
       container?.removeEventListener('scroll', handleScroll)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   useEffect(() => {
     if (isTop > 0) {
       prop.IndexSwiper.mousewheel.enable()
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isTop])
   const getisShow = () => {
     prop.Click(true)
@@ -98,14 +145,20 @@ function PageFour(prop: any) {
                   Be-fore
                 </Box>
               </Box>
-              <Box w={{ base: px2vw(180), lg: '180px' }}>
-                <Text fontSize={{ base: px2vw(16), lg: '16px' }} fontWeight="600">
-                  Kickoff the project:
+              <Box w={{ base: px2vw(180), lg: '185px' }}>
+                <Text fontSize={{ base: px2vw(16), lg: '16px' }} fontWeight="600" mb="12px">
+                  {List[0]?.title}
                 </Text>
-                <Text fontSize={{ base: px2vw(14), lg: '14px' }}>
-                  1.Research the Market and Technology.
-                </Text>
-                <Text fontSize={{ base: px2vw(14), lg: '14px' }}>2.Start Project Design.</Text>
+                {List[0]?.desc?.map((item: string) => (
+                  <Text
+                    key={item}
+                    fontSize={{ base: px2vw(14), lg: '14px' }}
+                    lineHeight="20px"
+                    opacity="0.64"
+                  >
+                    {item}
+                  </Text>
+                ))}
               </Box>
             </Flex>
           </Box>
@@ -138,14 +191,20 @@ function PageFour(prop: any) {
                   <Center fontSize={{ base: px2vw(16), lg: '16px' }}>2023</Center>
                 </Box>
               </Box>
-              <Box w={{ base: px2vw(180), lg: '180px' }}>
-                <Text fontSize={{ base: px2vw(16), lg: '16px' }} fontWeight="600">
-                  Kickoff the project:
+              <Box w={{ base: px2vw(180), lg: '260px' }}>
+                <Text fontSize={{ base: px2vw(16), lg: '16px' }} fontWeight="600" mb="12px">
+                  {List[2]?.title}
                 </Text>
-                <Text fontSize={{ base: px2vw(14), lg: '14px' }}>
-                  1.Research the Market and Technology.
-                </Text>
-                <Text fontSize={{ base: px2vw(14), lg: '14px' }}>2.Start Project Design.</Text>
+                {List[2]?.desc?.map((item: string) => (
+                  <Text
+                    key={item}
+                    fontSize={{ base: px2vw(14), lg: '14px' }}
+                    lineHeight="20px"
+                    opacity="0.64"
+                  >
+                    {item}
+                  </Text>
+                ))}
               </Box>
             </Flex>
           </Box>
@@ -175,17 +234,24 @@ function PageFour(prop: any) {
                   textAlign="center"
                   w="100%"
                 >
-                  Be-fore
+                  H1
+                  <Center fontSize={{ base: px2vw(16), lg: '16px' }}>2024</Center>
                 </Box>
               </Box>
-              <Box w={{ base: px2vw(180), lg: '180px' }}>
-                <Text fontSize={{ base: px2vw(16), lg: '16px' }} fontWeight="600">
-                  Kickoff the project:
+              <Box w={{ base: px2vw(180), lg: '206px' }}>
+                <Text fontSize={{ base: px2vw(16), lg: '16px' }} fontWeight="600" mb="12px">
+                  {List[4]?.title}
                 </Text>
-                <Text fontSize={{ base: px2vw(14), lg: '14px' }}>
-                  1.Research the Market and Technology.
-                </Text>
-                <Text fontSize={{ base: px2vw(14), lg: '14px' }}>2.Start Project Design.</Text>
+                {List[4]?.desc?.map((item: string) => (
+                  <Text
+                    key={item}
+                    fontSize={{ base: px2vw(14), lg: '14px' }}
+                    lineHeight="20px"
+                    opacity="0.64"
+                  >
+                    {item}
+                  </Text>
+                ))}
               </Box>
             </Flex>
           </Box>
@@ -224,17 +290,24 @@ function PageFour(prop: any) {
                   textAlign="center"
                   w="100%"
                 >
-                  Be-fore
+                  H1
+                  <Center fontSize={{ base: px2vw(16), lg: '16px' }}>2023</Center>
                 </Box>
               </Box>
-              <Box w={{ base: px2vw(180), lg: '180px' }}>
-                <Text fontSize={{ base: px2vw(16), lg: '16px' }} fontWeight="600">
-                  Kickoff the project:
+              <Box w={{ base: px2vw(180), lg: '334px' }}>
+                <Text fontSize={{ base: px2vw(16), lg: '16px' }} fontWeight="600" mb="12px">
+                  {List[1]?.title}
                 </Text>
-                <Text fontSize={{ base: px2vw(14), lg: '14px' }}>
-                  1.Research the Market and Technology.
-                </Text>
-                <Text fontSize={{ base: px2vw(14), lg: '14px' }}>2.Start Project Design.</Text>
+                {List[1]?.desc?.map((item: string) => (
+                  <Text
+                    key={item}
+                    fontSize={{ base: px2vw(14), lg: '14px' }}
+                    lineHeight="20px"
+                    opacity="0.64"
+                  >
+                    {item}
+                  </Text>
+                ))}
               </Box>
             </Flex>
           </Box>
@@ -265,17 +338,24 @@ function PageFour(prop: any) {
                   textAlign="center"
                   w="100%"
                 >
-                  Be-fore
+                  Q4
+                  <Center fontSize={{ base: px2vw(16), lg: '16px' }}>2023</Center>
                 </Box>
               </Box>
-              <Box w={{ base: px2vw(180), lg: '180px' }}>
-                <Text fontSize={{ base: px2vw(16), lg: '16px' }} fontWeight="600">
-                  Kickoff the project:
+              <Box w={{ base: px2vw(180), lg: '285px' }}>
+                <Text fontSize={{ base: px2vw(16), lg: '16px' }} fontWeight="600" mb="12px">
+                  {List[3]?.title}
                 </Text>
-                <Text fontSize={{ base: px2vw(14), lg: '14px' }}>
-                  1.Research the Market and Technology.
-                </Text>
-                <Text fontSize={{ base: px2vw(14), lg: '14px' }}>2.Start Project Design.</Text>
+                {List[3]?.desc?.map((item: string) => (
+                  <Text
+                    key={item}
+                    fontSize={{ base: px2vw(14), lg: '14px' }}
+                    lineHeight="20px"
+                    opacity="0.64"
+                  >
+                    {item}
+                  </Text>
+                ))}
               </Box>
             </Flex>
           </Box>
@@ -287,21 +367,11 @@ function PageFour(prop: any) {
             fontFamily="DT Getai Grotesk Display"
             color="purple"
             textTransform="capitalize"
-            mt={{ base: px2vw(16), lg: '32px' }}
+            mt="32px"
           >
             Join us to access the future of omnichain trading
           </Center>
-          <Center
-            fontSize={{ base: px2vw(32), lg: '32px' }}
-            fontWeight={{ base: px2vw(900), lg: '900' }}
-            fontFamily="DT Getai Grotesk Display"
-            color="purple"
-            textTransform="capitalize"
-            mt={{ base: px2vw(16), lg: '32px' }}
-          >
-            with RollNA.
-          </Center>
-          <Center>
+          <Center mt="32px">
             <Button
               onClick={() => {
                 getisShow()

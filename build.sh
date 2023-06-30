@@ -51,7 +51,7 @@ rm -rf $BUILD_DIR
 
 mkdir -p $BUILD_DIR/config/client
 
-for dir in '.next' 'public' 'abis'  'next.config.js' 'package.json' 'yarn.lock' 'config/index.js' 'config/client/common.js' "config/client/${1}.js"; do
+for dir in '.next' 'public' 'next.config.js' 'package.json' 'yarn.lock' 'config/index.js' 'config/client/common.js' "config/client/${1}.js"; do
   echo "Copy ${dir}"
   cp -rf $dir $BUILD_DIR/$dir
 done

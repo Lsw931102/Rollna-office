@@ -24,14 +24,13 @@ body {
   height: 100%;
 }
 #OuterSwiper {
+  height: 100vh;
+
   & > .swiper-wrapper {
     transform: translateX(0) !important;
   }
 
   z-index: 0;
-}
-.swiperView {
-  height: 100vh;
 }
 
 .innerSwiper {
@@ -82,9 +81,6 @@ body {
     transform: translate(0, 0);
     opacity: 1;
   }
-}
-.swiper, swiper-container{
-  z-index: 0 !important;
 }
 
 // 单行文本溢出
