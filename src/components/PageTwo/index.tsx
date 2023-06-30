@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Flex, Text, Box, Image, List, ListItem, Center } from '@chakra-ui/react'
 import Lottie from 'lottie-react'
 
@@ -8,35 +8,45 @@ import interoperability from '@/assets/imgs/page22.png'
 import lowcost from '@/assets/imgs/page23.png'
 import supremesecurity from '@/assets/imgs/page24.png'
 import leftAni from '@/assets/lotties/page2.json'
+import convenientSvg from '@/assets/svg/convenient.svg'
+import interoperabilitySvg from '@/assets/svg/interoperability.svg'
+import lowcostSvg from '@/assets/svg/lowCost.svg'
+import supremesecuritySvg from '@/assets/svg/supremesecurity.svg'
 
 interface ArrItem {
   icon: string
+  acIcon: string
   title: string
   desc: string
 }
 const arr: ArrItem[] = [
   {
     icon: convenient,
+    acIcon: convenientSvg,
     title: 'Convenient',
     desc: 'Elevated smart contract accounts and seamless asset movement across omnichains enable more convenient development and usage',
   },
   {
     icon: interoperability,
+    acIcon: interoperabilitySvg,
     title: 'Interoperability',
     desc: 'A unified liquidity pool maximizes the efficient use of funds. Once deployed, omnichains are interoperable',
   },
   {
     icon: lowcost,
+    acIcon: lowcostSvg,
     title: 'Low Cost',
     desc: 'Gas-Efficient Multi-Chain Rollup enables affordable Omnichain trading',
   },
   {
     icon: supremesecurity,
+    acIcon: supremesecuritySvg,
     title: 'Supreme Security',
     desc: 'Ultra-Secure trustless cross-chain solution with L1-level security',
   },
 ]
 function PageTwo() {
+  const [acIndex, setIndex] = useState<number | null>(null)
   return (
     <Flex
       w="100%"
@@ -88,7 +98,7 @@ function PageTwo() {
             w={{ base: '100%', lg: '536px' }}
           >
             <List mt={{ base: px2vw(26), lg: 0 }}>
-              {arr.map((item: ArrItem) => (
+              {arr.map((item: ArrItem, index: number) => (
                 <ListItem
                   key={item.title}
                   mt={{ base: px2vw(48), lg: '48px' }}
@@ -99,9 +109,14 @@ function PageTwo() {
                   data-swiper-parallax-duration="1500"
                   data-swiper-parallax-opacity="0"
                 >
-                  <Flex alignItems="center" paddingX={{ base: px2vw(16), lg: 0 }}>
+                  <Flex
+                    alignItems="center"
+                    paddingX={{ base: px2vw(16), lg: 0 }}
+                    onMouseEnter={() => setIndex(index)}
+                    onMouseLeave={() => setIndex(null)}
+                  >
                     <Image
-                      src={item?.icon}
+                      src={index === acIndex ? item?.acIcon : item?.icon}
                       ignoreFallback
                       width={{ base: px2vw(48), lg: '48px' }}
                     />

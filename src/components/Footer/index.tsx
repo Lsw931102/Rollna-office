@@ -20,12 +20,12 @@ export const Madies = () => (
       </Link>
     </Box>
     <Box mr={{ base: px2vw(40), lg: '40px' }}>
-      <Tooltip label="coming soon">
+      <Tooltip label="coming soon" p="6px" borderRadius="4px">
         <Image src={Discord} />
       </Tooltip>
     </Box>
     <Box>
-      <Tooltip label="coming soon">
+      <Tooltip label="coming soon" p="6px" borderRadius="4px">
         <Image src={Telegram} />
       </Tooltip>
     </Box>

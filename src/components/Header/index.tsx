@@ -32,7 +32,15 @@ function Index(prop: any) {
       zIndex={{ lg: '9' }}
     >
       <HStack spacing="10px">
-        <SkipNavLink href="#one" id="one" h="100%" w="100%" position="unset" display="block">
+        <SkipNavLink
+          href="#one"
+          id="one"
+          h="100%"
+          w="100%"
+          position="unset"
+          display="block"
+          cursor="pointer"
+        >
           <Image
             src={eva}
             ignoreFallback
@@ -49,6 +57,7 @@ function Index(prop: any) {
       <HStack spacing="30px" textStyle="14" display={{ base: 'none', lg: 'flex' }}>
         <Link
           color="black"
+          cursor="pointer"
           onClick={() => {
             handClick(1)
           }}
@@ -57,6 +66,7 @@ function Index(prop: any) {
         </Link>
         <Link
           color="black"
+          cursor="pointer"
           onClick={() => {
             handClick(2)
           }}
@@ -65,6 +75,7 @@ function Index(prop: any) {
         </Link>
         <Link
           color="black"
+          cursor="pointer"
           onClick={() => {
             handClick(3)
           }}
