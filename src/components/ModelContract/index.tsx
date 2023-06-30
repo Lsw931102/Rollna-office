@@ -1,10 +1,3 @@
-/*
- * @Author: Austion
- * @Date: 2023-06-29 14:29:06
- * @LastEditTime: 2023-06-29 14:33:05
- * @LastEditors: Austion
- * @FilePath: /Rollna-office/src/components/model/index.tsx
- */
 import React, { useState, useEffect } from 'react'
 import {
   Box,

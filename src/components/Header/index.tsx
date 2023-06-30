@@ -1,10 +1,3 @@
-/*
- * @Author: Austion
- * @Date: 2023-06-26 12:02:36
- * @LastEditTime: 2023-06-29 15:33:26
- * @LastEditors: Austion
- * @FilePath: /Rollna-office/src/components/Header/index.tsx
- */
 import React, { useState } from 'react'
 import {
   Text,
