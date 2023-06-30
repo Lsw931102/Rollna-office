@@ -24,8 +24,15 @@ function App(prop: any) {
       mySwiper?.slideTo(prop.Index, 1000, false)
       prop.setIndexU(-1)
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, prop.index)
+  }, [prop.Index])
+
+  useEffect(() => {
+    if(prop.isShowB){
+      setIsShow(prop.isShowB)
+      prop.onClick(false)
+    }
+    
+  }, [prop.isShowB])
 
   const getisShow = (val: boolean) => {
     console.log(val)

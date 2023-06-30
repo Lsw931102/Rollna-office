@@ -12,6 +12,7 @@ import {
   DrawerCloseButton,
   Box,
   SkipNavLink,
+  Center
 } from '@chakra-ui/react'
 import eva from '@/assets/imgs/logo.png'
 import nav from '@/assets/imgs/nav.png'
@@ -21,6 +22,9 @@ function Index(prop: any) {
   const [isOpenDrawer, setisOpenDrawer] = useState(false)
   const handClick = (val: number) => {
     prop.Click(val)
+  }
+  const getisShow = () => {
+    prop.onClick(true)
   }
   return (
     <Flex
@@ -137,6 +141,24 @@ function Index(prop: any) {
               Roadmap
             </SkipNavLink>
           </Box>
+          <Center position='absolute' bottom={{base: px2vw(40)}} left='20%'>
+            <Button
+              onClick={() => {
+                getisShow()
+                setisOpenDrawer(false)
+              }}
+              bg="purple"
+              color="wh.100"
+              mt={{ base: px2vw(10), lg: '10px' }}
+              pt={{ base: px2vw(12) }}
+              pb={{ base: px2vw(12) }}
+              pl={{ base: px2vw(24) }}
+              pr={{ base: px2vw(24) }}
+              colorScheme="purple"
+            >
+              Contact us
+            </Button>
+          </Center>
         </DrawerContent>
       </Drawer>
     </Flex>
