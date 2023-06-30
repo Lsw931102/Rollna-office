@@ -9,22 +9,23 @@ import px2vw from '@/utils/px2vw'
 
 export const Madies = () => (
   <Flex mt={{ base: px2vw(56), lg: 0 }}>
-    <Box mr={{ base: px2vw(40), lg: '40px' }}>
+    <Box mr={{ base: px2vw(40), lg: '40px' }} w={{ base: px2vw(24), lg: '32px' }}>
       <Link href="https://twitter.com/rollna_protocol" isExternal>
         <Image src={Twitter} />
       </Link>
     </Box>
-    <Box mr={{ base: px2vw(40), lg: '40px' }}>
+    <Box mr={{ base: px2vw(40), lg: '40px' }} w={{ base: px2vw(24), lg: '32px' }}>
       <Link href="https://medium.com/@rollna_team" isExternal>
         <Image src={Medium} />
       </Link>
     </Box>
-    <Box mr={{ base: px2vw(40), lg: '40px' }}>
-      <Tooltip label="coming soon" p="6px" borderRadius="4px">
+
+    <Box mr={{ base: px2vw(40), lg: '40px' }} w={{ base: px2vw(24), lg: '32px' }}>
+      <Tooltip label="coming soon">
         <Image src={Discord} />
       </Tooltip>
     </Box>
-    <Box>
+    <Box w={{ base: px2vw(24), lg: '32px' }}>
       <Tooltip label="coming soon" p="6px" borderRadius="4px">
         <Image src={Telegram} />
       </Tooltip>

@@ -210,7 +210,7 @@ function PageFour(prop: any) {
           </Box>
           <Box
             position="absolute"
-            right="12%"
+            right="9%"
             data-swiper-parallax-y="300"
             data-swiper-parallax-duration="3000"
             data-swiper-parallax-opacity="0"
@@ -266,7 +266,7 @@ function PageFour(prop: any) {
           <Box
             position="absolute"
             left="26%"
-            bottom={{ base: px2vw(0), lg: '3px' }}
+            bottom={{ base: px2vw(0), lg: '-7px' }}
             data-swiper-parallax-y="-300"
             data-swiper-parallax-duration="1500"
             data-swiper-parallax-opacity="0"
@@ -313,8 +313,8 @@ function PageFour(prop: any) {
           </Box>
           <Box
             position="absolute"
-            bottom={{ base: px2vw(178), lg: '178px' }}
-            right="21%"
+            bottom={{ base: px2vw(178), lg: '145px' }}
+            right="12%"
             data-swiper-parallax-y="-300"
             data-swiper-parallax-duration="2500"
             data-swiper-parallax-opacity="0"

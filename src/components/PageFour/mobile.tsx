@@ -5,6 +5,51 @@ import px2vw from '@/utils/px2vw'
 import Group51 from '@/assets/imgs/Group51.png'
 import Rectangle from '@/assets/imgs/Rectangle.png'
 
+export interface Item {
+  time: string
+  title: string
+  desc: string[]
+}
+
+export const List: Item[] = [
+  {
+    time: 'Before',
+    title: 'Kickoff the project',
+    desc: ['1.Kickoff the project', '2.Start Project Design'],
+  },
+  {
+    time: '2023H1',
+    title: 'Technical Design and Prototype Validation',
+    desc: [
+      '1.Design Native Account Abstraction',
+      '2.Design Mutichain Rollup',
+      '3.Complete Prototype Validation',
+    ],
+  },
+  {
+    time: '2023Q3',
+    title: 'Testnet Launch of Core Features',
+    desc: [
+      '1.Rollna Super Abstract Account',
+      '2.Rollna Mutichain Rollup Protocol',
+      '3.Testnets supporting ETH, Polygon, Arbitrum,zkSync,Scroll',
+    ],
+  },
+  {
+    time: '2023Q4',
+    title: 'Continuously Iterate on Essential Features',
+    desc: [
+      '1.Mainnet Launch of Core Features',
+      '2.Launch the Web Product',
+      '3.Achieve Integration of the BTC Ecosystem',
+    ],
+  },
+  {
+    time: '2024H1',
+    title: 'Sustainable Development',
+    desc: ['1.Full Launch Alpha', '2.Construct RollNA Ecosystem', '3.More interesting work'],
+  },
+]
 function PageMobileFour(prop: any) {
   const getisShow = () => {
     prop.Click(true)
@@ -97,7 +142,7 @@ function PageMobileFour(prop: any) {
             textAlign="center"
             position="absolute"
             left={{ base: px2vw(35) }}
-            bottom={{ base: px2vw(305) }}
+            bottom={{ base: px2vw(285) }}
           >
             Q4
             <Text fontSize={{ base: px2vw(16), lg: '16px' }} color="black" fontWeight="400">
@@ -116,7 +161,7 @@ function PageMobileFour(prop: any) {
             textAlign="center"
             position="absolute"
             left={{ base: px2vw(35) }}
-            bottom={{ base: px2vw(75) }}
+            bottom={{ base: px2vw(55) }}
           >
             H1
             <Text fontSize={{ base: px2vw(16), lg: '16px' }} color="black" fontWeight="400">
@@ -130,7 +175,7 @@ function PageMobileFour(prop: any) {
             backgroundImage={Rectangle}
             backgroundSize="100% 100%"
             p={{ base: px2vw(12), lg: '12px' }}
-            mb={{ base: px2vw(35), lg: '35px' }}
+            mb={{ base: px2vw(60), lg: '35px' }}
           >
             <Text
               fontSize={{ base: px2vw(16), lg: '16px' }}
@@ -138,79 +183,93 @@ function PageMobileFour(prop: any) {
               fontWeight="600"
               lineHeight={{ base: px2vw(20), lg: '20px' }}
             >
-              Kickoff the project:
+              {List[0]?.title}
             </Text>
-            <Text fontSize={{ base: px2vw(14), lg: '14px' }} pb={{ base: px2vw(4), lg: '4px' }}>
-              1.Research the Market and Technology.
-            </Text>
-            <Text fontSize={{ base: px2vw(14), lg: '14px' }}>2.Start Project Design.</Text>
+            {List[0]?.desc?.map((item: string) => (
+              <Text
+                key={item}
+                fontSize={{ base: px2vw(14), lg: '14px' }}
+                lineHeight="20px"
+                opacity="0.64"
+              >
+                {item}
+              </Text>
+            ))}
           </Box>
           <Box
             backgroundImage={Rectangle}
             backgroundSize="100% 100%"
             p={{ base: px2vw(12), lg: '12px' }}
-            mb={{ base: px2vw(35), lg: '35px' }}
+            mb={{ base: px2vw(60), lg: '35px' }}
           >
             <Text
               fontSize={{ base: px2vw(16), lg: '16px' }}
               pb={{ base: px2vw(20), lg: '20px' }}
               fontWeight="600"
+              lineHeight={{ base: px2vw(20), lg: '20px' }}
             >
-              Technical Design and Prototype Validation:
+              {List[1]?.title}
             </Text>
-            <Text fontSize={{ base: px2vw(14), lg: '14px' }} pb={{ base: px2vw(4), lg: '4px' }}>
-              1.Design Native Account Abstraction.
-            </Text>
-            <Text fontSize={{ base: px2vw(14), lg: '14px' }} pb={{ base: px2vw(4), lg: '4px' }}>
-              2.Design Mutichain Rollup.
-            </Text>
-            <Text fontSize={{ base: px2vw(14), lg: '14px' }}>3.Complete Prototype Validation.</Text>
+            {List[1]?.desc?.map((item: string) => (
+              <Text
+                key={item}
+                fontSize={{ base: px2vw(14), lg: '14px' }}
+                lineHeight="20px"
+                opacity="0.64"
+              >
+                {item}
+              </Text>
+            ))}
           </Box>
           <Box
             backgroundImage={Rectangle}
             backgroundSize="100% 100%"
             p={{ base: px2vw(12), lg: '12px' }}
-            mb={{ base: px2vw(35), lg: '35px' }}
+            mb={{ base: px2vw(60), lg: '35px' }}
           >
             <Text
               fontSize={{ base: px2vw(16), lg: '16px' }}
               pb={{ base: px2vw(20), lg: '20px' }}
               fontWeight="600"
+              lineHeight={{ base: px2vw(20), lg: '20px' }}
             >
-              Testnet Launch of Core Features:
+              {List[2]?.title}
             </Text>
-            <Text fontSize={{ base: px2vw(14), lg: '14px' }} pb={{ base: px2vw(4), lg: '4px' }}>
-              1.Rollna Super Abstract Account
-            </Text>
-            <Text fontSize={{ base: px2vw(14), lg: '14px' }} pb={{ base: px2vw(4), lg: '4px' }}>
-              2.Rollna Mutichain Rollup Protocol
-            </Text>
-            <Text fontSize={{ base: px2vw(14), lg: '14px' }}>
-              3.Testnets supporting ETH, Polygon, Arbitrum,zkSync,Scroll
-            </Text>
+            {List[2]?.desc?.map((item: string) => (
+              <Text
+                key={item}
+                fontSize={{ base: px2vw(14), lg: '14px' }}
+                lineHeight="20px"
+                opacity="0.64"
+              >
+                {item}
+              </Text>
+            ))}
           </Box>
           <Box
             backgroundImage={Rectangle}
             backgroundSize="100% 100%"
             p={{ base: px2vw(12), lg: '12px' }}
-            mb={{ base: px2vw(35), lg: '35px' }}
+            mb={{ base: px2vw(60), lg: '35px' }}
           >
             <Text
               fontSize={{ base: px2vw(16), lg: '16px' }}
               pb={{ base: px2vw(20), lg: '20px' }}
               fontWeight="600"
+              lineHeight={{ base: px2vw(20), lg: '20px' }}
             >
-              Continuously Iterate on Essential Features:
+              {List[3]?.title}
             </Text>
-            <Text fontSize={{ base: px2vw(14), lg: '14px' }} pb={{ base: px2vw(4), lg: '4px' }}>
-              1.Mainnet Launch of Core Features
-            </Text>
-            <Text fontSize={{ base: px2vw(14), lg: '14px' }} pb={{ base: px2vw(4), lg: '4px' }}>
-              2.Launch the Web Product
-            </Text>
-            <Text fontSize={{ base: px2vw(14), lg: '14px' }}>
-              3.Achieve Integration of the BTC Ecosystem
-            </Text>
+            {List[3]?.desc?.map((item: string) => (
+              <Text
+                key={item}
+                fontSize={{ base: px2vw(14), lg: '14px' }}
+                lineHeight="20px"
+                opacity="0.64"
+              >
+                {item}
+              </Text>
+            ))}
           </Box>
           <Box
             backgroundImage={Rectangle}
@@ -221,18 +280,20 @@ function PageMobileFour(prop: any) {
               fontSize={{ base: px2vw(16), lg: '16px' }}
               pb={{ base: px2vw(20), lg: '20px' }}
               fontWeight="600"
+              lineHeight={{ base: px2vw(20), lg: '20px' }}
             >
-              Sustainable Development:
+              {List[4]?.title}
             </Text>
-            <Text fontSize={{ base: px2vw(14), lg: '14px' }} pb={{ base: px2vw(4), lg: '4px' }}>
-              1.Full Launch Alpha.
-            </Text>
-            <Text fontSize={{ base: px2vw(14), lg: '14px' }} pb={{ base: px2vw(4), lg: '4px' }}>
-              2.Construct RollNA Ecosystem.
-            </Text>
-            <Text fontSize={{ base: px2vw(14), lg: '14px' }} pb={{ base: px2vw(4), lg: '4px' }}>
-              3.More interesting work.
-            </Text>
+            {List[4]?.desc?.map((item: string) => (
+              <Text
+                key={item}
+                fontSize={{ base: px2vw(14), lg: '14px' }}
+                lineHeight="20px"
+                opacity="0.64"
+              >
+                {item}
+              </Text>
+            ))}
           </Box>
         </Box>
       </Flex>

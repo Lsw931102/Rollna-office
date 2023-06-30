@@ -12,7 +12,41 @@ import px2vw from '@/utils/px2vw'
 import Baowr01 from '@/assets/imgs/Baowr01.png'
 import Baowr02 from '@/assets/imgs/Baowr02.png'
 import Baowr03 from '@/assets/imgs/Baowr03.png'
+export interface ArrItem {
+  img: string
+  title: string
+  desc: string[]
+}
 
+export const arr: ArrItem[] = [
+  {
+    img: Baowr01,
+    title: 'AMM DEX',
+    desc: [
+      'Omni-assets liquidity are merged',
+      'Omni-swap is supported',
+      'Save intermediate costs such as bridge fees and exchange fees',
+    ],
+  },
+  {
+    img: Baowr02,
+    title: 'OrderBook DEX',
+    desc: [
+      'Omni-assets listing and trading are supported',
+      'One-step deposit and withdrawal through omnichain are supported',
+      'Market makers are supported to deploy common omni-assets trading strategies',
+    ],
+  },
+  {
+    img: Baowr03,
+    title: 'Loans and Lending',
+    desc: [
+      'Omni-assets are supported to borrow and lend',
+      'Omnichain settlement are supported',
+      'Elevated smart contract accounts support omni-assets operation',
+    ],
+  },
+]
 function PageMobileThree() {
   const [index, setIndex] = useState(0)
 
@@ -55,162 +89,44 @@ function PageMobileThree() {
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={(n) => setIndex(n.activeIndex)}
           >
-            <SwiperSlide>
-              <Image
-                data-swiper-parallax-opacity="0"
-                data-swiper-parallax-x="0"
-                data-swiper-parallax-duration="800"
-                src={Baowr01}
-                ignoreFallback
-                w="100%"
-              />
-              <Box w="100%" mt={{ base: px2vw(50) }}>
-                <Text
-                  data-swiper-parallax-x="-400"
-                  data-swiper-parallax-duration="800"
+            {arr.map((item: ArrItem) => (
+              <SwiperSlide key={item.title}>
+                <Image
                   data-swiper-parallax-opacity="0"
-                  fontSize={{ base: px2vw(24), lg: '28px' }}
-                  fontWeight="900"
-                  color="black"
-                  pb={{ base: px2vw(24), lg: '24px' }}
-                >
-                  One-stop multi-chain DEX
-                </Text>
-                <Text
-                  data-swiper-parallax-x="-400"
+                  data-swiper-parallax-x="0"
                   data-swiper-parallax-duration="800"
-                  data-swiper-parallax-opacity="0"
-                  fontSize={{ base: px2vw(14), lg: '14px' }}
-                  color="black"
-                  pb={{ base: px2vw(24), lg: '24px' }}
-                >
-                  Multi-chain token listing and trading are supportedX
-                </Text>
-                <Text
-                  data-swiper-parallax-x="-400"
-                  data-swiper-parallax-duration="800"
-                  data-swiper-parallax-opacity="0"
-                  fontSize={{ base: px2vw(14), lg: '14px' }}
-                  color="black"
-                  pb={{ base: px2vw(24), lg: '24px' }}
-                >
-                  Market makers are supported to deploy common multi-chain trading strategies on DEX
-                </Text>
-                <Text
-                  data-swiper-parallax-x="-400"
-                  data-swiper-parallax-duration="800"
-                  data-swiper-parallax-opacity="0"
-                  fontSize={{ base: px2vw(14), lg: '14px' }}
-                  color="black"
-                >
-                  Make user experience similar to CEX
-                </Text>
-              </Box>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                data-swiper-parallax-opacity="0"
-                data-swiper-parallax-x="0"
-                data-swiper-parallax-duration="800"
-                src={Baowr02}
-                ignoreFallback
-                w="100%"
-              />
-              <Box w="100%" mt={{ base: px2vw(50) }}>
-                <Text
-                  data-swiper-parallax-x="-400"
-                  data-swiper-parallax-duration="800"
-                  data-swiper-parallax-opacity="0"
-                  fontSize={{ base: px2vw(24), lg: '28px' }}
-                  fontWeight="900"
-                  color="black"
-                  pb={{ base: px2vw(24), lg: '24px' }}
-                >
-                  One-stop multi-chain DEX
-                </Text>
-                <Text
-                  data-swiper-parallax-x="-400"
-                  data-swiper-parallax-duration="800"
-                  data-swiper-parallax-opacity="0"
-                  fontSize={{ base: px2vw(14), lg: '14px' }}
-                  color="black"
-                  pb={{ base: px2vw(24), lg: '24px' }}
-                >
-                  Multi-chain token listing and trading are supportedX
-                </Text>
-                <Text
-                  data-swiper-parallax-x="-400"
-                  data-swiper-parallax-duration="800"
-                  data-swiper-parallax-opacity="0"
-                  fontSize={{ base: px2vw(14), lg: '14px' }}
-                  color="black"
-                  pb={{ base: px2vw(24), lg: '24px' }}
-                >
-                  Market makers are supported to deploy common multi-chain trading strategies on DEX
-                </Text>
-                <Text
-                  data-swiper-parallax-x="-400"
-                  data-swiper-parallax-duration="800"
-                  data-swiper-parallax-opacity="0"
-                  fontSize={{ base: px2vw(14), lg: '14px' }}
-                  color="black"
-                >
-                  Make user experience similar to CEX
-                </Text>
-              </Box>
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image
-                data-swiper-parallax-opacity="0"
-                data-swiper-parallax-x="0"
-                data-swiper-parallax-duration="800"
-                src={Baowr03}
-                ignoreFallback
-                w="100%"
-              />
-              <Box w="100%" mt={{ base: px2vw(50) }}>
-                <Text
-                  data-swiper-parallax-x="-400"
-                  data-swiper-parallax-duration="800"
-                  data-swiper-parallax-opacity="0"
-                  fontSize={{ base: px2vw(24), lg: '28px' }}
-                  fontWeight="900"
-                  color="black"
-                  pb={{ base: px2vw(24), lg: '24px' }}
-                >
-                  One-stop multi-chain DEX
-                </Text>
-                <Text
-                  data-swiper-parallax-x="-400"
-                  data-swiper-parallax-duration="800"
-                  data-swiper-parallax-opacity="0"
-                  fontSize={{ base: px2vw(14), lg: '14px' }}
-                  color="black"
-                  pb={{ base: px2vw(24), lg: '24px' }}
-                >
-                  Multi-chain token listing and trading are supportedX
-                </Text>
-                <Text
-                  data-swiper-parallax-x="-400"
-                  data-swiper-parallax-duration="800"
-                  data-swiper-parallax-opacity="0"
-                  fontSize={{ base: px2vw(14), lg: '14px' }}
-                  color="black"
-                  pb={{ base: px2vw(24), lg: '24px' }}
-                >
-                  Market makers are supported to deploy common multi-chain trading strategies on DEX
-                </Text>
-                <Text
-                  data-swiper-parallax-x="-400"
-                  data-swiper-parallax-duration="800"
-                  data-swiper-parallax-opacity="0"
-                  fontSize={{ base: px2vw(14), lg: '14px' }}
-                  color="black"
-                >
-                  Make user experience similar to CEX
-                </Text>
-              </Box>
-            </SwiperSlide>
+                  src={item.img}
+                  ignoreFallback
+                  w="100%"
+                />
+                <Box w="100%" mt={{ base: px2vw(50) }}>
+                  <Text
+                    data-swiper-parallax-x="-400"
+                    data-swiper-parallax-duration="800"
+                    data-swiper-parallax-opacity="0"
+                    fontSize={{ base: px2vw(24), lg: '28px' }}
+                    fontWeight="900"
+                    color="black"
+                    pb={{ base: px2vw(24), lg: '24px' }}
+                  >
+                    {item.title}
+                  </Text>
+                  {item?.desc?.map((it: string) => (
+                    <Text
+                      data-swiper-parallax-x="-400"
+                      data-swiper-parallax-duration="800"
+                      data-swiper-parallax-opacity="0"
+                      fontSize={{ base: px2vw(14), lg: '14px' }}
+                      color="black"
+                      pb={{ base: px2vw(24), lg: '24px' }}
+                      key={it}
+                    >
+                      {it}
+                    </Text>
+                  ))}
+                </Box>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </Box>
         <Flex align="center" mt={{ base: px2vw(40), lg: '0px' }}>

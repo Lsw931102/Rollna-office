@@ -15,12 +15,16 @@ function App({ Component, pageProps }: AppProps) {
     window.rollnaConfig = publicRuntimeConfig
   }, [])
   const [swiperindex, setIndex] = useState<number>(0)
+  const [isShow, setIsShow] = useState<boolean>(false)
 
   const onClick = (val: number) => {
     setIndex(val)
   }
   const setIndexU = (val: number) => {
     setIndex(val)
+  }
+  const Click = (val: boolean) => {
+    setIsShow(val)
   }
 
   return (
@@ -53,8 +57,14 @@ function App({ Component, pageProps }: AppProps) {
         />
       </Head>
       <ChakraProvider resetCSS theme={theme}>
-        <Header Click={onClick} />
-        <Component {...(pageProps ?? {})} Index={swiperindex} setIndexU={setIndexU} />
+        <Header Click={onClick} onClick={Click} />
+        <Component
+          {...(pageProps ?? {})}
+          Index={swiperindex}
+          setIndexU={setIndexU}
+          onClick={Click}
+          isShowB={isShow}
+        />
       </ChakraProvider>
     </>
   )
