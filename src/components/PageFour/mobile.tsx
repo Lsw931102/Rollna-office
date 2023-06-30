@@ -226,9 +226,8 @@ function PageMobileFour(prop: any) {
             backgroundSize="100% 100%"
             p={{ base: px2vw(12), lg: '12px' }}
             mb={{ base: px2vw(60), lg: '35px' }}
-
           >
-           <Text
+            <Text
               fontSize={{ base: px2vw(16), lg: '16px' }}
               pb={{ base: px2vw(20), lg: '20px' }}
               fontWeight="600"
@@ -252,9 +251,8 @@ function PageMobileFour(prop: any) {
             backgroundSize="100% 100%"
             p={{ base: px2vw(12), lg: '12px' }}
             mb={{ base: px2vw(60), lg: '35px' }}
-
           >
-           <Text
+            <Text
               fontSize={{ base: px2vw(16), lg: '16px' }}
               pb={{ base: px2vw(20), lg: '20px' }}
               fontWeight="600"

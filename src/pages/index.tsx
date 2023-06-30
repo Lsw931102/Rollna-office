@@ -27,11 +27,10 @@ function App(prop: any) {
   }, [prop.Index])
 
   useEffect(() => {
-    if(prop.isShowB){
+    if (prop.isShowB) {
       setIsShow(prop.isShowB)
       prop.onClick(false)
     }
-    
   }, [prop.isShowB])
 
   const getisShow = (val: boolean) => {

@@ -12,7 +12,7 @@ import {
   DrawerCloseButton,
   Box,
   SkipNavLink,
-  Center
+  Center,
 } from '@chakra-ui/react'
 import eva from '@/assets/imgs/logo.png'
 import nav from '@/assets/imgs/nav.png'
@@ -141,7 +141,7 @@ function Index(prop: any) {
               Roadmap
             </SkipNavLink>
           </Box>
-          <Center position='absolute' bottom={{base: px2vw(40)}} left='20%'>
+          <Center position="absolute" bottom={{ base: px2vw(40) }} left="20%">
             <Button
               onClick={() => {
                 getisShow()

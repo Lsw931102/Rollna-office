@@ -17,7 +17,6 @@ function App({ Component, pageProps }: AppProps) {
   const [swiperindex, setIndex] = useState<number>(0)
   const [isShow, setIsShow] = useState<boolean>(false)
 
-
   const onClick = (val: number) => {
     setIndex(val)
   }
@@ -59,7 +58,13 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
       <ChakraProvider resetCSS theme={theme}>
         <Header Click={onClick} onClick={Click} />
-        <Component {...(pageProps ?? {})} Index={swiperindex} setIndexU={setIndexU} onClick={Click} isShowB={isShow} />
+        <Component
+          {...(pageProps ?? {})}
+          Index={swiperindex}
+          setIndexU={setIndexU}
+          onClick={Click}
+          isShowB={isShow}
+        />
       </ChakraProvider>
     </>
   )
