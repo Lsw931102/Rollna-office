@@ -29,7 +29,7 @@ function Index(prop: any) {
       justify="space-between"
       pos="fixed"
       w="100%"
-      zIndex={{ lg: '9' }}
+      zIndex="99"
     >
       <HStack spacing="10px">
         <SkipNavLink
