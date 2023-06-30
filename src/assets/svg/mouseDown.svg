@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="no"?>
+<svg id="Frame162850" width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 100%; max-height: 100%;">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.3 31.2V16.8C35.3 10.5592 30.2408 5.5 24 5.5C17.7591 5.5 12.7 10.5592 12.7 16.8V31.2C12.7 37.4408 17.7591 42.5 24 42.5C30.2408 42.5 35.3 37.4408 35.3 31.2ZM24 4C16.9307 4 11.2 9.73075 11.2 16.8V31.2C11.2 38.2692 16.9307 44 24 44C31.0692 44 36.8 38.2692 36.8 31.2V16.8C36.8 9.73075 31.0692 4 24 4Z" fill="black" stroke-dasharray="0,0,137.13422949218753,71.91185205078122"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="1.6129032258064515s" values="0,0,137.13422949218753,71.91185205078122; 
+          0,71.91185205078122,137.13422949218753,0; 
+          137.13422949218753,71.91185205078122,0,0" keyTimes="0; 0.34399999999999986; 1"></animate></path>
+<path d="M24 14V34" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0,0,13.120000000000003,6.879999999999997"><animate attributeType="XML" attributeName="stroke-dasharray" repeatCount="indefinite" dur="1.6129032258064515s" values="0,0,13.120000000000003,6.879999999999997; 
+          0,6.879999999999997,13.120000000000003,0; 
+          13.120000000000003,6.879999999999997,0,0" keyTimes="0; 0.34399999999999986; 1"></animate></path>
+<setting>{"type":"loader","speed":31,"random":1,"shift":1,"size":1,"rupture":41}</setting></svg>

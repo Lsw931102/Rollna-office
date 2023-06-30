@@ -1,11 +1,14 @@
 import React from 'react'
-import { Flex, Text } from '@chakra-ui/react'
+import { Flex, Text, Image } from '@chakra-ui/react'
 import px2vw from '@/utils/px2vw'
 import { Madies } from '@/components/Footer'
+
+import MouseSvg from '@/assets/svg/mouseDown.svg'
 
 function PageOne() {
   return (
     <Flex
+      pos="relative"
       w="100%"
       h={{ base: 'fit-content', lg: '100%' }}
       bg="bg"
@@ -54,6 +57,15 @@ function PageOne() {
             <Madies />
           </Flex>
         </Flex>
+      </Flex>
+      <Flex
+        display={{ base: 'none', lg: 'flex' }}
+        justifyContent="center"
+        pos="absolute"
+        bottom="16px"
+        w="100%"
+      >
+        <Image ignoreFallback src={MouseSvg} />
       </Flex>
     </Flex>
   )
